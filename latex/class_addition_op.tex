@@ -1,0 +1,239 @@
+\hypertarget{class_addition_op}{\section{Addition\+Op Class Reference}
+\label{class_addition_op}\index{Addition\+Op@{Addition\+Op}}
+}
+
+
+{\ttfamily \#include $<$Addition\+Op.\+h$>$}
+
+Inheritance diagram for Addition\+Op\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_addition_op}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_addition_op_a17fcc4c0a906f2dc9d177cb306f45fb3}{Addition\+Op} ()
+\item 
+\hyperlink{class_addition_op_a3f4c3e0a00355c7c4a2a52d121da1e91}{Addition\+Op} (std\+::vector$<$ \hyperlink{class_operand}{Operand} $\ast$ $>$ in\+Operands)
+\item 
+\hyperlink{class_addition_op_a840ff52a9d90e1e49c6e3f44a0af6c34}{Addition\+Op} (std\+::vector$<$ \hyperlink{class_operand}{Operand} $\ast$ $>$ in\+Operands, std\+::vector$<$ int $>$ in\+Coeffs)
+\item 
+virtual \hyperlink{class_symbol}{Symbol} $\ast$ \hyperlink{class_addition_op_acc5fa1937f8e82d7e6356d2aa199a5e9}{evaluate} (\hyperlink{class_symbol}{Symbol} $\ast$vars\mbox{[}$\,$\mbox{]})
+\item 
+virtual std\+::stringstream \hyperlink{class_addition_op_a6e62b558d233e3c358d62e14941872dc}{print} ()
+\item 
+virtual \hyperlink{class_addition_op}{Addition\+Op} $\ast$ \hyperlink{class_addition_op_a0339b4c06997d4592c50f9bf72f578a3}{diff} (int var\+Index)
+\item 
+virtual void \hyperlink{class_addition_op_aae8debc8773974054d3acf6a5df231ff}{combine\+Adds} ()
+\item 
+virtual void \hyperlink{class_addition_op_abd35da4badb0e1b02ab271a8f87da472}{combine\+Mults} ()
+\item 
+virtual void \hyperlink{class_addition_op_ad04b68e36b5852ec2b951005b71cd56d}{clean\+Mults} ()
+\item 
+virtual void \hyperlink{class_addition_op_a4f573734c49e2acff6ae51f15a8698d6}{clean\+Adds} ()
+\item 
+virtual void \hyperlink{class_addition_op_a4a0b8c6e12b6c54857b8b318c6ba55f1}{add\+Operand} (\hyperlink{class_operand}{Operand} $\ast$op)
+\item 
+virtual void \hyperlink{class_addition_op_a07520d850b5ab6156d278aa474e5006d}{add\+Operand} (\hyperlink{class_operand}{Operand} $\ast$op, int coeff)
+\item 
+std\+::vector$<$ int $>$ \hyperlink{class_addition_op_a8f952105219f850c06b9eacd352d5b0b}{get\+Coeffs} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 17 of file Addition\+Op.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_addition_op_a17fcc4c0a906f2dc9d177cb306f45fb3}{\index{Addition\+Op@{Addition\+Op}!Addition\+Op@{Addition\+Op}}
+\index{Addition\+Op@{Addition\+Op}!Addition\+Op@{Addition\+Op}}
+\subsubsection[{Addition\+Op}]{\setlength{\rightskip}{0pt plus 5cm}Addition\+Op\+::\+Addition\+Op (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_addition_op_a17fcc4c0a906f2dc9d177cb306f45fb3}
+
+
+Definition at line 23 of file Addition\+Op.\+h.
+
+\hypertarget{class_addition_op_a3f4c3e0a00355c7c4a2a52d121da1e91}{\index{Addition\+Op@{Addition\+Op}!Addition\+Op@{Addition\+Op}}
+\index{Addition\+Op@{Addition\+Op}!Addition\+Op@{Addition\+Op}}
+\subsubsection[{Addition\+Op}]{\setlength{\rightskip}{0pt plus 5cm}Addition\+Op\+::\+Addition\+Op (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf Operand} $\ast$ $>$}]{in\+Operands}
+\end{DoxyParamCaption}
+)}}\label{class_addition_op_a3f4c3e0a00355c7c4a2a52d121da1e91}
+
+
+Definition at line 25 of file Addition\+Op.\+cpp.
+
+\hypertarget{class_addition_op_a840ff52a9d90e1e49c6e3f44a0af6c34}{\index{Addition\+Op@{Addition\+Op}!Addition\+Op@{Addition\+Op}}
+\index{Addition\+Op@{Addition\+Op}!Addition\+Op@{Addition\+Op}}
+\subsubsection[{Addition\+Op}]{\setlength{\rightskip}{0pt plus 5cm}Addition\+Op\+::\+Addition\+Op (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf Operand} $\ast$ $>$}]{in\+Operands, }
+\item[{std\+::vector$<$ int $>$}]{in\+Coeffs}
+\end{DoxyParamCaption}
+)}}\label{class_addition_op_a840ff52a9d90e1e49c6e3f44a0af6c34}
+
+
+Definition at line 49 of file Addition\+Op.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_addition_op_a4a0b8c6e12b6c54857b8b318c6ba55f1}{\index{Addition\+Op@{Addition\+Op}!add\+Operand@{add\+Operand}}
+\index{add\+Operand@{add\+Operand}!Addition\+Op@{Addition\+Op}}
+\subsubsection[{add\+Operand}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Addition\+Op\+::add\+Operand (
+\begin{DoxyParamCaption}
+\item[{{\bf Operand} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_addition_op_a4a0b8c6e12b6c54857b8b318c6ba55f1}
+
+
+Reimplemented from \hyperlink{class_operand_aa4d004991f0b05b9b6aaa566443f63a6}{Operand}.
+
+
+
+Definition at line 35 of file Addition\+Op.\+h.
+
+\hypertarget{class_addition_op_a07520d850b5ab6156d278aa474e5006d}{\index{Addition\+Op@{Addition\+Op}!add\+Operand@{add\+Operand}}
+\index{add\+Operand@{add\+Operand}!Addition\+Op@{Addition\+Op}}
+\subsubsection[{add\+Operand}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Addition\+Op\+::add\+Operand (
+\begin{DoxyParamCaption}
+\item[{{\bf Operand} $\ast$}]{op, }
+\item[{int}]{coeff}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_addition_op_a07520d850b5ab6156d278aa474e5006d}
+
+
+Definition at line 36 of file Addition\+Op.\+h.
+
+\hypertarget{class_addition_op_a4f573734c49e2acff6ae51f15a8698d6}{\index{Addition\+Op@{Addition\+Op}!clean\+Adds@{clean\+Adds}}
+\index{clean\+Adds@{clean\+Adds}!Addition\+Op@{Addition\+Op}}
+\subsubsection[{clean\+Adds}]{\setlength{\rightskip}{0pt plus 5cm}void Addition\+Op\+::clean\+Adds (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_addition_op_a4f573734c49e2acff6ae51f15a8698d6}
+
+
+Implements \hyperlink{class_operand_adce551c3eaf269ed417647d9365fd8de}{Operand}.
+
+
+
+Definition at line 374 of file Addition\+Op.\+cpp.
+
+\hypertarget{class_addition_op_ad04b68e36b5852ec2b951005b71cd56d}{\index{Addition\+Op@{Addition\+Op}!clean\+Mults@{clean\+Mults}}
+\index{clean\+Mults@{clean\+Mults}!Addition\+Op@{Addition\+Op}}
+\subsubsection[{clean\+Mults}]{\setlength{\rightskip}{0pt plus 5cm}void Addition\+Op\+::clean\+Mults (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_addition_op_ad04b68e36b5852ec2b951005b71cd56d}
+
+
+Implements \hyperlink{class_operand_aca12745fcb2d33fda67568181eb19179}{Operand}.
+
+
+
+Definition at line 324 of file Addition\+Op.\+cpp.
+
+\hypertarget{class_addition_op_aae8debc8773974054d3acf6a5df231ff}{\index{Addition\+Op@{Addition\+Op}!combine\+Adds@{combine\+Adds}}
+\index{combine\+Adds@{combine\+Adds}!Addition\+Op@{Addition\+Op}}
+\subsubsection[{combine\+Adds}]{\setlength{\rightskip}{0pt plus 5cm}void Addition\+Op\+::combine\+Adds (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_addition_op_aae8debc8773974054d3acf6a5df231ff}
+
+
+Implements \hyperlink{class_operand_a1650a1adf9ed0d15423c746b6cdcdf2b}{Operand}.
+
+
+
+Definition at line 224 of file Addition\+Op.\+cpp.
+
+\hypertarget{class_addition_op_abd35da4badb0e1b02ab271a8f87da472}{\index{Addition\+Op@{Addition\+Op}!combine\+Mults@{combine\+Mults}}
+\index{combine\+Mults@{combine\+Mults}!Addition\+Op@{Addition\+Op}}
+\subsubsection[{combine\+Mults}]{\setlength{\rightskip}{0pt plus 5cm}void Addition\+Op\+::combine\+Mults (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_addition_op_abd35da4badb0e1b02ab271a8f87da472}
+
+
+Implements \hyperlink{class_operand_a82913d427a06d6d3f3832ce9ee0e59ff}{Operand}.
+
+
+
+Definition at line 300 of file Addition\+Op.\+cpp.
+
+\hypertarget{class_addition_op_a0339b4c06997d4592c50f9bf72f578a3}{\index{Addition\+Op@{Addition\+Op}!diff@{diff}}
+\index{diff@{diff}!Addition\+Op@{Addition\+Op}}
+\subsubsection[{diff}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Addition\+Op} $\ast$ Addition\+Op\+::diff (
+\begin{DoxyParamCaption}
+\item[{int}]{var\+Index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_addition_op_a0339b4c06997d4592c50f9bf72f578a3}
+
+
+Implements \hyperlink{class_operand_a057d6848e78c2cc4d36a5d57ef68fa61}{Operand}.
+
+
+
+Definition at line 194 of file Addition\+Op.\+cpp.
+
+\hypertarget{class_addition_op_acc5fa1937f8e82d7e6356d2aa199a5e9}{\index{Addition\+Op@{Addition\+Op}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!Addition\+Op@{Addition\+Op}}
+\subsubsection[{evaluate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Symbol} $\ast$ Addition\+Op\+::evaluate (
+\begin{DoxyParamCaption}
+\item[{{\bf Symbol} $\ast$}]{vars\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_addition_op_acc5fa1937f8e82d7e6356d2aa199a5e9}
+
+
+Implements \hyperlink{class_operand_a910e63f6f002b26dd75deb83af9c69a7}{Operand}.
+
+
+
+Definition at line 71 of file Addition\+Op.\+cpp.
+
+\hypertarget{class_addition_op_a8f952105219f850c06b9eacd352d5b0b}{\index{Addition\+Op@{Addition\+Op}!get\+Coeffs@{get\+Coeffs}}
+\index{get\+Coeffs@{get\+Coeffs}!Addition\+Op@{Addition\+Op}}
+\subsubsection[{get\+Coeffs}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$int$>$ Addition\+Op\+::get\+Coeffs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_addition_op_a8f952105219f850c06b9eacd352d5b0b}
+
+
+Definition at line 39 of file Addition\+Op.\+h.
+
+\hypertarget{class_addition_op_a6e62b558d233e3c358d62e14941872dc}{\index{Addition\+Op@{Addition\+Op}!print@{print}}
+\index{print@{print}!Addition\+Op@{Addition\+Op}}
+\subsubsection[{print}]{\setlength{\rightskip}{0pt plus 5cm}std\+::stringstream Addition\+Op\+::print (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_addition_op_a6e62b558d233e3c358d62e14941872dc}
+
+
+Implements \hyperlink{class_operand_a8cc045602e1f603a5920249a69abde03}{Operand}.
+
+
+
+Definition at line 127 of file Addition\+Op.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+S\+L\+P/\hyperlink{_addition_op_8h}{Addition\+Op.\+h}\item 
+S\+L\+P/\hyperlink{_addition_op_8cpp}{Addition\+Op.\+cpp}\end{DoxyCompactItemize}

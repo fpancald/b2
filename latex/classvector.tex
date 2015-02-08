@@ -1,0 +1,1231 @@
+\hypertarget{classvector}{\section{vector$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$ Class Template Reference}
+\label{classvector}\index{vector$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$@{vector$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$}}
+}
+
+
+{\ttfamily \#include $<$vector.\+h$>$}
+
+Inheritance diagram for vector$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classvector}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classvector}{vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$ \hyperlink{classvector_ae499c665535254a7364e3a219b780112}{\+\_\+\+Myt}
+\item 
+typedef \hyperlink{class___vector__val}{\+\_\+\+Vector\+\_\+val}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$ \hyperlink{classvector_a1d0fa35df9c0b874ea870eae971fe5e0}{\+\_\+\+Mybase}
+\item 
+typedef \hyperlink{class___vector__val_ad273d1146bf265f65e75133aa2f9986a}{\+\_\+\+Mybase\+::\+\_\+\+Alty} \hyperlink{classvector_af95a9863612fdd67572c39c825c5aee6}{\+\_\+\+Alloc}
+\item 
+typedef \hyperlink{classvector_af95a9863612fdd67572c39c825c5aee6}{\+\_\+\+Alloc} \hyperlink{classvector_ae35ea7650735172fd02fdd94aa530a25}{allocator\+\_\+type}
+\item 
+typedef \+\_\+\+Alloc\+::size\+\_\+type \hyperlink{classvector_ac975e84f5d6c2fe2267bb354a85818af}{size\+\_\+type}
+\item 
+typedef \+\_\+\+Alloc\+::difference\+\_\+type \hyperlink{classvector_a5972097c9d52210f29e2d753a75b0a7a}{difference\+\_\+type}
+\item 
+typedef \+\_\+\+Alloc\+::pointer \hyperlink{classvector_a7f69707c8f1cc638260b523d48793523}{pointer}
+\item 
+typedef \+\_\+\+Alloc\+::const\+\_\+pointer \hyperlink{classvector_a52b51d85dd355481f31b8d1643d5b969}{const\+\_\+pointer}
+\item 
+typedef \+\_\+\+Alloc\+::reference \hyperlink{classvector_a68d6b0f887c9e4d0f422a1e3900b9794}{reference}
+\item 
+typedef \+\_\+\+Alloc\+::const\+\_\+reference \hyperlink{classvector_a22ae7381c38ba94955ba45177b24a51f}{const\+\_\+reference}
+\item 
+typedef \+\_\+\+Alloc\+::value\+\_\+type \hyperlink{classvector_acb600d25126cc0f3871b5a73f840acad}{value\+\_\+type}
+\item 
+typedef \hyperlink{class___vector__iterator}{\+\_\+\+Vector\+\_\+iterator}$<$ \hyperlink{classvector_a1d0fa35df9c0b874ea870eae971fe5e0}{\+\_\+\+Mybase} $>$ \hyperlink{classvector_a5a7a542bca0f55f43e161bd5a09c483d}{iterator}
+\item 
+typedef \hyperlink{class___vector__const__iterator}{\+\_\+\+Vector\+\_\+const\+\_\+iterator}\\*
+$<$ \hyperlink{classvector_a1d0fa35df9c0b874ea870eae971fe5e0}{\+\_\+\+Mybase} $>$ \hyperlink{classvector_abed2910558c61a5a17113b2d250994da}{const\+\_\+iterator}
+\item 
+typedef \+\_\+\+S\+T\+D \hyperlink{classvector_a40def3e50f68e742f5b0cc571eaf51eb}{reverse\+\_\+iterator}\\*
+$<$ \hyperlink{classvector_a5a7a542bca0f55f43e161bd5a09c483d}{iterator} $>$ \hyperlink{classvector_a40def3e50f68e742f5b0cc571eaf51eb}{reverse\+\_\+iterator}
+\item 
+typedef \+\_\+\+S\+T\+D \hyperlink{classvector_a40def3e50f68e742f5b0cc571eaf51eb}{reverse\+\_\+iterator}\\*
+$<$ \hyperlink{classvector_abed2910558c61a5a17113b2d250994da}{const\+\_\+iterator} $>$ \hyperlink{classvector_aefbb12258ea747e127ef628e91e3c061}{const\+\_\+reverse\+\_\+iterator}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classvector_a228c9f7f14ec03dc6c77b58ad336aef3}{vector} ()
+\item 
+\hyperlink{classvector_ab21a4ccb639ea9fd983deaf97ae08034}{vector} (const \hyperlink{classvector_af95a9863612fdd67572c39c825c5aee6}{\+\_\+\+Alloc} \&\+\_\+\+Al)
+\item 
+\hyperlink{classvector_a51699cf57fc396ee5e6d220cc443e1b9}{vector} (\hyperlink{classvector_ac975e84f5d6c2fe2267bb354a85818af}{size\+\_\+type} \+\_\+\+Count)
+\item 
+\hyperlink{classvector_a216cecdf1dce89b22e429f462f782c05}{vector} (\hyperlink{classvector_ac975e84f5d6c2fe2267bb354a85818af}{size\+\_\+type} \+\_\+\+Count, const \+\_\+\+Ty \&\+\_\+\+Val)
+\item 
+\hyperlink{classvector_aa42d2e860dd28f204fb63ff24c8d046d}{vector} (\hyperlink{classvector_ac975e84f5d6c2fe2267bb354a85818af}{size\+\_\+type} \+\_\+\+Count, const \+\_\+\+Ty \&\+\_\+\+Val, const \hyperlink{classvector_af95a9863612fdd67572c39c825c5aee6}{\+\_\+\+Alloc} \&\+\_\+\+Al)
+\item 
+\hyperlink{classvector_ad33fdaff980e232bc58ae3ffcc39b44a}{vector} (const \hyperlink{classvector_ae499c665535254a7364e3a219b780112}{\+\_\+\+Myt} \&\+\_\+\+Right)
+\item 
+{\footnotesize template$<$class \+\_\+\+Iter $>$ }\\\hyperlink{classvector_a91c17323d484d96fd650414a1b4355e5}{vector} (\+\_\+\+Iter \+\_\+\+First, \+\_\+\+Iter \+\_\+\+Last)
+\item 
+{\footnotesize template$<$class \+\_\+\+Iter $>$ }\\\hyperlink{classvector_a49286302a69b1ea41854e75183810cba}{vector} (\+\_\+\+Iter \+\_\+\+First, \+\_\+\+Iter \+\_\+\+Last, const \hyperlink{classvector_af95a9863612fdd67572c39c825c5aee6}{\+\_\+\+Alloc} \&\+\_\+\+Al)
+\item 
+{\footnotesize template$<$class \+\_\+\+Iter $>$ }\\void \hyperlink{classvector_af458407343307d48e496bad8e3aaecbf}{\+\_\+\+Construct} (\+\_\+\+Iter \+\_\+\+Count, \+\_\+\+Iter \+\_\+\+Val, \+\_\+\+Int\+\_\+iterator\+\_\+tag)
+\item 
+{\footnotesize template$<$class \+\_\+\+Iter $>$ }\\void \hyperlink{classvector_a8d6b5f89ce28d9e71f67500a96cefa45}{\+\_\+\+Construct} (\+\_\+\+Iter \+\_\+\+First, \+\_\+\+Iter \+\_\+\+Last, input\+\_\+iterator\+\_\+tag)
+\item 
+void \hyperlink{classvector_a37d757eaf6d72cf8b3d0e2195cacf188}{\+\_\+\+Construct\+\_\+n} (\hyperlink{classvector_ac975e84f5d6c2fe2267bb354a85818af}{size\+\_\+type} \+\_\+\+Count, const \+\_\+\+Ty $\ast$\+\_\+\+Pval)
+\item 
+\hyperlink{classvector_ad6d57100eef2daafdcc4628af06a656d}{vector} (\hyperlink{classvector_ae499c665535254a7364e3a219b780112}{\+\_\+\+Myt} \&\&\+\_\+\+Right)
+\item 
+\hyperlink{classvector_ae499c665535254a7364e3a219b780112}{\+\_\+\+Myt} \& \hyperlink{classvector_a209c9b772cdd5ed01ffc9d351a953826}{operator=} (\hyperlink{classvector_ae499c665535254a7364e3a219b780112}{\+\_\+\+Myt} \&\&\+\_\+\+Right)
+\item 
+void \hyperlink{classvector_a5b3c2d0a2573a1ed31a1ac9b7413f0f3}{\+\_\+\+Assign\+\_\+rv} (\hyperlink{classvector_ae499c665535254a7364e3a219b780112}{\+\_\+\+Myt} \&\&\+\_\+\+Right)
+\item 
+void \hyperlink{classvector_acf11e850cea519337e771d3d9d3779eb}{push\+\_\+back} (\+\_\+\+Ty \&\&\+\_\+\+Val)
+\item 
+void \hyperlink{classvector_a9a698dee99d62dd092caa7f17572866a}{emplace\+\_\+back} (\+\_\+\+Ty \&\&\+\_\+\+Val)
+\item 
+{\footnotesize template$<$class \+\_\+\+Valty $>$ }\\void \hyperlink{classvector_abd73be05a346e182658bbc1b1ae52dec}{emplace\+\_\+back} (\+\_\+\+Valty \&\&\+\_\+\+Val)
+\item 
+{\footnotesize template$<$class \+\_\+\+Valty $>$ }\\\hyperlink{classvector_a5a7a542bca0f55f43e161bd5a09c483d}{iterator} \hyperlink{classvector_ac52a3ac9c41a88dea7ab11fd73539893}{insert} (\hyperlink{classvector_abed2910558c61a5a17113b2d250994da}{const\+\_\+iterator} \+\_\+\+Where, \+\_\+\+Valty \&\&\+\_\+\+Val)
+\item 
+{\footnotesize template$<$class \+\_\+\+Valty $>$ }\\\hyperlink{classvector_a5a7a542bca0f55f43e161bd5a09c483d}{iterator} \hyperlink{classvector_abd24d07d48fcb842a6d07d2e7f0578dc}{emplace} (\hyperlink{classvector_abed2910558c61a5a17113b2d250994da}{const\+\_\+iterator} \+\_\+\+Where, \+\_\+\+Valty \&\&\+\_\+\+Val)
+\item 
+void \hyperlink{classvector_a949b2559806ecaae9cd5e3fcbec75d95}{swap} (\hyperlink{classvector_ae499c665535254a7364e3a219b780112}{\+\_\+\+Myt} \&\&\+\_\+\+Right)
+\item 
+\hyperlink{classvector_a98318c18baf337cfd287144557edb20c}{$\sim$vector} ()
+\item 
+\hyperlink{classvector_ae499c665535254a7364e3a219b780112}{\+\_\+\+Myt} \& \hyperlink{classvector_a5d402c01180b25eeb170866e2717b725}{operator=} (const \hyperlink{classvector_ae499c665535254a7364e3a219b780112}{\+\_\+\+Myt} \&\+\_\+\+Right)
+\item 
+void \hyperlink{classvector_a7428e66207efbf468e49651985a08c31}{reserve} (\hyperlink{classvector_ac975e84f5d6c2fe2267bb354a85818af}{size\+\_\+type} \+\_\+\+Count)
+\item 
+\hyperlink{classvector_ac975e84f5d6c2fe2267bb354a85818af}{size\+\_\+type} \hyperlink{classvector_a21c65889147afae2659222cd573aeb6e}{capacity} () const 
+\item 
+\hyperlink{classvector_a5a7a542bca0f55f43e161bd5a09c483d}{iterator} \hyperlink{classvector_a6efe00923de326e1661c331968658cf6}{begin} ()
+\item 
+\hyperlink{classvector_abed2910558c61a5a17113b2d250994da}{const\+\_\+iterator} \hyperlink{classvector_a7852e2f2214cf8b6c35cc37fd403ad3c}{begin} () const 
+\item 
+\hyperlink{classvector_a5a7a542bca0f55f43e161bd5a09c483d}{iterator} \hyperlink{classvector_aba1634590994c68b16af21735a4f541a}{end} ()
+\item 
+\hyperlink{classvector_abed2910558c61a5a17113b2d250994da}{const\+\_\+iterator} \hyperlink{classvector_a5ddbe02dc2954e254f93eb33dc03c9c8}{end} () const 
+\item 
+\hyperlink{classvector_a5a7a542bca0f55f43e161bd5a09c483d}{iterator} \hyperlink{classvector_a3957e92146489f5d04e5075dec2858cb}{\+\_\+\+Make\+\_\+iter} (\hyperlink{classvector_abed2910558c61a5a17113b2d250994da}{const\+\_\+iterator} \+\_\+\+Where) const 
+\item 
+\hyperlink{classvector_a40def3e50f68e742f5b0cc571eaf51eb}{reverse\+\_\+iterator} \hyperlink{classvector_a78f8334976fd4cb3954b1fe0833f7d90}{rbegin} ()
+\item 
+\hyperlink{classvector_aefbb12258ea747e127ef628e91e3c061}{const\+\_\+reverse\+\_\+iterator} \hyperlink{classvector_ae885bc2d89e2e938acf68437b618249b}{rbegin} () const 
+\item 
+\hyperlink{classvector_a40def3e50f68e742f5b0cc571eaf51eb}{reverse\+\_\+iterator} \hyperlink{classvector_ace499734c8f59823a305d8ee8355faf4}{rend} ()
+\item 
+\hyperlink{classvector_aefbb12258ea747e127ef628e91e3c061}{const\+\_\+reverse\+\_\+iterator} \hyperlink{classvector_a5d33de9ba4b238f1baeb6ae178d6725a}{rend} () const 
+\item 
+void \hyperlink{classvector_aa98dbcc4560cd1171d5d6d23567e8d53}{resize} (\hyperlink{classvector_ac975e84f5d6c2fe2267bb354a85818af}{size\+\_\+type} \+\_\+\+Newsize)
+\item 
+void \hyperlink{classvector_a7bc8f8fd18dfea8648036ba31f616386}{resize} (\hyperlink{classvector_ac975e84f5d6c2fe2267bb354a85818af}{size\+\_\+type} \+\_\+\+Newsize, \+\_\+\+Ty \+\_\+\+Val)
+\item 
+\hyperlink{classvector_ac975e84f5d6c2fe2267bb354a85818af}{size\+\_\+type} \hyperlink{classvector_a1f753ec0d05eadcb7fc18617ea54a82b}{size} () const 
+\item 
+\hyperlink{classvector_ac975e84f5d6c2fe2267bb354a85818af}{size\+\_\+type} \hyperlink{classvector_a0002515b016b6ea9ba25902c44ec7b1a}{max\+\_\+size} () const 
+\item 
+bool \hyperlink{classvector_a8aa620f8d84b5a9b2279d0956039da25}{empty} () const 
+\item 
+\hyperlink{classvector_af95a9863612fdd67572c39c825c5aee6}{\+\_\+\+Alloc} \hyperlink{classvector_a0ee6657761474e25e5d0c33926b1f7f7}{get\+\_\+allocator} () const 
+\item 
+\hyperlink{classvector_a22ae7381c38ba94955ba45177b24a51f}{const\+\_\+reference} \hyperlink{classvector_abb4ef2cdcb5fe5fd4f67abbf4135765c}{at} (\hyperlink{classvector_ac975e84f5d6c2fe2267bb354a85818af}{size\+\_\+type} \+\_\+\+Pos) const 
+\item 
+\hyperlink{classvector_a68d6b0f887c9e4d0f422a1e3900b9794}{reference} \hyperlink{classvector_af83e91556a8a2ea79e558c8d62bd442b}{at} (\hyperlink{classvector_ac975e84f5d6c2fe2267bb354a85818af}{size\+\_\+type} \+\_\+\+Pos)
+\item 
+\hyperlink{classvector_a22ae7381c38ba94955ba45177b24a51f}{const\+\_\+reference} \hyperlink{classvector_aa364f7385b52acc5e9931fb1e9af09d7}{operator\mbox{[}$\,$\mbox{]}} (\hyperlink{classvector_ac975e84f5d6c2fe2267bb354a85818af}{size\+\_\+type} \+\_\+\+Pos) const 
+\item 
+\hyperlink{classvector_a68d6b0f887c9e4d0f422a1e3900b9794}{reference} \hyperlink{classvector_a193ab55a199d22c1f47c190343a535fa}{operator\mbox{[}$\,$\mbox{]}} (\hyperlink{classvector_ac975e84f5d6c2fe2267bb354a85818af}{size\+\_\+type} \+\_\+\+Pos)
+\item 
+\hyperlink{classvector_a68d6b0f887c9e4d0f422a1e3900b9794}{reference} \hyperlink{classvector_a327ba92b9bf6c74429a6671a727913cd}{front} ()
+\item 
+\hyperlink{classvector_a22ae7381c38ba94955ba45177b24a51f}{const\+\_\+reference} \hyperlink{classvector_abc308a2e916ff33162db56d0673a0ea0}{front} () const 
+\item 
+\hyperlink{classvector_a68d6b0f887c9e4d0f422a1e3900b9794}{reference} \hyperlink{classvector_a98c5a0f98672a189f63e8424f9c3274e}{back} ()
+\item 
+\hyperlink{classvector_a22ae7381c38ba94955ba45177b24a51f}{const\+\_\+reference} \hyperlink{classvector_af7d191b66470dc5df940008dae6887dc}{back} () const 
+\item 
+void \hyperlink{classvector_ac2bfd37a2361f30ba58eee1eca3fc6c7}{push\+\_\+back} (const \+\_\+\+Ty \&\+\_\+\+Val)
+\item 
+void \hyperlink{classvector_a915399f4b25c73588948f5c363fd2111}{pop\+\_\+back} ()
+\item 
+{\footnotesize template$<$class \+\_\+\+Iter $>$ }\\void \hyperlink{classvector_a12288587f56ae22d9306cb39792a50c9}{assign} (\+\_\+\+Iter \+\_\+\+First, \+\_\+\+Iter \+\_\+\+Last)
+\item 
+{\footnotesize template$<$class \+\_\+\+Iter $>$ }\\void \hyperlink{classvector_aeba4b1947b3c0719a0d37bd8f6083fd8}{\+\_\+\+Assign} (\+\_\+\+Iter \+\_\+\+Count, \+\_\+\+Iter \+\_\+\+Val, \+\_\+\+Int\+\_\+iterator\+\_\+tag)
+\item 
+{\footnotesize template$<$class \+\_\+\+Iter $>$ }\\void \hyperlink{classvector_a08a08acdbaf15a5c31891aa483615fca}{\+\_\+\+Assign} (\+\_\+\+Iter \+\_\+\+First, \+\_\+\+Iter \+\_\+\+Last, input\+\_\+iterator\+\_\+tag)
+\item 
+void \hyperlink{classvector_a84147518414e7b1b2ca725ced50a60d4}{assign} (\hyperlink{classvector_ac975e84f5d6c2fe2267bb354a85818af}{size\+\_\+type} \+\_\+\+Count, const \+\_\+\+Ty \&\+\_\+\+Val)
+\item 
+\hyperlink{classvector_a5a7a542bca0f55f43e161bd5a09c483d}{iterator} \hyperlink{classvector_a26fbb403c5e2f43caea7e42c408de747}{insert} (\hyperlink{classvector_abed2910558c61a5a17113b2d250994da}{const\+\_\+iterator} \+\_\+\+Where, const \+\_\+\+Ty \&\+\_\+\+Val)
+\item 
+void \hyperlink{classvector_add70179791405b879492b3fbf52ef668}{insert} (\hyperlink{classvector_abed2910558c61a5a17113b2d250994da}{const\+\_\+iterator} \+\_\+\+Where, \hyperlink{classvector_ac975e84f5d6c2fe2267bb354a85818af}{size\+\_\+type} \+\_\+\+Count, const \+\_\+\+Ty \&\+\_\+\+Val)
+\item 
+{\footnotesize template$<$class \+\_\+\+Iter $>$ }\\void \hyperlink{classvector_a9ef38510dac40c69bb0ab0998d045f02}{insert} (\hyperlink{classvector_abed2910558c61a5a17113b2d250994da}{const\+\_\+iterator} \+\_\+\+Where, \+\_\+\+Iter \+\_\+\+First, \+\_\+\+Iter \+\_\+\+Last)
+\item 
+{\footnotesize template$<$class \+\_\+\+Iter $>$ }\\void \hyperlink{classvector_a18b93a6644080bb543c9aff2d041ea97}{\+\_\+\+Insert} (\hyperlink{classvector_abed2910558c61a5a17113b2d250994da}{const\+\_\+iterator} \+\_\+\+Where, \+\_\+\+Iter \+\_\+\+First, \+\_\+\+Iter \+\_\+\+Last, \+\_\+\+Int\+\_\+iterator\+\_\+tag)
+\item 
+{\footnotesize template$<$class \+\_\+\+Iter $>$ }\\void \hyperlink{classvector_a45db786cdafa1273cd1f605426f8f0c2}{\+\_\+\+Insert} (\hyperlink{classvector_abed2910558c61a5a17113b2d250994da}{const\+\_\+iterator} \+\_\+\+Where, \+\_\+\+Iter \+\_\+\+First, \+\_\+\+Iter \+\_\+\+Last, input\+\_\+iterator\+\_\+tag)
+\item 
+{\footnotesize template$<$class \+\_\+\+Iter $>$ }\\void \hyperlink{classvector_abc90508f0d68ec762eec41b5824f4e9d}{\+\_\+\+Insert} (\hyperlink{classvector_abed2910558c61a5a17113b2d250994da}{const\+\_\+iterator} \+\_\+\+Where, \+\_\+\+Iter \+\_\+\+First, \+\_\+\+Iter \+\_\+\+Last, forward\+\_\+iterator\+\_\+tag)
+\item 
+\hyperlink{classvector_a5a7a542bca0f55f43e161bd5a09c483d}{iterator} \hyperlink{classvector_a4e9ff386d2bbdf9b6360fa8106139073}{erase} (\hyperlink{classvector_abed2910558c61a5a17113b2d250994da}{const\+\_\+iterator} \+\_\+\+Where)
+\item 
+\hyperlink{classvector_a5a7a542bca0f55f43e161bd5a09c483d}{iterator} \hyperlink{classvector_ad17b00c67398fd746359b1caa55b5348}{erase} (\hyperlink{classvector_abed2910558c61a5a17113b2d250994da}{const\+\_\+iterator} \+\_\+\+First\+\_\+arg, \hyperlink{classvector_abed2910558c61a5a17113b2d250994da}{const\+\_\+iterator} \+\_\+\+Last\+\_\+arg)
+\item 
+void \hyperlink{classvector_a51da9039663bda99118fa35aace9ae9c}{clear} ()
+\item 
+void \hyperlink{classvector_ada1f77df63cd9cf53ff2109c9dcb5ee0}{swap} (\hyperlink{classvector_ae499c665535254a7364e3a219b780112}{\+\_\+\+Myt} \&\+\_\+\+Right)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classvector_af6ae46542130d94f62eaca2f150c1a07}{\+\_\+\+Assign\+\_\+n} (\hyperlink{classvector_ac975e84f5d6c2fe2267bb354a85818af}{size\+\_\+type} \+\_\+\+Count, const \+\_\+\+Ty \&\+\_\+\+Val)
+\item 
+bool \hyperlink{classvector_a8b82acf390655c3df75716064d30862a}{\+\_\+\+Buy} (\hyperlink{classvector_ac975e84f5d6c2fe2267bb354a85818af}{size\+\_\+type} \+\_\+\+Capacity)
+\item 
+void \hyperlink{classvector_adc2e4d8e694e03595c8c12ebb0e724b6}{\+\_\+\+Destroy} (\hyperlink{classvector_a7f69707c8f1cc638260b523d48793523}{pointer} \+\_\+\+First, \hyperlink{classvector_a7f69707c8f1cc638260b523d48793523}{pointer} \+\_\+\+Last)
+\item 
+\hyperlink{classvector_ac975e84f5d6c2fe2267bb354a85818af}{size\+\_\+type} \hyperlink{classvector_a6f65f39c49d359c1d9dd33fba88ca182}{\+\_\+\+Grow\+\_\+to} (\hyperlink{classvector_ac975e84f5d6c2fe2267bb354a85818af}{size\+\_\+type} \+\_\+\+Count) const 
+\item 
+bool \hyperlink{classvector_a1d9754111e0124a045277acb78e2f2e5}{\+\_\+\+Inside} (const \+\_\+\+Ty $\ast$\+\_\+\+Ptr) const 
+\item 
+void \hyperlink{classvector_ae2e64058c9c07a661f3c20a01e13b723}{\+\_\+\+Reserve} (\hyperlink{classvector_ac975e84f5d6c2fe2267bb354a85818af}{size\+\_\+type} \+\_\+\+Count)
+\item 
+void \hyperlink{classvector_a90176ebd5790a9cbc1d4664cd55774b2}{\+\_\+\+Tidy} ()
+\item 
+{\footnotesize template$<$class \+\_\+\+Iter $>$ }\\\hyperlink{classvector_a7f69707c8f1cc638260b523d48793523}{pointer} \hyperlink{classvector_a1faab67c07f4d062e65447a917783255}{\+\_\+\+Ucopy} (\+\_\+\+Iter \+\_\+\+First, \+\_\+\+Iter \+\_\+\+Last, \hyperlink{classvector_a7f69707c8f1cc638260b523d48793523}{pointer} \+\_\+\+Ptr)
+\item 
+{\footnotesize template$<$class \+\_\+\+Iter $>$ }\\\hyperlink{classvector_a7f69707c8f1cc638260b523d48793523}{pointer} \hyperlink{classvector_a7fb2c85958dd62d4cb404372e592592a}{\+\_\+\+Umove} (\+\_\+\+Iter \+\_\+\+First, \+\_\+\+Iter \+\_\+\+Last, \hyperlink{classvector_a7f69707c8f1cc638260b523d48793523}{pointer} \+\_\+\+Ptr)
+\item 
+void \hyperlink{classvector_af4c55e88f9f4c6cc90163700228505cb}{\+\_\+\+Insert\+\_\+n} (\hyperlink{classvector_abed2910558c61a5a17113b2d250994da}{const\+\_\+iterator} \+\_\+\+Where, \hyperlink{classvector_ac975e84f5d6c2fe2267bb354a85818af}{size\+\_\+type} \+\_\+\+Count, const \+\_\+\+Ty \&\+\_\+\+Val)
+\item 
+\hyperlink{classvector_a7f69707c8f1cc638260b523d48793523}{pointer} \hyperlink{classvector_af7344c421c511345d29874b97cf021f8}{\+\_\+\+Ufill} (\hyperlink{classvector_a7f69707c8f1cc638260b523d48793523}{pointer} \+\_\+\+Ptr, \hyperlink{classvector_ac975e84f5d6c2fe2267bb354a85818af}{size\+\_\+type} \+\_\+\+Count, const \+\_\+\+Ty $\ast$\+\_\+\+Pval)
+\item 
+\hyperlink{classvector_a804dd7945b52d9e372b1433c16ab78c2}{\+\_\+\+\_\+declspec} (noreturn) void \+\_\+\+Xlen() const 
+\item 
+\hyperlink{classvector_ae43c8191913ff101482185dc22e80d15}{\+\_\+\+\_\+declspec} (noreturn) void \+\_\+\+Xran() const 
+\item 
+void \hyperlink{classvector_abc1081a6cc86d9b7dae1cf7b8aeaca68}{\+\_\+\+Orphan\+\_\+range} (\hyperlink{classvector_a7f69707c8f1cc638260b523d48793523}{pointer}, \hyperlink{classvector_a7f69707c8f1cc638260b523d48793523}{pointer}) const 
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$class vector$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$}
+
+
+
+Definition at line 479 of file vector.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classvector_af95a9863612fdd67572c39c825c5aee6}{\index{vector@{vector}!\+\_\+\+Alloc@{\+\_\+\+Alloc}}
+\index{\+\_\+\+Alloc@{\+\_\+\+Alloc}!vector@{vector}}
+\subsubsection[{\+\_\+\+Alloc}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ typedef {\bf \+\_\+\+Mybase\+::\+\_\+\+Alty} {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::{\bf \+\_\+\+Alloc}}}\label{classvector_af95a9863612fdd67572c39c825c5aee6}
+
+
+Definition at line 485 of file vector.\+h.
+
+\hypertarget{classvector_a1d0fa35df9c0b874ea870eae971fe5e0}{\index{vector@{vector}!\+\_\+\+Mybase@{\+\_\+\+Mybase}}
+\index{\+\_\+\+Mybase@{\+\_\+\+Mybase}!vector@{vector}}
+\subsubsection[{\+\_\+\+Mybase}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ typedef {\bf \+\_\+\+Vector\+\_\+val}$<$\+\_\+\+Ty, \+\_\+\+Ax$>$ {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::{\bf \+\_\+\+Mybase}}}\label{classvector_a1d0fa35df9c0b874ea870eae971fe5e0}
+
+
+Definition at line 484 of file vector.\+h.
+
+\hypertarget{classvector_ae499c665535254a7364e3a219b780112}{\index{vector@{vector}!\+\_\+\+Myt@{\+\_\+\+Myt}}
+\index{\+\_\+\+Myt@{\+\_\+\+Myt}!vector@{vector}}
+\subsubsection[{\+\_\+\+Myt}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ typedef {\bf vector}$<$\+\_\+\+Ty, \+\_\+\+Ax$>$ {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::{\bf \+\_\+\+Myt}}}\label{classvector_ae499c665535254a7364e3a219b780112}
+
+
+Definition at line 483 of file vector.\+h.
+
+\hypertarget{classvector_ae35ea7650735172fd02fdd94aa530a25}{\index{vector@{vector}!allocator\+\_\+type@{allocator\+\_\+type}}
+\index{allocator\+\_\+type@{allocator\+\_\+type}!vector@{vector}}
+\subsubsection[{allocator\+\_\+type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ typedef {\bf \+\_\+\+Alloc} {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::{\bf allocator\+\_\+type}}}\label{classvector_ae35ea7650735172fd02fdd94aa530a25}
+
+
+Definition at line 487 of file vector.\+h.
+
+\hypertarget{classvector_abed2910558c61a5a17113b2d250994da}{\index{vector@{vector}!const\+\_\+iterator@{const\+\_\+iterator}}
+\index{const\+\_\+iterator@{const\+\_\+iterator}!vector@{vector}}
+\subsubsection[{const\+\_\+iterator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ typedef {\bf \+\_\+\+Vector\+\_\+const\+\_\+iterator}$<${\bf \+\_\+\+Mybase}$>$ {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::{\bf const\+\_\+iterator}}}\label{classvector_abed2910558c61a5a17113b2d250994da}
+
+
+Definition at line 500 of file vector.\+h.
+
+\hypertarget{classvector_a52b51d85dd355481f31b8d1643d5b969}{\index{vector@{vector}!const\+\_\+pointer@{const\+\_\+pointer}}
+\index{const\+\_\+pointer@{const\+\_\+pointer}!vector@{vector}}
+\subsubsection[{const\+\_\+pointer}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ typedef \+\_\+\+Alloc\+::const\+\_\+pointer {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::{\bf const\+\_\+pointer}}}\label{classvector_a52b51d85dd355481f31b8d1643d5b969}
+
+
+Definition at line 491 of file vector.\+h.
+
+\hypertarget{classvector_a22ae7381c38ba94955ba45177b24a51f}{\index{vector@{vector}!const\+\_\+reference@{const\+\_\+reference}}
+\index{const\+\_\+reference@{const\+\_\+reference}!vector@{vector}}
+\subsubsection[{const\+\_\+reference}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ typedef \+\_\+\+Alloc\+::const\+\_\+reference {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::{\bf const\+\_\+reference}}}\label{classvector_a22ae7381c38ba94955ba45177b24a51f}
+
+
+Definition at line 493 of file vector.\+h.
+
+\hypertarget{classvector_aefbb12258ea747e127ef628e91e3c061}{\index{vector@{vector}!const\+\_\+reverse\+\_\+iterator@{const\+\_\+reverse\+\_\+iterator}}
+\index{const\+\_\+reverse\+\_\+iterator@{const\+\_\+reverse\+\_\+iterator}!vector@{vector}}
+\subsubsection[{const\+\_\+reverse\+\_\+iterator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ typedef \+\_\+\+S\+T\+D {\bf reverse\+\_\+iterator}$<${\bf const\+\_\+iterator}$>$ {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::{\bf const\+\_\+reverse\+\_\+iterator}}}\label{classvector_aefbb12258ea747e127ef628e91e3c061}
+
+
+Definition at line 503 of file vector.\+h.
+
+\hypertarget{classvector_a5972097c9d52210f29e2d753a75b0a7a}{\index{vector@{vector}!difference\+\_\+type@{difference\+\_\+type}}
+\index{difference\+\_\+type@{difference\+\_\+type}!vector@{vector}}
+\subsubsection[{difference\+\_\+type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ typedef \+\_\+\+Alloc\+::difference\+\_\+type {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::{\bf difference\+\_\+type}}}\label{classvector_a5972097c9d52210f29e2d753a75b0a7a}
+
+
+Definition at line 489 of file vector.\+h.
+
+\hypertarget{classvector_a5a7a542bca0f55f43e161bd5a09c483d}{\index{vector@{vector}!iterator@{iterator}}
+\index{iterator@{iterator}!vector@{vector}}
+\subsubsection[{iterator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ typedef {\bf \+\_\+\+Vector\+\_\+iterator}$<${\bf \+\_\+\+Mybase}$>$ {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::{\bf iterator}}}\label{classvector_a5a7a542bca0f55f43e161bd5a09c483d}
+
+
+Definition at line 499 of file vector.\+h.
+
+\hypertarget{classvector_a7f69707c8f1cc638260b523d48793523}{\index{vector@{vector}!pointer@{pointer}}
+\index{pointer@{pointer}!vector@{vector}}
+\subsubsection[{pointer}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ typedef \+\_\+\+Alloc\+::pointer {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::{\bf pointer}}}\label{classvector_a7f69707c8f1cc638260b523d48793523}
+
+
+Definition at line 490 of file vector.\+h.
+
+\hypertarget{classvector_a68d6b0f887c9e4d0f422a1e3900b9794}{\index{vector@{vector}!reference@{reference}}
+\index{reference@{reference}!vector@{vector}}
+\subsubsection[{reference}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ typedef \+\_\+\+Alloc\+::reference {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::{\bf reference}}}\label{classvector_a68d6b0f887c9e4d0f422a1e3900b9794}
+
+
+Definition at line 492 of file vector.\+h.
+
+\hypertarget{classvector_a40def3e50f68e742f5b0cc571eaf51eb}{\index{vector@{vector}!reverse\+\_\+iterator@{reverse\+\_\+iterator}}
+\index{reverse\+\_\+iterator@{reverse\+\_\+iterator}!vector@{vector}}
+\subsubsection[{reverse\+\_\+iterator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ typedef \+\_\+\+S\+T\+D {\bf reverse\+\_\+iterator}$<${\bf iterator}$>$ {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::{\bf reverse\+\_\+iterator}}}\label{classvector_a40def3e50f68e742f5b0cc571eaf51eb}
+
+
+Definition at line 502 of file vector.\+h.
+
+\hypertarget{classvector_ac975e84f5d6c2fe2267bb354a85818af}{\index{vector@{vector}!size\+\_\+type@{size\+\_\+type}}
+\index{size\+\_\+type@{size\+\_\+type}!vector@{vector}}
+\subsubsection[{size\+\_\+type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ typedef \+\_\+\+Alloc\+::size\+\_\+type {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::{\bf size\+\_\+type}}}\label{classvector_ac975e84f5d6c2fe2267bb354a85818af}
+
+
+Definition at line 488 of file vector.\+h.
+
+\hypertarget{classvector_acb600d25126cc0f3871b5a73f840acad}{\index{vector@{vector}!value\+\_\+type@{value\+\_\+type}}
+\index{value\+\_\+type@{value\+\_\+type}!vector@{vector}}
+\subsubsection[{value\+\_\+type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ typedef \+\_\+\+Alloc\+::value\+\_\+type {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::{\bf value\+\_\+type}}}\label{classvector_acb600d25126cc0f3871b5a73f840acad}
+
+
+Definition at line 494 of file vector.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classvector_a228c9f7f14ec03dc6c77b58ad336aef3}{\index{vector@{vector}!vector@{vector}}
+\index{vector@{vector}!vector@{vector}}
+\subsubsection[{vector}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::{\bf vector} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvector_a228c9f7f14ec03dc6c77b58ad336aef3}
+
+
+Definition at line 505 of file vector.\+h.
+
+\hypertarget{classvector_ab21a4ccb639ea9fd983deaf97ae08034}{\index{vector@{vector}!vector@{vector}}
+\index{vector@{vector}!vector@{vector}}
+\subsubsection[{vector}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::{\bf vector} (
+\begin{DoxyParamCaption}
+\item[{const {\bf \+\_\+\+Alloc} \&}]{\+\_\+\+Al}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classvector_ab21a4ccb639ea9fd983deaf97ae08034}
+
+
+Definition at line 510 of file vector.\+h.
+
+\hypertarget{classvector_a51699cf57fc396ee5e6d220cc443e1b9}{\index{vector@{vector}!vector@{vector}}
+\index{vector@{vector}!vector@{vector}}
+\subsubsection[{vector}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::{\bf vector} (
+\begin{DoxyParamCaption}
+\item[{{\bf size\+\_\+type}}]{\+\_\+\+Count}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classvector_a51699cf57fc396ee5e6d220cc443e1b9}
+
+
+Definition at line 515 of file vector.\+h.
+
+\hypertarget{classvector_a216cecdf1dce89b22e429f462f782c05}{\index{vector@{vector}!vector@{vector}}
+\index{vector@{vector}!vector@{vector}}
+\subsubsection[{vector}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::{\bf vector} (
+\begin{DoxyParamCaption}
+\item[{{\bf size\+\_\+type}}]{\+\_\+\+Count, }
+\item[{const \+\_\+\+Ty \&}]{\+\_\+\+Val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvector_a216cecdf1dce89b22e429f462f782c05}
+
+
+Definition at line 521 of file vector.\+h.
+
+\hypertarget{classvector_aa42d2e860dd28f204fb63ff24c8d046d}{\index{vector@{vector}!vector@{vector}}
+\index{vector@{vector}!vector@{vector}}
+\subsubsection[{vector}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::{\bf vector} (
+\begin{DoxyParamCaption}
+\item[{{\bf size\+\_\+type}}]{\+\_\+\+Count, }
+\item[{const \+\_\+\+Ty \&}]{\+\_\+\+Val, }
+\item[{const {\bf \+\_\+\+Alloc} \&}]{\+\_\+\+Al}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvector_aa42d2e860dd28f204fb63ff24c8d046d}
+
+
+Definition at line 527 of file vector.\+h.
+
+\hypertarget{classvector_ad33fdaff980e232bc58ae3ffcc39b44a}{\index{vector@{vector}!vector@{vector}}
+\index{vector@{vector}!vector@{vector}}
+\subsubsection[{vector}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::{\bf vector} (
+\begin{DoxyParamCaption}
+\item[{const {\bf \+\_\+\+Myt} \&}]{\+\_\+\+Right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvector_ad33fdaff980e232bc58ae3ffcc39b44a}
+
+
+Definition at line 533 of file vector.\+h.
+
+\hypertarget{classvector_a91c17323d484d96fd650414a1b4355e5}{\index{vector@{vector}!vector@{vector}}
+\index{vector@{vector}!vector@{vector}}
+\subsubsection[{vector}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ template$<$class \+\_\+\+Iter $>$ {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::{\bf vector} (
+\begin{DoxyParamCaption}
+\item[{\+\_\+\+Iter}]{\+\_\+\+First, }
+\item[{\+\_\+\+Iter}]{\+\_\+\+Last}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvector_a91c17323d484d96fd650414a1b4355e5}
+
+
+Definition at line 547 of file vector.\+h.
+
+\hypertarget{classvector_a49286302a69b1ea41854e75183810cba}{\index{vector@{vector}!vector@{vector}}
+\index{vector@{vector}!vector@{vector}}
+\subsubsection[{vector}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ template$<$class \+\_\+\+Iter $>$ {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::{\bf vector} (
+\begin{DoxyParamCaption}
+\item[{\+\_\+\+Iter}]{\+\_\+\+First, }
+\item[{\+\_\+\+Iter}]{\+\_\+\+Last, }
+\item[{const {\bf \+\_\+\+Alloc} \&}]{\+\_\+\+Al}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvector_a49286302a69b1ea41854e75183810cba}
+
+
+Definition at line 554 of file vector.\+h.
+
+\hypertarget{classvector_ad6d57100eef2daafdcc4628af06a656d}{\index{vector@{vector}!vector@{vector}}
+\index{vector@{vector}!vector@{vector}}
+\subsubsection[{vector}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::{\bf vector} (
+\begin{DoxyParamCaption}
+\item[{{\bf \+\_\+\+Myt} \&\&}]{\+\_\+\+Right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvector_ad6d57100eef2daafdcc4628af06a656d}
+
+
+Definition at line 593 of file vector.\+h.
+
+\hypertarget{classvector_a98318c18baf337cfd287144557edb20c}{\index{vector@{vector}!````~vector@{$\sim$vector}}
+\index{````~vector@{$\sim$vector}!vector@{vector}}
+\subsubsection[{$\sim$vector}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::$\sim${\bf vector} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvector_a98318c18baf337cfd287144557edb20c}
+
+
+Definition at line 703 of file vector.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classvector_a804dd7945b52d9e372b1433c16ab78c2}{\index{vector@{vector}!\+\_\+\+\_\+declspec@{\+\_\+\+\_\+declspec}}
+\index{\+\_\+\+\_\+declspec@{\+\_\+\+\_\+declspec}!vector@{vector}}
+\subsubsection[{\+\_\+\+\_\+declspec}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::\+\_\+\+\_\+declspec (
+\begin{DoxyParamCaption}
+\item[{noreturn}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classvector_a804dd7945b52d9e372b1433c16ab78c2}
+
+
+Definition at line 1425 of file vector.\+h.
+
+\hypertarget{classvector_ae43c8191913ff101482185dc22e80d15}{\index{vector@{vector}!\+\_\+\+\_\+declspec@{\+\_\+\+\_\+declspec}}
+\index{\+\_\+\+\_\+declspec@{\+\_\+\+\_\+declspec}!vector@{vector}}
+\subsubsection[{\+\_\+\+\_\+declspec}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::\+\_\+\+\_\+declspec (
+\begin{DoxyParamCaption}
+\item[{noreturn}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classvector_ae43c8191913ff101482185dc22e80d15}
+
+
+Definition at line 1430 of file vector.\+h.
+
+\hypertarget{classvector_aeba4b1947b3c0719a0d37bd8f6083fd8}{\index{vector@{vector}!\+\_\+\+Assign@{\+\_\+\+Assign}}
+\index{\+\_\+\+Assign@{\+\_\+\+Assign}!vector@{vector}}
+\subsubsection[{\+\_\+\+Assign}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ template$<$class \+\_\+\+Iter $>$ void {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::\+\_\+\+Assign (
+\begin{DoxyParamCaption}
+\item[{\+\_\+\+Iter}]{\+\_\+\+Count, }
+\item[{\+\_\+\+Iter}]{\+\_\+\+Val, }
+\item[{\+\_\+\+Int\+\_\+iterator\+\_\+tag}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvector_aeba4b1947b3c0719a0d37bd8f6083fd8}
+
+
+Definition at line 1033 of file vector.\+h.
+
+\hypertarget{classvector_a08a08acdbaf15a5c31891aa483615fca}{\index{vector@{vector}!\+\_\+\+Assign@{\+\_\+\+Assign}}
+\index{\+\_\+\+Assign@{\+\_\+\+Assign}!vector@{vector}}
+\subsubsection[{\+\_\+\+Assign}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ template$<$class \+\_\+\+Iter $>$ void {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::\+\_\+\+Assign (
+\begin{DoxyParamCaption}
+\item[{\+\_\+\+Iter}]{\+\_\+\+First, }
+\item[{\+\_\+\+Iter}]{\+\_\+\+Last, }
+\item[{input\+\_\+iterator\+\_\+tag}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvector_a08a08acdbaf15a5c31891aa483615fca}
+
+
+Definition at line 1039 of file vector.\+h.
+
+\hypertarget{classvector_af6ae46542130d94f62eaca2f150c1a07}{\index{vector@{vector}!\+\_\+\+Assign\+\_\+n@{\+\_\+\+Assign\+\_\+n}}
+\index{\+\_\+\+Assign\+\_\+n@{\+\_\+\+Assign\+\_\+n}!vector@{vector}}
+\subsubsection[{\+\_\+\+Assign\+\_\+n}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ void {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::\+\_\+\+Assign\+\_\+n (
+\begin{DoxyParamCaption}
+\item[{{\bf size\+\_\+type}}]{\+\_\+\+Count, }
+\item[{const \+\_\+\+Ty \&}]{\+\_\+\+Val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classvector_af6ae46542130d94f62eaca2f150c1a07}
+
+
+Definition at line 1242 of file vector.\+h.
+
+\hypertarget{classvector_a5b3c2d0a2573a1ed31a1ac9b7413f0f3}{\index{vector@{vector}!\+\_\+\+Assign\+\_\+rv@{\+\_\+\+Assign\+\_\+rv}}
+\index{\+\_\+\+Assign\+\_\+rv@{\+\_\+\+Assign\+\_\+rv}!vector@{vector}}
+\subsubsection[{\+\_\+\+Assign\+\_\+rv}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ void {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::\+\_\+\+Assign\+\_\+rv (
+\begin{DoxyParamCaption}
+\item[{{\bf \+\_\+\+Myt} \&\&}]{\+\_\+\+Right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvector_a5b3c2d0a2573a1ed31a1ac9b7413f0f3}
+
+
+Definition at line 605 of file vector.\+h.
+
+\hypertarget{classvector_a8b82acf390655c3df75716064d30862a}{\index{vector@{vector}!\+\_\+\+Buy@{\+\_\+\+Buy}}
+\index{\+\_\+\+Buy@{\+\_\+\+Buy}!vector@{vector}}
+\subsubsection[{\+\_\+\+Buy}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ bool {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::\+\_\+\+Buy (
+\begin{DoxyParamCaption}
+\item[{{\bf size\+\_\+type}}]{\+\_\+\+Capacity}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classvector_a8b82acf390655c3df75716064d30862a}
+
+
+Definition at line 1249 of file vector.\+h.
+
+\hypertarget{classvector_af458407343307d48e496bad8e3aaecbf}{\index{vector@{vector}!\+\_\+\+Construct@{\+\_\+\+Construct}}
+\index{\+\_\+\+Construct@{\+\_\+\+Construct}!vector@{vector}}
+\subsubsection[{\+\_\+\+Construct}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ template$<$class \+\_\+\+Iter $>$ void {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::\+\_\+\+Construct (
+\begin{DoxyParamCaption}
+\item[{\+\_\+\+Iter}]{\+\_\+\+Count, }
+\item[{\+\_\+\+Iter}]{\+\_\+\+Val, }
+\item[{\+\_\+\+Int\+\_\+iterator\+\_\+tag}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvector_af458407343307d48e496bad8e3aaecbf}
+
+
+Definition at line 561 of file vector.\+h.
+
+\hypertarget{classvector_a8d6b5f89ce28d9e71f67500a96cefa45}{\index{vector@{vector}!\+\_\+\+Construct@{\+\_\+\+Construct}}
+\index{\+\_\+\+Construct@{\+\_\+\+Construct}!vector@{vector}}
+\subsubsection[{\+\_\+\+Construct}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ template$<$class \+\_\+\+Iter $>$ void {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::\+\_\+\+Construct (
+\begin{DoxyParamCaption}
+\item[{\+\_\+\+Iter}]{\+\_\+\+First, }
+\item[{\+\_\+\+Iter}]{\+\_\+\+Last, }
+\item[{input\+\_\+iterator\+\_\+tag}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvector_a8d6b5f89ce28d9e71f67500a96cefa45}
+
+
+Definition at line 569 of file vector.\+h.
+
+\hypertarget{classvector_a37d757eaf6d72cf8b3d0e2195cacf188}{\index{vector@{vector}!\+\_\+\+Construct\+\_\+n@{\+\_\+\+Construct\+\_\+n}}
+\index{\+\_\+\+Construct\+\_\+n@{\+\_\+\+Construct\+\_\+n}!vector@{vector}}
+\subsubsection[{\+\_\+\+Construct\+\_\+n}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ void {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::\+\_\+\+Construct\+\_\+n (
+\begin{DoxyParamCaption}
+\item[{{\bf size\+\_\+type}}]{\+\_\+\+Count, }
+\item[{const \+\_\+\+Ty $\ast$}]{\+\_\+\+Pval}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvector_a37d757eaf6d72cf8b3d0e2195cacf188}
+
+
+Definition at line 580 of file vector.\+h.
+
+\hypertarget{classvector_adc2e4d8e694e03595c8c12ebb0e724b6}{\index{vector@{vector}!\+\_\+\+Destroy@{\+\_\+\+Destroy}}
+\index{\+\_\+\+Destroy@{\+\_\+\+Destroy}!vector@{vector}}
+\subsubsection[{\+\_\+\+Destroy}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ void {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::\+\_\+\+Destroy (
+\begin{DoxyParamCaption}
+\item[{{\bf pointer}}]{\+\_\+\+First, }
+\item[{{\bf pointer}}]{\+\_\+\+Last}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classvector_adc2e4d8e694e03595c8c12ebb0e724b6}
+
+
+Definition at line 1268 of file vector.\+h.
+
+\hypertarget{classvector_a6f65f39c49d359c1d9dd33fba88ca182}{\index{vector@{vector}!\+\_\+\+Grow\+\_\+to@{\+\_\+\+Grow\+\_\+to}}
+\index{\+\_\+\+Grow\+\_\+to@{\+\_\+\+Grow\+\_\+to}!vector@{vector}}
+\subsubsection[{\+\_\+\+Grow\+\_\+to}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ {\bf size\+\_\+type} {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::\+\_\+\+Grow\+\_\+to (
+\begin{DoxyParamCaption}
+\item[{{\bf size\+\_\+type}}]{\+\_\+\+Count}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classvector_a6f65f39c49d359c1d9dd33fba88ca182}
+
+
+Definition at line 1273 of file vector.\+h.
+
+\hypertarget{classvector_a18b93a6644080bb543c9aff2d041ea97}{\index{vector@{vector}!\+\_\+\+Insert@{\+\_\+\+Insert}}
+\index{\+\_\+\+Insert@{\+\_\+\+Insert}!vector@{vector}}
+\subsubsection[{\+\_\+\+Insert}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ template$<$class \+\_\+\+Iter $>$ void {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::\+\_\+\+Insert (
+\begin{DoxyParamCaption}
+\item[{{\bf const\+\_\+iterator}}]{\+\_\+\+Where, }
+\item[{\+\_\+\+Iter}]{\+\_\+\+First, }
+\item[{\+\_\+\+Iter}]{\+\_\+\+Last, }
+\item[{\+\_\+\+Int\+\_\+iterator\+\_\+tag}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvector_a18b93a6644080bb543c9aff2d041ea97}
+
+
+Definition at line 1069 of file vector.\+h.
+
+\hypertarget{classvector_a45db786cdafa1273cd1f605426f8f0c2}{\index{vector@{vector}!\+\_\+\+Insert@{\+\_\+\+Insert}}
+\index{\+\_\+\+Insert@{\+\_\+\+Insert}!vector@{vector}}
+\subsubsection[{\+\_\+\+Insert}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ template$<$class \+\_\+\+Iter $>$ void {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::\+\_\+\+Insert (
+\begin{DoxyParamCaption}
+\item[{{\bf const\+\_\+iterator}}]{\+\_\+\+Where, }
+\item[{\+\_\+\+Iter}]{\+\_\+\+First, }
+\item[{\+\_\+\+Iter}]{\+\_\+\+Last, }
+\item[{input\+\_\+iterator\+\_\+tag}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvector_a45db786cdafa1273cd1f605426f8f0c2}
+
+
+Definition at line 1076 of file vector.\+h.
+
+\hypertarget{classvector_abc90508f0d68ec762eec41b5824f4e9d}{\index{vector@{vector}!\+\_\+\+Insert@{\+\_\+\+Insert}}
+\index{\+\_\+\+Insert@{\+\_\+\+Insert}!vector@{vector}}
+\subsubsection[{\+\_\+\+Insert}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ template$<$class \+\_\+\+Iter $>$ void {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::\+\_\+\+Insert (
+\begin{DoxyParamCaption}
+\item[{{\bf const\+\_\+iterator}}]{\+\_\+\+Where, }
+\item[{\+\_\+\+Iter}]{\+\_\+\+First, }
+\item[{\+\_\+\+Iter}]{\+\_\+\+Last, }
+\item[{forward\+\_\+iterator\+\_\+tag}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvector_abc90508f0d68ec762eec41b5824f4e9d}
+
+
+Definition at line 1104 of file vector.\+h.
+
+\hypertarget{classvector_af4c55e88f9f4c6cc90163700228505cb}{\index{vector@{vector}!\+\_\+\+Insert\+\_\+n@{\+\_\+\+Insert\+\_\+n}}
+\index{\+\_\+\+Insert\+\_\+n@{\+\_\+\+Insert\+\_\+n}!vector@{vector}}
+\subsubsection[{\+\_\+\+Insert\+\_\+n}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ void {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::\+\_\+\+Insert\+\_\+n (
+\begin{DoxyParamCaption}
+\item[{{\bf const\+\_\+iterator}}]{\+\_\+\+Where, }
+\item[{{\bf size\+\_\+type}}]{\+\_\+\+Count, }
+\item[{const \+\_\+\+Ty \&}]{\+\_\+\+Val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classvector_af4c55e88f9f4c6cc90163700228505cb}
+
+
+Definition at line 1328 of file vector.\+h.
+
+\hypertarget{classvector_a1d9754111e0124a045277acb78e2f2e5}{\index{vector@{vector}!\+\_\+\+Inside@{\+\_\+\+Inside}}
+\index{\+\_\+\+Inside@{\+\_\+\+Inside}!vector@{vector}}
+\subsubsection[{\+\_\+\+Inside}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ bool {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::\+\_\+\+Inside (
+\begin{DoxyParamCaption}
+\item[{const \+\_\+\+Ty $\ast$}]{\+\_\+\+Ptr}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classvector_a1d9754111e0124a045277acb78e2f2e5}
+
+
+Definition at line 1284 of file vector.\+h.
+
+\hypertarget{classvector_a3957e92146489f5d04e5075dec2858cb}{\index{vector@{vector}!\+\_\+\+Make\+\_\+iter@{\+\_\+\+Make\+\_\+iter}}
+\index{\+\_\+\+Make\+\_\+iter@{\+\_\+\+Make\+\_\+iter}!vector@{vector}}
+\subsubsection[{\+\_\+\+Make\+\_\+iter}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ {\bf iterator} {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::\+\_\+\+Make\+\_\+iter (
+\begin{DoxyParamCaption}
+\item[{{\bf const\+\_\+iterator}}]{\+\_\+\+Where}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvector_a3957e92146489f5d04e5075dec2858cb}
+
+
+Definition at line 800 of file vector.\+h.
+
+\hypertarget{classvector_abc1081a6cc86d9b7dae1cf7b8aeaca68}{\index{vector@{vector}!\+\_\+\+Orphan\+\_\+range@{\+\_\+\+Orphan\+\_\+range}}
+\index{\+\_\+\+Orphan\+\_\+range@{\+\_\+\+Orphan\+\_\+range}!vector@{vector}}
+\subsubsection[{\+\_\+\+Orphan\+\_\+range}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ void {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::\+\_\+\+Orphan\+\_\+range (
+\begin{DoxyParamCaption}
+\item[{{\bf pointer}}]{, }
+\item[{{\bf pointer}}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classvector_abc1081a6cc86d9b7dae1cf7b8aeaca68}
+
+
+Definition at line 1452 of file vector.\+h.
+
+\hypertarget{classvector_ae2e64058c9c07a661f3c20a01e13b723}{\index{vector@{vector}!\+\_\+\+Reserve@{\+\_\+\+Reserve}}
+\index{\+\_\+\+Reserve@{\+\_\+\+Reserve}!vector@{vector}}
+\subsubsection[{\+\_\+\+Reserve}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ void {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::\+\_\+\+Reserve (
+\begin{DoxyParamCaption}
+\item[{{\bf size\+\_\+type}}]{\+\_\+\+Count}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classvector_ae2e64058c9c07a661f3c20a01e13b723}
+
+
+Definition at line 1289 of file vector.\+h.
+
+\hypertarget{classvector_a90176ebd5790a9cbc1d4664cd55774b2}{\index{vector@{vector}!\+\_\+\+Tidy@{\+\_\+\+Tidy}}
+\index{\+\_\+\+Tidy@{\+\_\+\+Tidy}!vector@{vector}}
+\subsubsection[{\+\_\+\+Tidy}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ void {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::\+\_\+\+Tidy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classvector_a90176ebd5790a9cbc1d4664cd55774b2}
+
+
+Definition at line 1300 of file vector.\+h.
+
+\hypertarget{classvector_a1faab67c07f4d062e65447a917783255}{\index{vector@{vector}!\+\_\+\+Ucopy@{\+\_\+\+Ucopy}}
+\index{\+\_\+\+Ucopy@{\+\_\+\+Ucopy}!vector@{vector}}
+\subsubsection[{\+\_\+\+Ucopy}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ template$<$class \+\_\+\+Iter $>$ {\bf pointer} {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::\+\_\+\+Ucopy (
+\begin{DoxyParamCaption}
+\item[{\+\_\+\+Iter}]{\+\_\+\+First, }
+\item[{\+\_\+\+Iter}]{\+\_\+\+Last, }
+\item[{{\bf pointer}}]{\+\_\+\+Ptr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classvector_a1faab67c07f4d062e65447a917783255}
+
+
+Definition at line 1315 of file vector.\+h.
+
+\hypertarget{classvector_af7344c421c511345d29874b97cf021f8}{\index{vector@{vector}!\+\_\+\+Ufill@{\+\_\+\+Ufill}}
+\index{\+\_\+\+Ufill@{\+\_\+\+Ufill}!vector@{vector}}
+\subsubsection[{\+\_\+\+Ufill}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ {\bf pointer} {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::\+\_\+\+Ufill (
+\begin{DoxyParamCaption}
+\item[{{\bf pointer}}]{\+\_\+\+Ptr, }
+\item[{{\bf size\+\_\+type}}]{\+\_\+\+Count, }
+\item[{const \+\_\+\+Ty $\ast$}]{\+\_\+\+Pval}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classvector_af7344c421c511345d29874b97cf021f8}
+
+
+Definition at line 1419 of file vector.\+h.
+
+\hypertarget{classvector_a7fb2c85958dd62d4cb404372e592592a}{\index{vector@{vector}!\+\_\+\+Umove@{\+\_\+\+Umove}}
+\index{\+\_\+\+Umove@{\+\_\+\+Umove}!vector@{vector}}
+\subsubsection[{\+\_\+\+Umove}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ template$<$class \+\_\+\+Iter $>$ {\bf pointer} {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::\+\_\+\+Umove (
+\begin{DoxyParamCaption}
+\item[{\+\_\+\+Iter}]{\+\_\+\+First, }
+\item[{\+\_\+\+Iter}]{\+\_\+\+Last, }
+\item[{{\bf pointer}}]{\+\_\+\+Ptr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classvector_a7fb2c85958dd62d4cb404372e592592a}
+
+
+Definition at line 1322 of file vector.\+h.
+
+\hypertarget{classvector_a12288587f56ae22d9306cb39792a50c9}{\index{vector@{vector}!assign@{assign}}
+\index{assign@{assign}!vector@{vector}}
+\subsubsection[{assign}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ template$<$class \+\_\+\+Iter $>$ void {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::assign (
+\begin{DoxyParamCaption}
+\item[{\+\_\+\+Iter}]{\+\_\+\+First, }
+\item[{\+\_\+\+Iter}]{\+\_\+\+Last}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvector_a12288587f56ae22d9306cb39792a50c9}
+
+
+Definition at line 1027 of file vector.\+h.
+
+\hypertarget{classvector_a84147518414e7b1b2ca725ced50a60d4}{\index{vector@{vector}!assign@{assign}}
+\index{assign@{assign}!vector@{vector}}
+\subsubsection[{assign}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ void {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::assign (
+\begin{DoxyParamCaption}
+\item[{{\bf size\+\_\+type}}]{\+\_\+\+Count, }
+\item[{const \+\_\+\+Ty \&}]{\+\_\+\+Val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvector_a84147518414e7b1b2ca725ced50a60d4}
+
+
+Definition at line 1045 of file vector.\+h.
+
+\hypertarget{classvector_abb4ef2cdcb5fe5fd4f67abbf4135765c}{\index{vector@{vector}!at@{at}}
+\index{at@{at}!vector@{vector}}
+\subsubsection[{at}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ {\bf const\+\_\+reference} {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::at (
+\begin{DoxyParamCaption}
+\item[{{\bf size\+\_\+type}}]{\+\_\+\+Pos}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvector_abb4ef2cdcb5fe5fd4f67abbf4135765c}
+
+
+Definition at line 897 of file vector.\+h.
+
+\hypertarget{classvector_af83e91556a8a2ea79e558c8d62bd442b}{\index{vector@{vector}!at@{at}}
+\index{at@{at}!vector@{vector}}
+\subsubsection[{at}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ {\bf reference} {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::at (
+\begin{DoxyParamCaption}
+\item[{{\bf size\+\_\+type}}]{\+\_\+\+Pos}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvector_af83e91556a8a2ea79e558c8d62bd442b}
+
+
+Definition at line 904 of file vector.\+h.
+
+\hypertarget{classvector_a98c5a0f98672a189f63e8424f9c3274e}{\index{vector@{vector}!back@{back}}
+\index{back@{back}!vector@{vector}}
+\subsubsection[{back}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ {\bf reference} {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::back (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvector_a98c5a0f98672a189f63e8424f9c3274e}
+
+
+Definition at line 965 of file vector.\+h.
+
+\hypertarget{classvector_af7d191b66470dc5df940008dae6887dc}{\index{vector@{vector}!back@{back}}
+\index{back@{back}!vector@{vector}}
+\subsubsection[{back}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ {\bf const\+\_\+reference} {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::back (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvector_af7d191b66470dc5df940008dae6887dc}
+
+
+Definition at line 970 of file vector.\+h.
+
+\hypertarget{classvector_a6efe00923de326e1661c331968658cf6}{\index{vector@{vector}!begin@{begin}}
+\index{begin@{begin}!vector@{vector}}
+\subsubsection[{begin}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ {\bf iterator} {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::begin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvector_a6efe00923de326e1661c331968658cf6}
+
+
+Definition at line 780 of file vector.\+h.
+
+\hypertarget{classvector_a7852e2f2214cf8b6c35cc37fd403ad3c}{\index{vector@{vector}!begin@{begin}}
+\index{begin@{begin}!vector@{vector}}
+\subsubsection[{begin}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ {\bf const\+\_\+iterator} {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::begin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvector_a7852e2f2214cf8b6c35cc37fd403ad3c}
+
+
+Definition at line 785 of file vector.\+h.
+
+\hypertarget{classvector_a21c65889147afae2659222cd573aeb6e}{\index{vector@{vector}!capacity@{capacity}}
+\index{capacity@{capacity}!vector@{vector}}
+\subsubsection[{capacity}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ {\bf size\+\_\+type} {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::capacity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvector_a21c65889147afae2659222cd573aeb6e}
+
+
+Definition at line 775 of file vector.\+h.
+
+\hypertarget{classvector_a51da9039663bda99118fa35aace9ae9c}{\index{vector@{vector}!clear@{clear}}
+\index{clear@{clear}!vector@{vector}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ void {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvector_a51da9039663bda99118fa35aace9ae9c}
+
+
+Definition at line 1216 of file vector.\+h.
+
+\hypertarget{classvector_abd24d07d48fcb842a6d07d2e7f0578dc}{\index{vector@{vector}!emplace@{emplace}}
+\index{emplace@{emplace}!vector@{vector}}
+\subsubsection[{emplace}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ template$<$class \+\_\+\+Valty $>$ {\bf iterator} {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::emplace (
+\begin{DoxyParamCaption}
+\item[{{\bf const\+\_\+iterator}}]{\+\_\+\+Where, }
+\item[{\+\_\+\+Valty \&\&}]{\+\_\+\+Val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvector_abd24d07d48fcb842a6d07d2e7f0578dc}
+
+
+Definition at line 679 of file vector.\+h.
+
+\hypertarget{classvector_a9a698dee99d62dd092caa7f17572866a}{\index{vector@{vector}!emplace\+\_\+back@{emplace\+\_\+back}}
+\index{emplace\+\_\+back@{emplace\+\_\+back}!vector@{vector}}
+\subsubsection[{emplace\+\_\+back}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ void {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::emplace\+\_\+back (
+\begin{DoxyParamCaption}
+\item[{\+\_\+\+Ty \&\&}]{\+\_\+\+Val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvector_a9a698dee99d62dd092caa7f17572866a}
+
+
+Definition at line 655 of file vector.\+h.
+
+\hypertarget{classvector_abd73be05a346e182658bbc1b1ae52dec}{\index{vector@{vector}!emplace\+\_\+back@{emplace\+\_\+back}}
+\index{emplace\+\_\+back@{emplace\+\_\+back}!vector@{vector}}
+\subsubsection[{emplace\+\_\+back}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ template$<$class \+\_\+\+Valty $>$ void {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::emplace\+\_\+back (
+\begin{DoxyParamCaption}
+\item[{\+\_\+\+Valty \&\&}]{\+\_\+\+Val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvector_abd73be05a346e182658bbc1b1ae52dec}
+
+
+Definition at line 661 of file vector.\+h.
+
+\hypertarget{classvector_a8aa620f8d84b5a9b2279d0956039da25}{\index{vector@{vector}!empty@{empty}}
+\index{empty@{empty}!vector@{vector}}
+\subsubsection[{empty}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ bool {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvector_a8aa620f8d84b5a9b2279d0956039da25}
+
+
+Definition at line 887 of file vector.\+h.
+
+\hypertarget{classvector_aba1634590994c68b16af21735a4f541a}{\index{vector@{vector}!end@{end}}
+\index{end@{end}!vector@{vector}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ {\bf iterator} {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::end (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvector_aba1634590994c68b16af21735a4f541a}
+
+
+Definition at line 790 of file vector.\+h.
+
+\hypertarget{classvector_a5ddbe02dc2954e254f93eb33dc03c9c8}{\index{vector@{vector}!end@{end}}
+\index{end@{end}!vector@{vector}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ {\bf const\+\_\+iterator} {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::end (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvector_a5ddbe02dc2954e254f93eb33dc03c9c8}
+
+
+Definition at line 795 of file vector.\+h.
+
+\hypertarget{classvector_a4e9ff386d2bbdf9b6360fa8106139073}{\index{vector@{vector}!erase@{erase}}
+\index{erase@{erase}!vector@{vector}}
+\subsubsection[{erase}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ {\bf iterator} {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::erase (
+\begin{DoxyParamCaption}
+\item[{{\bf const\+\_\+iterator}}]{\+\_\+\+Where}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvector_a4e9ff386d2bbdf9b6360fa8106139073}
+
+
+Definition at line 1178 of file vector.\+h.
+
+\hypertarget{classvector_ad17b00c67398fd746359b1caa55b5348}{\index{vector@{vector}!erase@{erase}}
+\index{erase@{erase}!vector@{vector}}
+\subsubsection[{erase}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ {\bf iterator} {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::erase (
+\begin{DoxyParamCaption}
+\item[{{\bf const\+\_\+iterator}}]{\+\_\+\+First\+\_\+arg, }
+\item[{{\bf const\+\_\+iterator}}]{\+\_\+\+Last\+\_\+arg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvector_ad17b00c67398fd746359b1caa55b5348}
+
+
+Definition at line 1188 of file vector.\+h.
+
+\hypertarget{classvector_a327ba92b9bf6c74429a6671a727913cd}{\index{vector@{vector}!front@{front}}
+\index{front@{front}!vector@{vector}}
+\subsubsection[{front}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ {\bf reference} {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::front (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvector_a327ba92b9bf6c74429a6671a727913cd}
+
+
+Definition at line 955 of file vector.\+h.
+
+\hypertarget{classvector_abc308a2e916ff33162db56d0673a0ea0}{\index{vector@{vector}!front@{front}}
+\index{front@{front}!vector@{vector}}
+\subsubsection[{front}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ {\bf const\+\_\+reference} {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::front (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvector_abc308a2e916ff33162db56d0673a0ea0}
+
+
+Definition at line 960 of file vector.\+h.
+
+\hypertarget{classvector_a0ee6657761474e25e5d0c33926b1f7f7}{\index{vector@{vector}!get\+\_\+allocator@{get\+\_\+allocator}}
+\index{get\+\_\+allocator@{get\+\_\+allocator}!vector@{vector}}
+\subsubsection[{get\+\_\+allocator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ {\bf \+\_\+\+Alloc} {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::get\+\_\+allocator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvector_a0ee6657761474e25e5d0c33926b1f7f7}
+
+
+Definition at line 892 of file vector.\+h.
+
+\hypertarget{classvector_ac52a3ac9c41a88dea7ab11fd73539893}{\index{vector@{vector}!insert@{insert}}
+\index{insert@{insert}!vector@{vector}}
+\subsubsection[{insert}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ template$<$class \+\_\+\+Valty $>$ {\bf iterator} {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::insert (
+\begin{DoxyParamCaption}
+\item[{{\bf const\+\_\+iterator}}]{\+\_\+\+Where, }
+\item[{\+\_\+\+Valty \&\&}]{\+\_\+\+Val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvector_ac52a3ac9c41a88dea7ab11fd73539893}
+
+
+Definition at line 673 of file vector.\+h.
+
+\hypertarget{classvector_a26fbb403c5e2f43caea7e42c408de747}{\index{vector@{vector}!insert@{insert}}
+\index{insert@{insert}!vector@{vector}}
+\subsubsection[{insert}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ {\bf iterator} {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::insert (
+\begin{DoxyParamCaption}
+\item[{{\bf const\+\_\+iterator}}]{\+\_\+\+Where, }
+\item[{const \+\_\+\+Ty \&}]{\+\_\+\+Val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvector_a26fbb403c5e2f43caea7e42c408de747}
+
+
+Definition at line 1050 of file vector.\+h.
+
+\hypertarget{classvector_add70179791405b879492b3fbf52ef668}{\index{vector@{vector}!insert@{insert}}
+\index{insert@{insert}!vector@{vector}}
+\subsubsection[{insert}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ void {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::insert (
+\begin{DoxyParamCaption}
+\item[{{\bf const\+\_\+iterator}}]{\+\_\+\+Where, }
+\item[{{\bf size\+\_\+type}}]{\+\_\+\+Count, }
+\item[{const \+\_\+\+Ty \&}]{\+\_\+\+Val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvector_add70179791405b879492b3fbf52ef668}
+
+
+Definition at line 1057 of file vector.\+h.
+
+\hypertarget{classvector_a9ef38510dac40c69bb0ab0998d045f02}{\index{vector@{vector}!insert@{insert}}
+\index{insert@{insert}!vector@{vector}}
+\subsubsection[{insert}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ template$<$class \+\_\+\+Iter $>$ void {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::insert (
+\begin{DoxyParamCaption}
+\item[{{\bf const\+\_\+iterator}}]{\+\_\+\+Where, }
+\item[{\+\_\+\+Iter}]{\+\_\+\+First, }
+\item[{\+\_\+\+Iter}]{\+\_\+\+Last}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvector_a9ef38510dac40c69bb0ab0998d045f02}
+
+
+Definition at line 1063 of file vector.\+h.
+
+\hypertarget{classvector_a0002515b016b6ea9ba25902c44ec7b1a}{\index{vector@{vector}!max\+\_\+size@{max\+\_\+size}}
+\index{max\+\_\+size@{max\+\_\+size}!vector@{vector}}
+\subsubsection[{max\+\_\+size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ {\bf size\+\_\+type} {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::max\+\_\+size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvector_a0002515b016b6ea9ba25902c44ec7b1a}
+
+
+Definition at line 882 of file vector.\+h.
+
+\hypertarget{classvector_a209c9b772cdd5ed01ffc9d351a953826}{\index{vector@{vector}!operator=@{operator=}}
+\index{operator=@{operator=}!vector@{vector}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ {\bf \+\_\+\+Myt}\& {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf \+\_\+\+Myt} \&\&}]{\+\_\+\+Right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvector_a209c9b772cdd5ed01ffc9d351a953826}
+
+
+Definition at line 599 of file vector.\+h.
+
+\hypertarget{classvector_a5d402c01180b25eeb170866e2717b725}{\index{vector@{vector}!operator=@{operator=}}
+\index{operator=@{operator=}!vector@{vector}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ {\bf \+\_\+\+Myt}\& {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf \+\_\+\+Myt} \&}]{\+\_\+\+Right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvector_a5d402c01180b25eeb170866e2717b725}
+
+
+Definition at line 708 of file vector.\+h.
+
+\hypertarget{classvector_aa364f7385b52acc5e9931fb1e9af09d7}{\index{vector@{vector}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!vector@{vector}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ {\bf const\+\_\+reference} {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{{\bf size\+\_\+type}}]{\+\_\+\+Pos}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvector_aa364f7385b52acc5e9931fb1e9af09d7}
+
+
+Definition at line 911 of file vector.\+h.
+
+\hypertarget{classvector_a193ab55a199d22c1f47c190343a535fa}{\index{vector@{vector}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!vector@{vector}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ {\bf reference} {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{{\bf size\+\_\+type}}]{\+\_\+\+Pos}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvector_a193ab55a199d22c1f47c190343a535fa}
+
+
+Definition at line 927 of file vector.\+h.
+
+\hypertarget{classvector_a915399f4b25c73588948f5c363fd2111}{\index{vector@{vector}!pop\+\_\+back@{pop\+\_\+back}}
+\index{pop\+\_\+back@{pop\+\_\+back}!vector@{vector}}
+\subsubsection[{pop\+\_\+back}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ void {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::pop\+\_\+back (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvector_a915399f4b25c73588948f5c363fd2111}
+
+
+Definition at line 1015 of file vector.\+h.
+
+\hypertarget{classvector_acf11e850cea519337e771d3d9d3779eb}{\index{vector@{vector}!push\+\_\+back@{push\+\_\+back}}
+\index{push\+\_\+back@{push\+\_\+back}!vector@{vector}}
+\subsubsection[{push\+\_\+back}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ void {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::push\+\_\+back (
+\begin{DoxyParamCaption}
+\item[{\+\_\+\+Ty \&\&}]{\+\_\+\+Val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvector_acf11e850cea519337e771d3d9d3779eb}
+
+
+Definition at line 630 of file vector.\+h.
+
+\hypertarget{classvector_ac2bfd37a2361f30ba58eee1eca3fc6c7}{\index{vector@{vector}!push\+\_\+back@{push\+\_\+back}}
+\index{push\+\_\+back@{push\+\_\+back}!vector@{vector}}
+\subsubsection[{push\+\_\+back}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ void {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::push\+\_\+back (
+\begin{DoxyParamCaption}
+\item[{const \+\_\+\+Ty \&}]{\+\_\+\+Val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvector_ac2bfd37a2361f30ba58eee1eca3fc6c7}
+
+
+Definition at line 975 of file vector.\+h.
+
+\hypertarget{classvector_a78f8334976fd4cb3954b1fe0833f7d90}{\index{vector@{vector}!rbegin@{rbegin}}
+\index{rbegin@{rbegin}!vector@{vector}}
+\subsubsection[{rbegin}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ {\bf reverse\+\_\+iterator} {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::rbegin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvector_a78f8334976fd4cb3954b1fe0833f7d90}
+
+
+Definition at line 805 of file vector.\+h.
+
+\hypertarget{classvector_ae885bc2d89e2e938acf68437b618249b}{\index{vector@{vector}!rbegin@{rbegin}}
+\index{rbegin@{rbegin}!vector@{vector}}
+\subsubsection[{rbegin}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ {\bf const\+\_\+reverse\+\_\+iterator} {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::rbegin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvector_ae885bc2d89e2e938acf68437b618249b}
+
+
+Definition at line 810 of file vector.\+h.
+
+\hypertarget{classvector_ace499734c8f59823a305d8ee8355faf4}{\index{vector@{vector}!rend@{rend}}
+\index{rend@{rend}!vector@{vector}}
+\subsubsection[{rend}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ {\bf reverse\+\_\+iterator} {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::rend (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvector_ace499734c8f59823a305d8ee8355faf4}
+
+
+Definition at line 815 of file vector.\+h.
+
+\hypertarget{classvector_a5d33de9ba4b238f1baeb6ae178d6725a}{\index{vector@{vector}!rend@{rend}}
+\index{rend@{rend}!vector@{vector}}
+\subsubsection[{rend}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ {\bf const\+\_\+reverse\+\_\+iterator} {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::rend (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvector_a5d33de9ba4b238f1baeb6ae178d6725a}
+
+
+Definition at line 820 of file vector.\+h.
+
+\hypertarget{classvector_a7428e66207efbf468e49651985a08c31}{\index{vector@{vector}!reserve@{reserve}}
+\index{reserve@{reserve}!vector@{vector}}
+\subsubsection[{reserve}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ void {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::reserve (
+\begin{DoxyParamCaption}
+\item[{{\bf size\+\_\+type}}]{\+\_\+\+Count}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvector_a7428e66207efbf468e49651985a08c31}
+
+
+Definition at line 745 of file vector.\+h.
+
+\hypertarget{classvector_aa98dbcc4560cd1171d5d6d23567e8d53}{\index{vector@{vector}!resize@{resize}}
+\index{resize@{resize}!vector@{vector}}
+\subsubsection[{resize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ void {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::resize (
+\begin{DoxyParamCaption}
+\item[{{\bf size\+\_\+type}}]{\+\_\+\+Newsize}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvector_aa98dbcc4560cd1171d5d6d23567e8d53}
+
+
+Definition at line 856 of file vector.\+h.
+
+\hypertarget{classvector_a7bc8f8fd18dfea8648036ba31f616386}{\index{vector@{vector}!resize@{resize}}
+\index{resize@{resize}!vector@{vector}}
+\subsubsection[{resize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ void {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::resize (
+\begin{DoxyParamCaption}
+\item[{{\bf size\+\_\+type}}]{\+\_\+\+Newsize, }
+\item[{\+\_\+\+Ty}]{\+\_\+\+Val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvector_a7bc8f8fd18dfea8648036ba31f616386}
+
+
+Definition at line 869 of file vector.\+h.
+
+\hypertarget{classvector_a1f753ec0d05eadcb7fc18617ea54a82b}{\index{vector@{vector}!size@{size}}
+\index{size@{size}!vector@{vector}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ {\bf size\+\_\+type} {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvector_a1f753ec0d05eadcb7fc18617ea54a82b}
+
+
+Definition at line 877 of file vector.\+h.
+
+\hypertarget{classvector_a949b2559806ecaae9cd5e3fcbec75d95}{\index{vector@{vector}!swap@{swap}}
+\index{swap@{swap}!vector@{vector}}
+\subsubsection[{swap}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ void {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::swap (
+\begin{DoxyParamCaption}
+\item[{{\bf \+\_\+\+Myt} \&\&}]{\+\_\+\+Right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvector_a949b2559806ecaae9cd5e3fcbec75d95}
+
+
+Definition at line 693 of file vector.\+h.
+
+\hypertarget{classvector_ada1f77df63cd9cf53ff2109c9dcb5ee0}{\index{vector@{vector}!swap@{swap}}
+\index{swap@{swap}!vector@{vector}}
+\subsubsection[{swap}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty, class \+\_\+\+Ax = allocator$<$\+\_\+\+Ty$>$$>$ void {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$\+::swap (
+\begin{DoxyParamCaption}
+\item[{{\bf \+\_\+\+Myt} \&}]{\+\_\+\+Right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classvector_ada1f77df63cd9cf53ff2109c9dcb5ee0}
+
+
+Definition at line 1221 of file vector.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{vector_8h}{vector.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,181 @@
+\hypertarget{class_mult_op}{\section{Mult\+Op Class Reference}
+\label{class_mult_op}\index{Mult\+Op@{Mult\+Op}}
+}
+
+
+{\ttfamily \#include $<$Mult\+Op.\+h$>$}
+
+Inheritance diagram for Mult\+Op\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_mult_op}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_mult_op_ae0ea2e5997a3cac068c00143680cbb6f}{Mult\+Op} ()
+\item 
+\hyperlink{class_mult_op_a18a1a7a3d5c65ab3a994d400002610d1}{Mult\+Op} (std\+::vector$<$ \hyperlink{class_operand}{Operand} $\ast$ $>$ in\+Operands)
+\item 
+virtual \hyperlink{class_symbol}{Symbol} $\ast$ \hyperlink{class_mult_op_ae25e9a6e8e71dab26b15513f8de6a36a}{evaluate} (\hyperlink{class_symbol}{Symbol} $\ast$vars\mbox{[}$\,$\mbox{]})
+\item 
+virtual std\+::stringstream \hyperlink{class_mult_op_ab08cb5ca6f8ad57596160a98a79f88ae}{print} ()
+\item 
+virtual \hyperlink{class_addition_op}{Addition\+Op} $\ast$ \hyperlink{class_mult_op_a37b0fd3f963181f326272b7c8de9d86c}{diff} (int var\+Index)
+\item 
+virtual void \hyperlink{class_mult_op_ae2c71f6cacdf19f30adc3dbb53f54c28}{combine\+Adds} ()
+\item 
+virtual void \hyperlink{class_mult_op_a53528db5222b6e7d0aa985c0a40e6e6c}{combine\+Mults} ()
+\item 
+virtual void \hyperlink{class_mult_op_aa46a75fb04c6a595eda8fb3f5d1dc15c}{clean\+Mults} ()
+\item 
+virtual void \hyperlink{class_mult_op_a84302f5059650d7eb78bb64fe07e4f9d}{clean\+Adds} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 18 of file Mult\+Op.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_mult_op_ae0ea2e5997a3cac068c00143680cbb6f}{\index{Mult\+Op@{Mult\+Op}!Mult\+Op@{Mult\+Op}}
+\index{Mult\+Op@{Mult\+Op}!Mult\+Op@{Mult\+Op}}
+\subsubsection[{Mult\+Op}]{\setlength{\rightskip}{0pt plus 5cm}Mult\+Op\+::\+Mult\+Op (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_mult_op_ae0ea2e5997a3cac068c00143680cbb6f}
+
+
+Definition at line 21 of file Mult\+Op.\+h.
+
+\hypertarget{class_mult_op_a18a1a7a3d5c65ab3a994d400002610d1}{\index{Mult\+Op@{Mult\+Op}!Mult\+Op@{Mult\+Op}}
+\index{Mult\+Op@{Mult\+Op}!Mult\+Op@{Mult\+Op}}
+\subsubsection[{Mult\+Op}]{\setlength{\rightskip}{0pt plus 5cm}Mult\+Op\+::\+Mult\+Op (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf Operand} $\ast$ $>$}]{in\+Operands}
+\end{DoxyParamCaption}
+)}}\label{class_mult_op_a18a1a7a3d5c65ab3a994d400002610d1}
+
+
+Definition at line 20 of file Mult\+Op.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_mult_op_a84302f5059650d7eb78bb64fe07e4f9d}{\index{Mult\+Op@{Mult\+Op}!clean\+Adds@{clean\+Adds}}
+\index{clean\+Adds@{clean\+Adds}!Mult\+Op@{Mult\+Op}}
+\subsubsection[{clean\+Adds}]{\setlength{\rightskip}{0pt plus 5cm}void Mult\+Op\+::clean\+Adds (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_mult_op_a84302f5059650d7eb78bb64fe07e4f9d}
+
+
+Implements \hyperlink{class_operand_adce551c3eaf269ed417647d9365fd8de}{Operand}.
+
+
+
+Definition at line 383 of file Mult\+Op.\+cpp.
+
+\hypertarget{class_mult_op_aa46a75fb04c6a595eda8fb3f5d1dc15c}{\index{Mult\+Op@{Mult\+Op}!clean\+Mults@{clean\+Mults}}
+\index{clean\+Mults@{clean\+Mults}!Mult\+Op@{Mult\+Op}}
+\subsubsection[{clean\+Mults}]{\setlength{\rightskip}{0pt plus 5cm}void Mult\+Op\+::clean\+Mults (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_mult_op_aa46a75fb04c6a595eda8fb3f5d1dc15c}
+
+
+Implements \hyperlink{class_operand_aca12745fcb2d33fda67568181eb19179}{Operand}.
+
+
+
+Definition at line 300 of file Mult\+Op.\+cpp.
+
+\hypertarget{class_mult_op_ae2c71f6cacdf19f30adc3dbb53f54c28}{\index{Mult\+Op@{Mult\+Op}!combine\+Adds@{combine\+Adds}}
+\index{combine\+Adds@{combine\+Adds}!Mult\+Op@{Mult\+Op}}
+\subsubsection[{combine\+Adds}]{\setlength{\rightskip}{0pt plus 5cm}void Mult\+Op\+::combine\+Adds (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_mult_op_ae2c71f6cacdf19f30adc3dbb53f54c28}
+
+
+Implements \hyperlink{class_operand_a1650a1adf9ed0d15423c746b6cdcdf2b}{Operand}.
+
+
+
+Definition at line 195 of file Mult\+Op.\+cpp.
+
+\hypertarget{class_mult_op_a53528db5222b6e7d0aa985c0a40e6e6c}{\index{Mult\+Op@{Mult\+Op}!combine\+Mults@{combine\+Mults}}
+\index{combine\+Mults@{combine\+Mults}!Mult\+Op@{Mult\+Op}}
+\subsubsection[{combine\+Mults}]{\setlength{\rightskip}{0pt plus 5cm}void Mult\+Op\+::combine\+Mults (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_mult_op_a53528db5222b6e7d0aa985c0a40e6e6c}
+
+
+Implements \hyperlink{class_operand_a82913d427a06d6d3f3832ce9ee0e59ff}{Operand}.
+
+
+
+Definition at line 226 of file Mult\+Op.\+cpp.
+
+\hypertarget{class_mult_op_a37b0fd3f963181f326272b7c8de9d86c}{\index{Mult\+Op@{Mult\+Op}!diff@{diff}}
+\index{diff@{diff}!Mult\+Op@{Mult\+Op}}
+\subsubsection[{diff}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Addition\+Op} $\ast$ Mult\+Op\+::diff (
+\begin{DoxyParamCaption}
+\item[{int}]{var\+Index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_mult_op_a37b0fd3f963181f326272b7c8de9d86c}
+
+
+Implements \hyperlink{class_operand_a057d6848e78c2cc4d36a5d57ef68fa61}{Operand}.
+
+
+
+Definition at line 142 of file Mult\+Op.\+cpp.
+
+\hypertarget{class_mult_op_ae25e9a6e8e71dab26b15513f8de6a36a}{\index{Mult\+Op@{Mult\+Op}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!Mult\+Op@{Mult\+Op}}
+\subsubsection[{evaluate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Symbol} $\ast$ Mult\+Op\+::evaluate (
+\begin{DoxyParamCaption}
+\item[{{\bf Symbol} $\ast$}]{vars\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_mult_op_ae25e9a6e8e71dab26b15513f8de6a36a}
+
+
+Implements \hyperlink{class_operand_a910e63f6f002b26dd75deb83af9c69a7}{Operand}.
+
+
+
+Definition at line 45 of file Mult\+Op.\+cpp.
+
+\hypertarget{class_mult_op_ab08cb5ca6f8ad57596160a98a79f88ae}{\index{Mult\+Op@{Mult\+Op}!print@{print}}
+\index{print@{print}!Mult\+Op@{Mult\+Op}}
+\subsubsection[{print}]{\setlength{\rightskip}{0pt plus 5cm}std\+::stringstream Mult\+Op\+::print (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_mult_op_ab08cb5ca6f8ad57596160a98a79f88ae}
+
+
+Implements \hyperlink{class_operand_a8cc045602e1f603a5920249a69abde03}{Operand}.
+
+
+
+Definition at line 83 of file Mult\+Op.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+S\+L\+P/\hyperlink{_mult_op_8h}{Mult\+Op.\+h}\item 
+S\+L\+P/\hyperlink{_mult_op_8cpp}{Mult\+Op.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,123 @@
+\hypertarget{class_factor}{\section{Factor Class Reference}
+\label{class_factor}\index{Factor@{Factor}}
+}
+
+
+{\ttfamily \#include $<$Factor.\+h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_operand}{Operand} $\ast$ \hyperlink{class_factor_a32b4d25bf955b224966521ab6410b721}{reduce\+Term} (\hyperlink{class_operand}{Operand} $\ast$term, \hyperlink{class_operand}{Operand} $\ast$symb)
+\item 
+static \hyperlink{class_addition_op}{Addition\+Op} $\ast$ \hyperlink{class_factor_a0c0e7abb73bc3de0b241e3862c6946f0}{factor\+Add} (\hyperlink{class_addition_op}{Addition\+Op} $\ast$node)
+\item 
+static \hyperlink{class_operand}{Operand} $\ast$ \hyperlink{class_factor_a11a8f832b5675426eb1c99d0d04edf25}{find\+Factor} (\hyperlink{class_addition_op}{Addition\+Op} $\ast$terms)
+\item 
+static void \hyperlink{class_factor_a9356f713c8e7682079658836020aa53e}{split\+Tree} (\hyperlink{class_addition_op}{Addition\+Op} $\ast$base\+Add, \hyperlink{class_operand}{Operand} $\ast$symb, \hyperlink{class_addition_op}{Addition\+Op} $\ast$\hyperlink{class_factor_a0c0e7abb73bc3de0b241e3862c6946f0}{factor\+Add}, \hyperlink{class_addition_op}{Addition\+Op} $\ast$rest\+Add)
+\item 
+static int \hyperlink{class_factor_ac96af46d1a23f2149d57ffc7b6d4527d}{count\+Adds} (\hyperlink{class_operand}{Operand} $\ast$node)
+\item 
+static int \hyperlink{class_factor_a46b96eb50bd24d7eb6552472c0900066}{count\+Mults} (\hyperlink{class_operand}{Operand} $\ast$node)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_operand}{Operand} $\ast$ \hyperlink{class_factor_ab9b06006dd838e95ac84c49ba6ae93bb}{test\+Factor} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 32 of file Factor.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_factor_ac96af46d1a23f2149d57ffc7b6d4527d}{\index{Factor@{Factor}!count\+Adds@{count\+Adds}}
+\index{count\+Adds@{count\+Adds}!Factor@{Factor}}
+\subsubsection[{count\+Adds}]{\setlength{\rightskip}{0pt plus 5cm}int Factor\+::count\+Adds (
+\begin{DoxyParamCaption}
+\item[{{\bf Operand} $\ast$}]{node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_factor_ac96af46d1a23f2149d57ffc7b6d4527d}
+
+
+Definition at line 561 of file Factor.\+cpp.
+
+\hypertarget{class_factor_a46b96eb50bd24d7eb6552472c0900066}{\index{Factor@{Factor}!count\+Mults@{count\+Mults}}
+\index{count\+Mults@{count\+Mults}!Factor@{Factor}}
+\subsubsection[{count\+Mults}]{\setlength{\rightskip}{0pt plus 5cm}int Factor\+::count\+Mults (
+\begin{DoxyParamCaption}
+\item[{{\bf Operand} $\ast$}]{node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_factor_a46b96eb50bd24d7eb6552472c0900066}
+
+
+Definition at line 607 of file Factor.\+cpp.
+
+\hypertarget{class_factor_a0c0e7abb73bc3de0b241e3862c6946f0}{\index{Factor@{Factor}!factor\+Add@{factor\+Add}}
+\index{factor\+Add@{factor\+Add}!Factor@{Factor}}
+\subsubsection[{factor\+Add}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Addition\+Op} $\ast$ Factor\+::factor\+Add (
+\begin{DoxyParamCaption}
+\item[{{\bf Addition\+Op} $\ast$}]{node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_factor_a0c0e7abb73bc3de0b241e3862c6946f0}
+
+
+Definition at line 297 of file Factor.\+cpp.
+
+\hypertarget{class_factor_a11a8f832b5675426eb1c99d0d04edf25}{\index{Factor@{Factor}!find\+Factor@{find\+Factor}}
+\index{find\+Factor@{find\+Factor}!Factor@{Factor}}
+\subsubsection[{find\+Factor}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Operand} $\ast$ Factor\+::find\+Factor (
+\begin{DoxyParamCaption}
+\item[{{\bf Addition\+Op} $\ast$}]{terms}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_factor_a11a8f832b5675426eb1c99d0d04edf25}
+
+
+Definition at line 347 of file Factor.\+cpp.
+
+\hypertarget{class_factor_a32b4d25bf955b224966521ab6410b721}{\index{Factor@{Factor}!reduce\+Term@{reduce\+Term}}
+\index{reduce\+Term@{reduce\+Term}!Factor@{Factor}}
+\subsubsection[{reduce\+Term}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Operand} $\ast$ Factor\+::reduce\+Term (
+\begin{DoxyParamCaption}
+\item[{{\bf Operand} $\ast$}]{term, }
+\item[{{\bf Operand} $\ast$}]{symb}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_factor_a32b4d25bf955b224966521ab6410b721}
+
+
+Definition at line 467 of file Factor.\+cpp.
+
+\hypertarget{class_factor_a9356f713c8e7682079658836020aa53e}{\index{Factor@{Factor}!split\+Tree@{split\+Tree}}
+\index{split\+Tree@{split\+Tree}!Factor@{Factor}}
+\subsubsection[{split\+Tree}]{\setlength{\rightskip}{0pt plus 5cm}void Factor\+::split\+Tree (
+\begin{DoxyParamCaption}
+\item[{{\bf Addition\+Op} $\ast$}]{base\+Add, }
+\item[{{\bf Operand} $\ast$}]{symb, }
+\item[{{\bf Addition\+Op} $\ast$}]{factor\+Add, }
+\item[{{\bf Addition\+Op} $\ast$}]{rest\+Add}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_factor_a9356f713c8e7682079658836020aa53e}
+
+
+Definition at line 427 of file Factor.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_factor_ab9b06006dd838e95ac84c49ba6ae93bb}{\index{Factor@{Factor}!test\+Factor@{test\+Factor}}
+\index{test\+Factor@{test\+Factor}!Factor@{Factor}}
+\subsubsection[{test\+Factor}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Operand} $\ast$ Factor\+::test\+Factor = 0\hspace{0.3cm}{\ttfamily [static]}}}\label{class_factor_ab9b06006dd838e95ac84c49ba6ae93bb}
+
+
+Definition at line 73 of file Factor.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+S\+L\+P/\hyperlink{_factor_8h}{Factor.\+h}\item 
+S\+L\+P/\hyperlink{_factor_8cpp}{Factor.\+cpp}\end{DoxyCompactItemize}

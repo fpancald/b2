@@ -1,0 +1,677 @@
+\hypertarget{class_a_m_p}{\section{A\+M\+P Class Reference}
+\label{class_a_m_p}\index{A\+M\+P@{A\+M\+P}}
+}
+
+
+{\ttfamily \#include $<$amp.\+hpp$>$}
+
+Inheritance diagram for A\+M\+P\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_a_m_p}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_a_m_p_adee66e9c3e14bcda4e0f9ad41e1e0335}{A\+M\+P} ()
+\item 
+\hyperlink{class_a_m_p_a481ad3a03f94b3b94568bb9eac1fb466}{A\+M\+P} (double v)
+\item 
+\hyperlink{class_a_m_p_af2718e09eaedb9bbf3a28bd260c6d8b6}{A\+M\+P} (std\+::string str, int base, int prec)
+\item 
+\hyperlink{class_a_m_p_a82233ee7f6ef6d3a60de4c26577c3dfd}{A\+M\+P} (mpfr\+\_\+t m)
+\item 
+\hyperlink{class_a_m_p_a8d3bb5485998c3eb4fd8440ad13ed1af}{$\sim$\+A\+M\+P} ()
+\item 
+\hyperlink{class_a_m_p_a1489b5bcd791211890e96be541f45693}{A\+M\+P} (\hyperlink{class_a_m_p}{A\+M\+P} \&copy\+\_\+from\+\_\+me)
+\item 
+\hyperlink{class_a_m_p_a979411a214a965c50b60a95eda1ea78e}{A\+M\+P} (const \hyperlink{class_a_m_p}{A\+M\+P} \&copy\+\_\+from\+\_\+me)
+\item 
+\hyperlink{class_a_m_p_a4a2d7e847c333daf12a1b957adbb9a62}{A\+M\+P} (volatile \hyperlink{class_a_m_p}{A\+M\+P} \&copy\+\_\+from\+\_\+me)
+\item 
+\hyperlink{class_a_m_p_a499d42ec7afbb99db2d9ba32cf98f98d}{A\+M\+P} (const volatile \hyperlink{class_a_m_p}{A\+M\+P} \&copy\+\_\+from\+\_\+me)
+\item 
+int \hyperlink{class_a_m_p_ab19be67af62d854d022ee53921953167}{Get\+Precision} ()
+\item 
+double $\ast$ \hyperlink{class_a_m_p_abc7e1b7d895d542da54e332ec461f07f}{Get\+D} ()
+\item 
+mpfr\+\_\+t $\ast$ \hyperlink{class_a_m_p_a3f39697c054b30f4637923b45aac9795}{Get\+M\+P} ()
+\item 
+std\+::string \hyperlink{class_a_m_p_aa376d6c4be6390e62c274eeeef4fbd12}{Get\+Stats} (std\+::string s)
+\item 
+bool \hyperlink{class_a_m_p_afd0da25041946d69753f2cdf6b2a5065}{Get\+Precision\+B} ()
+\item 
+void \hyperlink{class_a_m_p_ab098ea8e83660764f2f2110aa4ea739f}{Set\+Precision} (int prec)
+\item 
+void \hyperlink{class_a_m_p_a7d3f8c20b06a72cd4f7b8300aae45e6d}{Set\+Precision} (mp\+\_\+prec\+\_\+t mp\+\_\+prec)
+\item 
+void \hyperlink{class_a_m_p_a1a3f15f4cd90c4f97fcfe2f4fbb2e4e5}{Set} (std\+::string str, int base, int prec)
+\item 
+void \hyperlink{class_a_m_p_a3c0a25d70c600791f4ad22b11e462101}{Set} (mpfr\+\_\+t m)
+\item 
+void \hyperlink{class_a_m_p_a4d7472e47c0b5458c00fe30dff4d91d4}{Set} (double t)
+\item 
+\hyperlink{class_a_m_p}{A\+M\+P} \& \hyperlink{class_a_m_p_a5bbdda51e9627a6e4ec3171fce34c1b3}{operator=} (\hyperlink{class_a_m_p}{A\+M\+P} a)
+\item 
+virtual std\+::stringstream \hyperlink{class_a_m_p_a0d97f7941390b745d4a8c5099f8530c1}{print} ()
+\item 
+virtual \hyperlink{class_symbol}{Symbol} $\ast$ \hyperlink{class_a_m_p_a13330b73b85994d48e091ba35d37f5da}{add} (\hyperlink{class_symbol}{Symbol} $\ast$operand)
+\item 
+virtual \hyperlink{class_symbol}{Symbol} $\ast$ \hyperlink{class_a_m_p_aa22f858fe19e8d00dea47ee9a6c26040}{sub} (\hyperlink{class_symbol}{Symbol} $\ast$operand)
+\item 
+virtual \hyperlink{class_symbol}{Symbol} $\ast$ \hyperlink{class_a_m_p_ab9c9e14b427261284a980f936ce64095}{mult} (\hyperlink{class_symbol}{Symbol} $\ast$operand)
+\item 
+virtual \hyperlink{class_symbol}{Symbol} $\ast$ \hyperlink{class_a_m_p_a0c3ed1aeaa0a0974f0ea3f7f92dbe080}{exp} (int exp)
+\item 
+virtual \hyperlink{class_symbol}{Symbol} $\ast$ \hyperlink{class_a_m_p_aacc63b07222e5a3e1d3008ffcf8564c2}{neg} ()
+\item 
+virtual \hyperlink{class_a_m_p}{A\+M\+P} $\ast$ \hyperlink{class_a_m_p_a7be3cf2bc62e7849d829412cd9e83875}{clone} ()
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_a_m_p}{A\+M\+P} \hyperlink{class_a_m_p_a53fa727ddd84247135d8242ca76c0ea5}{operator+} (\hyperlink{class_a_m_p}{A\+M\+P} a, \hyperlink{class_a_m_p}{A\+M\+P} b)
+\item 
+\hyperlink{class_a_m_p}{A\+M\+P} \hyperlink{class_a_m_p_ab8c006600aac3ca1d268f527fa735601}{operator+} (\hyperlink{class_a_m_p}{A\+M\+P} a, double b)
+\item 
+\hyperlink{class_a_m_p}{A\+M\+P} \hyperlink{class_a_m_p_a129043da29f3d738404f7677f435d08f}{operator+} (double a, \hyperlink{class_a_m_p}{A\+M\+P} b)
+\item 
+\hyperlink{class_a_m_p}{A\+M\+P} \hyperlink{class_a_m_p_a9dfbf753a991f63b3bbd4edefeaa09dd}{operator-\/} (\hyperlink{class_a_m_p}{A\+M\+P} a, \hyperlink{class_a_m_p}{A\+M\+P} b)
+\item 
+\hyperlink{class_a_m_p}{A\+M\+P} \hyperlink{class_a_m_p_a9dd9bc8a7376ca14830562409c00ce9c}{operator-\/} (\hyperlink{class_a_m_p}{A\+M\+P} a, double b)
+\item 
+\hyperlink{class_a_m_p}{A\+M\+P} \hyperlink{class_a_m_p_aa8ee1d36bd733990bbbba40412e3f554}{operator-\/} (double a, \hyperlink{class_a_m_p}{A\+M\+P} b)
+\item 
+\hyperlink{class_a_m_p}{A\+M\+P} \hyperlink{class_a_m_p_a9c2c71d0d7012e73cf03b456d95166b4}{operator$\ast$} (\hyperlink{class_a_m_p}{A\+M\+P} a, \hyperlink{class_a_m_p}{A\+M\+P} b)
+\item 
+\hyperlink{class_a_m_p}{A\+M\+P} \hyperlink{class_a_m_p_acb5225604989f2f4177eaec6b08c5cde}{operator$\ast$} (double a, \hyperlink{class_a_m_p}{A\+M\+P} b)
+\item 
+\hyperlink{class_a_m_p}{A\+M\+P} \hyperlink{class_a_m_p_a9fc5f153f95cda0dd331590738815acf}{operator$\ast$} (\hyperlink{class_a_m_p}{A\+M\+P} a, double b)
+\item 
+\hyperlink{class_a_m_p}{A\+M\+P} \hyperlink{class_a_m_p_a09fc3cf3b6ff3f388cfbf730cca9d216}{operator/} (\hyperlink{class_a_m_p}{A\+M\+P} a, \hyperlink{class_a_m_p}{A\+M\+P} b)
+\item 
+\hyperlink{class_a_m_p}{A\+M\+P} \hyperlink{class_a_m_p_a92ea228fb63190a290a22dd1f61d7084}{operator/} (\hyperlink{class_a_m_p}{A\+M\+P} a, double b)
+\item 
+\hyperlink{class_a_m_p}{A\+M\+P} \hyperlink{class_a_m_p_a3b58c3a64b532a6460a734b96792ec4a}{operator/} (double a, \hyperlink{class_a_m_p}{A\+M\+P} b)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 20 of file amp.\+hpp.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_a_m_p_adee66e9c3e14bcda4e0f9ad41e1e0335}{\index{A\+M\+P@{A\+M\+P}!A\+M\+P@{A\+M\+P}}
+\index{A\+M\+P@{A\+M\+P}!A\+M\+P@{A\+M\+P}}
+\subsubsection[{A\+M\+P}]{\setlength{\rightskip}{0pt plus 5cm}A\+M\+P\+::\+A\+M\+P (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_a_m_p_adee66e9c3e14bcda4e0f9ad41e1e0335}
+Constructors Default Constructor. Allocate all pointers, precision, and initalize the dereferenced mpfr\+\_\+t pointer. 
+
+Definition at line 13 of file amp.\+cpp.
+
+\hypertarget{class_a_m_p_a481ad3a03f94b3b94568bb9eac1fb466}{\index{A\+M\+P@{A\+M\+P}!A\+M\+P@{A\+M\+P}}
+\index{A\+M\+P@{A\+M\+P}!A\+M\+P@{A\+M\+P}}
+\subsubsection[{A\+M\+P}]{\setlength{\rightskip}{0pt plus 5cm}A\+M\+P\+::\+A\+M\+P (
+\begin{DoxyParamCaption}
+\item[{double}]{v}
+\end{DoxyParamCaption}
+)}}\label{class_a_m_p_a481ad3a03f94b3b94568bb9eac1fb466}
+Double constructor. 
+\begin{DoxyParams}{Parameters}
+{\em double} & v -\/ The value of the dereferenced pointer. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 28 of file amp.\+cpp.
+
+\hypertarget{class_a_m_p_af2718e09eaedb9bbf3a28bd260c6d8b6}{\index{A\+M\+P@{A\+M\+P}!A\+M\+P@{A\+M\+P}}
+\index{A\+M\+P@{A\+M\+P}!A\+M\+P@{A\+M\+P}}
+\subsubsection[{A\+M\+P}]{\setlength{\rightskip}{0pt plus 5cm}A\+M\+P\+::\+A\+M\+P (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{str, }
+\item[{int}]{base, }
+\item[{int}]{prec}
+\end{DoxyParamCaption}
+)}}\label{class_a_m_p_af2718e09eaedb9bbf3a28bd260c6d8b6}
+M\+P String Constructor 
+\begin{DoxyParams}{Parameters}
+{\em std\+::string} & -\/ the string of the constructor. \\
+\hline
+{\em int} & base -\/ the base of the string \\
+\hline
+{\em prec} & -\/ the precision in bits \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 46 of file amp.\+cpp.
+
+\hypertarget{class_a_m_p_a82233ee7f6ef6d3a60de4c26577c3dfd}{\index{A\+M\+P@{A\+M\+P}!A\+M\+P@{A\+M\+P}}
+\index{A\+M\+P@{A\+M\+P}!A\+M\+P@{A\+M\+P}}
+\subsubsection[{A\+M\+P}]{\setlength{\rightskip}{0pt plus 5cm}A\+M\+P\+::\+A\+M\+P (
+\begin{DoxyParamCaption}
+\item[{mpfr\+\_\+t}]{m}
+\end{DoxyParamCaption}
+)}}\label{class_a_m_p_a82233ee7f6ef6d3a60de4c26577c3dfd}
+M\+P mpfr\+\_\+t constructor 
+\begin{DoxyParams}{Parameters}
+{\em mpfr\+\_\+t} & m -\/ The new value of the derefenced mp.\\
+\hline
+\end{DoxyParams}
+M\+P mpfr\+\_\+t constructor. 
+\begin{DoxyParams}{Parameters}
+{\em mpfr\+\_\+t} & m -- the value of the dereferenced mp \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 67 of file amp.\+cpp.
+
+\hypertarget{class_a_m_p_a8d3bb5485998c3eb4fd8440ad13ed1af}{\index{A\+M\+P@{A\+M\+P}!````~A\+M\+P@{$\sim$\+A\+M\+P}}
+\index{````~A\+M\+P@{$\sim$\+A\+M\+P}!A\+M\+P@{A\+M\+P}}
+\subsubsection[{$\sim$\+A\+M\+P}]{\setlength{\rightskip}{0pt plus 5cm}A\+M\+P\+::$\sim$\+A\+M\+P (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_a_m_p_a8d3bb5485998c3eb4fd8440ad13ed1af}
+The default destructor. 
+
+Definition at line 77 of file amp.\+cpp.
+
+\hypertarget{class_a_m_p_a1489b5bcd791211890e96be541f45693}{\index{A\+M\+P@{A\+M\+P}!A\+M\+P@{A\+M\+P}}
+\index{A\+M\+P@{A\+M\+P}!A\+M\+P@{A\+M\+P}}
+\subsubsection[{A\+M\+P}]{\setlength{\rightskip}{0pt plus 5cm}A\+M\+P\+::\+A\+M\+P (
+\begin{DoxyParamCaption}
+\item[{{\bf A\+M\+P} \&}]{copy\+\_\+from\+\_\+me}
+\end{DoxyParamCaption}
+)}}\label{class_a_m_p_a1489b5bcd791211890e96be541f45693}
+Copy constructors. Reference copy constructor. 
+
+Definition at line 88 of file amp.\+cpp.
+
+\hypertarget{class_a_m_p_a979411a214a965c50b60a95eda1ea78e}{\index{A\+M\+P@{A\+M\+P}!A\+M\+P@{A\+M\+P}}
+\index{A\+M\+P@{A\+M\+P}!A\+M\+P@{A\+M\+P}}
+\subsubsection[{A\+M\+P}]{\setlength{\rightskip}{0pt plus 5cm}A\+M\+P\+::\+A\+M\+P (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+M\+P} \&}]{copy\+\_\+from\+\_\+me}
+\end{DoxyParamCaption}
+)}}\label{class_a_m_p_a979411a214a965c50b60a95eda1ea78e}
+Constant reference copy constructor. 
+
+Definition at line 99 of file amp.\+cpp.
+
+\hypertarget{class_a_m_p_a4a2d7e847c333daf12a1b957adbb9a62}{\index{A\+M\+P@{A\+M\+P}!A\+M\+P@{A\+M\+P}}
+\index{A\+M\+P@{A\+M\+P}!A\+M\+P@{A\+M\+P}}
+\subsubsection[{A\+M\+P}]{\setlength{\rightskip}{0pt plus 5cm}A\+M\+P\+::\+A\+M\+P (
+\begin{DoxyParamCaption}
+\item[{volatile {\bf A\+M\+P} \&}]{copy\+\_\+from\+\_\+me}
+\end{DoxyParamCaption}
+)}}\label{class_a_m_p_a4a2d7e847c333daf12a1b957adbb9a62}
+Volatile reference copy constructor. 
+
+Definition at line 109 of file amp.\+cpp.
+
+\hypertarget{class_a_m_p_a499d42ec7afbb99db2d9ba32cf98f98d}{\index{A\+M\+P@{A\+M\+P}!A\+M\+P@{A\+M\+P}}
+\index{A\+M\+P@{A\+M\+P}!A\+M\+P@{A\+M\+P}}
+\subsubsection[{A\+M\+P}]{\setlength{\rightskip}{0pt plus 5cm}A\+M\+P\+::\+A\+M\+P (
+\begin{DoxyParamCaption}
+\item[{const volatile {\bf A\+M\+P} \&}]{copy\+\_\+from\+\_\+me}
+\end{DoxyParamCaption}
+)}}\label{class_a_m_p_a499d42ec7afbb99db2d9ba32cf98f98d}
+Constant volatile reference copy constructor. 
+
+Definition at line 118 of file amp.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_a_m_p_a13330b73b85994d48e091ba35d37f5da}{\index{A\+M\+P@{A\+M\+P}!add@{add}}
+\index{add@{add}!A\+M\+P@{A\+M\+P}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Symbol} $\ast$ A\+M\+P\+::add (
+\begin{DoxyParamCaption}
+\item[{{\bf Symbol} $\ast$}]{operand}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_a_m_p_a13330b73b85994d48e091ba35d37f5da}
+
+
+Implements \hyperlink{class_symbol_ae8aeeef72df9b6c8f32197e97b909c72}{Symbol}.
+
+
+
+Definition at line 816 of file amp.\+cpp.
+
+\hypertarget{class_a_m_p_a7be3cf2bc62e7849d829412cd9e83875}{\index{A\+M\+P@{A\+M\+P}!clone@{clone}}
+\index{clone@{clone}!A\+M\+P@{A\+M\+P}}
+\subsubsection[{clone}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf A\+M\+P}$\ast$ A\+M\+P\+::clone (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_a_m_p_a7be3cf2bc62e7849d829412cd9e83875}
+
+
+Implements \hyperlink{class_symbol_a642df9ea636eb1b7fafa11fc539ea49a}{Symbol}.
+
+
+
+Definition at line 164 of file amp.\+hpp.
+
+\hypertarget{class_a_m_p_a0c3ed1aeaa0a0974f0ea3f7f92dbe080}{\index{A\+M\+P@{A\+M\+P}!exp@{exp}}
+\index{exp@{exp}!A\+M\+P@{A\+M\+P}}
+\subsubsection[{exp}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Symbol} $\ast$ A\+M\+P\+::exp (
+\begin{DoxyParamCaption}
+\item[{int}]{exp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_a_m_p_a0c3ed1aeaa0a0974f0ea3f7f92dbe080}
+
+
+Implements \hyperlink{class_symbol_aa259102d6727f267c718b91c78e5eb46}{Symbol}.
+
+
+
+Definition at line 925 of file amp.\+cpp.
+
+\hypertarget{class_a_m_p_abc7e1b7d895d542da54e332ec461f07f}{\index{A\+M\+P@{A\+M\+P}!Get\+D@{Get\+D}}
+\index{Get\+D@{Get\+D}!A\+M\+P@{A\+M\+P}}
+\subsubsection[{Get\+D}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$ A\+M\+P\+::\+Get\+D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_a_m_p_abc7e1b7d895d542da54e332ec461f07f}
+Get the pointer to the double. \begin{DoxyReturn}{Returns}
+d -\/ The pointer to the double. 
+\end{DoxyReturn}
+
+
+Definition at line 69 of file amp.\+hpp.
+
+\hypertarget{class_a_m_p_a3f39697c054b30f4637923b45aac9795}{\index{A\+M\+P@{A\+M\+P}!Get\+M\+P@{Get\+M\+P}}
+\index{Get\+M\+P@{Get\+M\+P}!A\+M\+P@{A\+M\+P}}
+\subsubsection[{Get\+M\+P}]{\setlength{\rightskip}{0pt plus 5cm}mpfr\+\_\+t$\ast$ A\+M\+P\+::\+Get\+M\+P (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_a_m_p_a3f39697c054b30f4637923b45aac9795}
+Get the pointer to the mpfr object. \begin{DoxyReturn}{Returns}
+mp -\/ The pointer to the mpfr object. 
+\end{DoxyReturn}
+
+
+Definition at line 74 of file amp.\+hpp.
+
+\hypertarget{class_a_m_p_ab19be67af62d854d022ee53921953167}{\index{A\+M\+P@{A\+M\+P}!Get\+Precision@{Get\+Precision}}
+\index{Get\+Precision@{Get\+Precision}!A\+M\+P@{A\+M\+P}}
+\subsubsection[{Get\+Precision}]{\setlength{\rightskip}{0pt plus 5cm}int A\+M\+P\+::\+Get\+Precision (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_a_m_p_ab19be67af62d854d022ee53921953167}
+Get the precision. \begin{DoxyReturn}{Returns}
+precision -\/ The precision in bits. 
+\end{DoxyReturn}
+
+
+Definition at line 133 of file amp.\+cpp.
+
+\hypertarget{class_a_m_p_afd0da25041946d69753f2cdf6b2a5065}{\index{A\+M\+P@{A\+M\+P}!Get\+Precision\+B@{Get\+Precision\+B}}
+\index{Get\+Precision\+B@{Get\+Precision\+B}!A\+M\+P@{A\+M\+P}}
+\subsubsection[{Get\+Precision\+B}]{\setlength{\rightskip}{0pt plus 5cm}bool A\+M\+P\+::\+Get\+Precision\+B (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_a_m_p_afd0da25041946d69753f2cdf6b2a5065}
+A function that returns true if using multiprecision and false when using hardware precision. 
+
+Definition at line 83 of file amp.\+hpp.
+
+\hypertarget{class_a_m_p_aa376d6c4be6390e62c274eeeef4fbd12}{\index{A\+M\+P@{A\+M\+P}!Get\+Stats@{Get\+Stats}}
+\index{Get\+Stats@{Get\+Stats}!A\+M\+P@{A\+M\+P}}
+\subsubsection[{Get\+Stats}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string A\+M\+P\+::\+Get\+Stats (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{s}
+\end{DoxyParamCaption}
+)}}\label{class_a_m_p_aa376d6c4be6390e62c274eeeef4fbd12}
+A function for testing purposes that returns a string object with the \hyperlink{class_a_m_p}{A\+M\+P} object's information. \begin{DoxyReturn}{Returns}
+std\+::string -\/ The string that contains the information.
+\end{DoxyReturn}
+A function for testing purposes. returns a string with object information. 
+
+Definition at line 283 of file amp.\+cpp.
+
+\hypertarget{class_a_m_p_ab9c9e14b427261284a980f936ce64095}{\index{A\+M\+P@{A\+M\+P}!mult@{mult}}
+\index{mult@{mult}!A\+M\+P@{A\+M\+P}}
+\subsubsection[{mult}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Symbol} $\ast$ A\+M\+P\+::mult (
+\begin{DoxyParamCaption}
+\item[{{\bf Symbol} $\ast$}]{operand}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_a_m_p_ab9c9e14b427261284a980f936ce64095}
+
+
+Implements \hyperlink{class_symbol_a224ae5c870650b7704756d8279b9bc53}{Symbol}.
+
+
+
+Definition at line 890 of file amp.\+cpp.
+
+\hypertarget{class_a_m_p_aacc63b07222e5a3e1d3008ffcf8564c2}{\index{A\+M\+P@{A\+M\+P}!neg@{neg}}
+\index{neg@{neg}!A\+M\+P@{A\+M\+P}}
+\subsubsection[{neg}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Symbol} $\ast$ A\+M\+P\+::neg (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_a_m_p_aacc63b07222e5a3e1d3008ffcf8564c2}
+
+
+Implements \hyperlink{class_symbol_acfc77f36fef51f4d300896d0e5183986}{Symbol}.
+
+
+
+Definition at line 932 of file amp.\+cpp.
+
+\hypertarget{class_a_m_p_a5bbdda51e9627a6e4ec3171fce34c1b3}{\index{A\+M\+P@{A\+M\+P}!operator=@{operator=}}
+\index{operator=@{operator=}!A\+M\+P@{A\+M\+P}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf A\+M\+P} \& A\+M\+P\+::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf A\+M\+P}}]{a}
+\end{DoxyParamCaption}
+)}}\label{class_a_m_p_a5bbdda51e9627a6e4ec3171fce34c1b3}
+The assignment = operator. 
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{class_a_m_p}{A\+M\+P}} & a -\/ The value to be assigned to $\ast$this. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 299 of file amp.\+cpp.
+
+\hypertarget{class_a_m_p_a0d97f7941390b745d4a8c5099f8530c1}{\index{A\+M\+P@{A\+M\+P}!print@{print}}
+\index{print@{print}!A\+M\+P@{A\+M\+P}}
+\subsubsection[{print}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\+::stringstream A\+M\+P\+::print (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_a_m_p_a0d97f7941390b745d4a8c5099f8530c1}
+
+
+Implements \hyperlink{class_symbol_a327d7b38b13102918bab2a09b8b6a303}{Symbol}.
+
+
+
+Definition at line 156 of file amp.\+hpp.
+
+\hypertarget{class_a_m_p_a1a3f15f4cd90c4f97fcfe2f4fbb2e4e5}{\index{A\+M\+P@{A\+M\+P}!Set@{Set}}
+\index{Set@{Set}!A\+M\+P@{A\+M\+P}}
+\subsubsection[{Set}]{\setlength{\rightskip}{0pt plus 5cm}void A\+M\+P\+::\+Set (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{str, }
+\item[{int}]{base, }
+\item[{int}]{prec}
+\end{DoxyParamCaption}
+)}}\label{class_a_m_p_a1a3f15f4cd90c4f97fcfe2f4fbb2e4e5}
+Set the dereferenced mpfr\+\_\+t pointer. Uses the mpfr\+\_\+set\+\_\+str(mpfr\+\_\+t m, char$\ast$ c, int base, int prec) function from mpfr. 
+\begin{DoxyParams}{Parameters}
+{\em std\+::string} & str -\/ The floating represented as a string object. \\
+\hline
+{\em int} & base -\/ The base (i.\+e. number of symbols) of the string object \\
+\hline
+{\em prec} & -\/ The precision in bits. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 227 of file amp.\+cpp.
+
+\hypertarget{class_a_m_p_a3c0a25d70c600791f4ad22b11e462101}{\index{A\+M\+P@{A\+M\+P}!Set@{Set}}
+\index{Set@{Set}!A\+M\+P@{A\+M\+P}}
+\subsubsection[{Set}]{\setlength{\rightskip}{0pt plus 5cm}void A\+M\+P\+::\+Set (
+\begin{DoxyParamCaption}
+\item[{mpfr\+\_\+t}]{m}
+\end{DoxyParamCaption}
+)}}\label{class_a_m_p_a3c0a25d70c600791f4ad22b11e462101}
+Set the dereferenced mpfr\+\_\+t pointer. 
+\begin{DoxyParams}{Parameters}
+{\em mpfr\+\_\+t} & m -\/ The new value of the dereferenced pointer. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 244 of file amp.\+cpp.
+
+\hypertarget{class_a_m_p_a4d7472e47c0b5458c00fe30dff4d91d4}{\index{A\+M\+P@{A\+M\+P}!Set@{Set}}
+\index{Set@{Set}!A\+M\+P@{A\+M\+P}}
+\subsubsection[{Set}]{\setlength{\rightskip}{0pt plus 5cm}void A\+M\+P\+::\+Set (
+\begin{DoxyParamCaption}
+\item[{double}]{t}
+\end{DoxyParamCaption}
+)}}\label{class_a_m_p_a4d7472e47c0b5458c00fe30dff4d91d4}
+Set the dereferenced double pointer. 
+\begin{DoxyParams}{Parameters}
+{\em double} & t -\/ The value of the dereferenced pointer. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 268 of file amp.\+cpp.
+
+\hypertarget{class_a_m_p_ab098ea8e83660764f2f2110aa4ea739f}{\index{A\+M\+P@{A\+M\+P}!Set\+Precision@{Set\+Precision}}
+\index{Set\+Precision@{Set\+Precision}!A\+M\+P@{A\+M\+P}}
+\subsubsection[{Set\+Precision}]{\setlength{\rightskip}{0pt plus 5cm}void A\+M\+P\+::\+Set\+Precision (
+\begin{DoxyParamCaption}
+\item[{int}]{prec}
+\end{DoxyParamCaption}
+)}}\label{class_a_m_p_ab098ea8e83660764f2f2110aa4ea739f}
+Set the precision. 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & The precision in bits.\\
+\hline
+\end{DoxyParams}
+Set the precision. 
+\begin{DoxyParams}{Parameters}
+{\em int} & prec -\/ The precision in bits. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 153 of file amp.\+cpp.
+
+\hypertarget{class_a_m_p_a7d3f8c20b06a72cd4f7b8300aae45e6d}{\index{A\+M\+P@{A\+M\+P}!Set\+Precision@{Set\+Precision}}
+\index{Set\+Precision@{Set\+Precision}!A\+M\+P@{A\+M\+P}}
+\subsubsection[{Set\+Precision}]{\setlength{\rightskip}{0pt plus 5cm}void A\+M\+P\+::\+Set\+Precision (
+\begin{DoxyParamCaption}
+\item[{mp\+\_\+prec\+\_\+t}]{mp\+\_\+prec}
+\end{DoxyParamCaption}
+)}}\label{class_a_m_p_a7d3f8c20b06a72cd4f7b8300aae45e6d}
+Set the precision. 
+\begin{DoxyParams}{Parameters}
+{\em mpfr\+\_\+prec} & mp\+\_\+prec -\/ The precision in bits as an mpfr\+\_\+prec object.\\
+\hline
+\end{DoxyParams}
+Set the precision. 
+\begin{DoxyParams}{Parameters}
+{\em mpfr\+\_\+prec} & mp\+\_\+prec -\/ The precision in bits as an mpfr\+\_\+prec object. \\
+\hline
+{\em bool} & b -\/ This should be true if int(mp\+\_\+prec) $<$ H\+A\+R\+D\+W\+A\+R\+E\+\_\+\+P\+R\+E\+C\+I\+S\+I\+O\+N \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 188 of file amp.\+cpp.
+
+\hypertarget{class_a_m_p_aa22f858fe19e8d00dea47ee9a6c26040}{\index{A\+M\+P@{A\+M\+P}!sub@{sub}}
+\index{sub@{sub}!A\+M\+P@{A\+M\+P}}
+\subsubsection[{sub}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Symbol} $\ast$ A\+M\+P\+::sub (
+\begin{DoxyParamCaption}
+\item[{{\bf Symbol} $\ast$}]{operand}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_a_m_p_aa22f858fe19e8d00dea47ee9a6c26040}
+
+
+Implements \hyperlink{class_symbol_a53b98ce639c66d1b2e73992f20f56c54}{Symbol}.
+
+
+
+Definition at line 851 of file amp.\+cpp.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_a_m_p_a9c2c71d0d7012e73cf03b456d95166b4}{\index{A\+M\+P@{A\+M\+P}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!A\+M\+P@{A\+M\+P}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf A\+M\+P} operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{{\bf A\+M\+P}}]{a, }
+\item[{{\bf A\+M\+P}}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_a_m_p_a9c2c71d0d7012e73cf03b456d95166b4}
+Multiplication operator. 
+
+Definition at line 528 of file amp.\+cpp.
+
+\hypertarget{class_a_m_p_acb5225604989f2f4177eaec6b08c5cde}{\index{A\+M\+P@{A\+M\+P}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!A\+M\+P@{A\+M\+P}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf A\+M\+P} operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{double}]{a, }
+\item[{{\bf A\+M\+P}}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_a_m_p_acb5225604989f2f4177eaec6b08c5cde}
+
+
+Definition at line 655 of file amp.\+cpp.
+
+\hypertarget{class_a_m_p_a9fc5f153f95cda0dd331590738815acf}{\index{A\+M\+P@{A\+M\+P}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!A\+M\+P@{A\+M\+P}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf A\+M\+P} operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{{\bf A\+M\+P}}]{a, }
+\item[{double}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_a_m_p_a9fc5f153f95cda0dd331590738815acf}
+
+
+Definition at line 690 of file amp.\+cpp.
+
+\hypertarget{class_a_m_p_a53fa727ddd84247135d8242ca76c0ea5}{\index{A\+M\+P@{A\+M\+P}!operator+@{operator+}}
+\index{operator+@{operator+}!A\+M\+P@{A\+M\+P}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf A\+M\+P} operator+ (
+\begin{DoxyParamCaption}
+\item[{{\bf A\+M\+P}}]{a, }
+\item[{{\bf A\+M\+P}}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_a_m_p_a53fa727ddd84247135d8242ca76c0ea5}
+Addition operator.
+
+Extraction operator. Addition operator. 
+
+Definition at line 387 of file amp.\+cpp.
+
+\hypertarget{class_a_m_p_ab8c006600aac3ca1d268f527fa735601}{\index{A\+M\+P@{A\+M\+P}!operator+@{operator+}}
+\index{operator+@{operator+}!A\+M\+P@{A\+M\+P}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf A\+M\+P} operator+ (
+\begin{DoxyParamCaption}
+\item[{{\bf A\+M\+P}}]{a, }
+\item[{double}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_a_m_p_ab8c006600aac3ca1d268f527fa735601}
+
+
+Definition at line 443 of file amp.\+cpp.
+
+\hypertarget{class_a_m_p_a129043da29f3d738404f7677f435d08f}{\index{A\+M\+P@{A\+M\+P}!operator+@{operator+}}
+\index{operator+@{operator+}!A\+M\+P@{A\+M\+P}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf A\+M\+P} operator+ (
+\begin{DoxyParamCaption}
+\item[{double}]{a, }
+\item[{{\bf A\+M\+P}}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_a_m_p_a129043da29f3d738404f7677f435d08f}
+
+
+Definition at line 477 of file amp.\+cpp.
+
+\hypertarget{class_a_m_p_a9dfbf753a991f63b3bbd4edefeaa09dd}{\index{A\+M\+P@{A\+M\+P}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!A\+M\+P@{A\+M\+P}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf A\+M\+P} operator-\/ (
+\begin{DoxyParamCaption}
+\item[{{\bf A\+M\+P}}]{a, }
+\item[{{\bf A\+M\+P}}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_a_m_p_a9dfbf753a991f63b3bbd4edefeaa09dd}
+Subtraction operator. 
+
+Definition at line 483 of file amp.\+cpp.
+
+\hypertarget{class_a_m_p_a9dd9bc8a7376ca14830562409c00ce9c}{\index{A\+M\+P@{A\+M\+P}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!A\+M\+P@{A\+M\+P}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf A\+M\+P} operator-\/ (
+\begin{DoxyParamCaption}
+\item[{{\bf A\+M\+P}}]{a, }
+\item[{double}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_a_m_p_a9dd9bc8a7376ca14830562409c00ce9c}
+
+
+Definition at line 615 of file amp.\+cpp.
+
+\hypertarget{class_a_m_p_aa8ee1d36bd733990bbbba40412e3f554}{\index{A\+M\+P@{A\+M\+P}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!A\+M\+P@{A\+M\+P}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf A\+M\+P} operator-\/ (
+\begin{DoxyParamCaption}
+\item[{double}]{a, }
+\item[{{\bf A\+M\+P}}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_a_m_p_aa8ee1d36bd733990bbbba40412e3f554}
+
+
+Definition at line 577 of file amp.\+cpp.
+
+\hypertarget{class_a_m_p_a09fc3cf3b6ff3f388cfbf730cca9d216}{\index{A\+M\+P@{A\+M\+P}!operator/@{operator/}}
+\index{operator/@{operator/}!A\+M\+P@{A\+M\+P}}
+\subsubsection[{operator/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf A\+M\+P} operator/ (
+\begin{DoxyParamCaption}
+\item[{{\bf A\+M\+P}}]{a, }
+\item[{{\bf A\+M\+P}}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_a_m_p_a09fc3cf3b6ff3f388cfbf730cca9d216}
+Division operator. 
+
+Definition at line 698 of file amp.\+cpp.
+
+\hypertarget{class_a_m_p_a92ea228fb63190a290a22dd1f61d7084}{\index{A\+M\+P@{A\+M\+P}!operator/@{operator/}}
+\index{operator/@{operator/}!A\+M\+P@{A\+M\+P}}
+\subsubsection[{operator/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf A\+M\+P} operator/ (
+\begin{DoxyParamCaption}
+\item[{{\bf A\+M\+P}}]{a, }
+\item[{double}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_a_m_p_a92ea228fb63190a290a22dd1f61d7084}
+
+
+Definition at line 776 of file amp.\+cpp.
+
+\hypertarget{class_a_m_p_a3b58c3a64b532a6460a734b96792ec4a}{\index{A\+M\+P@{A\+M\+P}!operator/@{operator/}}
+\index{operator/@{operator/}!A\+M\+P@{A\+M\+P}}
+\subsubsection[{operator/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf A\+M\+P} operator/ (
+\begin{DoxyParamCaption}
+\item[{double}]{a, }
+\item[{{\bf A\+M\+P}}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_a_m_p_a3b58c3a64b532a6460a734b96792ec4a}
+
+
+Definition at line 748 of file amp.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+S\+L\+P/\hyperlink{amp_8hpp}{amp.\+hpp}\item 
+S\+L\+P/\hyperlink{amp_8cpp}{amp.\+cpp}\end{DoxyCompactItemize}

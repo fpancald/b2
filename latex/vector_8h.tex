@@ -1,0 +1,381 @@
+\hypertarget{vector_8h}{\section{vector.\+h File Reference}
+\label{vector_8h}\index{vector.\+h@{vector.\+h}}
+}
+{\ttfamily \#include $<$memory$>$}\\*
+{\ttfamily \#include $<$stdexcept$>$}\\*
+{\ttfamily \#include $<$xfunctional$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class___vector__const__iterator}{\+\_\+\+Vector\+\_\+const\+\_\+iterator$<$ \+\_\+\+Myvec $>$}
+\item 
+class \hyperlink{class___vector__iterator}{\+\_\+\+Vector\+\_\+iterator$<$ \+\_\+\+Myvec $>$}
+\item 
+class \hyperlink{class___vector__val}{\+\_\+\+Vector\+\_\+val$<$ \+\_\+\+Ty, \+\_\+\+Alloc $>$}
+\item 
+class \hyperlink{classvector}{vector$<$ \+\_\+\+Ty, \+\_\+\+Ax $>$}
+\item 
+class \hyperlink{class___vb__iter__base}{\+\_\+\+Vb\+\_\+iter\+\_\+base$<$ \+\_\+\+Alloc $>$}
+\item 
+class \hyperlink{class___vb__reference}{\+\_\+\+Vb\+\_\+reference$<$ \+\_\+\+Alloc $>$}
+\item 
+class \hyperlink{class___vb__const__iterator}{\+\_\+\+Vb\+\_\+const\+\_\+iterator$<$ \+\_\+\+Alloc $>$}
+\item 
+struct \hyperlink{struct___is__checked__helper_3_01___vb__const__iterator_3_01___alloc_01_4_01_4}{\+\_\+\+Is\+\_\+checked\+\_\+helper$<$ \+\_\+\+Vb\+\_\+const\+\_\+iterator$<$ \+\_\+\+Alloc $>$ $>$}
+\item 
+class \hyperlink{class___vb__iterator}{\+\_\+\+Vb\+\_\+iterator$<$ \+\_\+\+Alloc $>$}
+\item 
+struct \hyperlink{struct___is__checked__helper_3_01___vb__iterator_3_01___alloc_01_4_01_4}{\+\_\+\+Is\+\_\+checked\+\_\+helper$<$ \+\_\+\+Vb\+\_\+iterator$<$ \+\_\+\+Alloc $>$ $>$}
+\item 
+class \hyperlink{class___vb__val}{\+\_\+\+Vb\+\_\+val$<$ \+\_\+\+Alloc $>$}
+\item 
+class \hyperlink{classvector_3_01___bool_00_01___alloc_01_4}{vector$<$ \+\_\+\+Bool, \+\_\+\+Alloc $>$}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{vector_8h_a6b16f73727cd7a0f8e40d6b7f5bcf70e}{\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+}
+\item 
+\#define \hyperlink{vector_8h_accb4aa82f529c64913d1038422f9efa9}{\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+\+O\+R\+P\+H\+A\+N\+\_\+\+R\+A\+N\+G\+E}~(\+\_\+\+I\+T\+E\+R\+A\+T\+O\+R\+\_\+\+D\+E\+B\+U\+G\+\_\+\+L\+E\+V\+E\+L == 2)
+\item 
+\#define \hyperlink{vector_8h_a406d4e5524c966e29655be77be184bff}{\+\_\+\+V\+I\+C\+O\+N\+T}(it)~it.\+\_\+\+Getcont()
+\item 
+\#define \hyperlink{vector_8h_a5dae669d15419799a37053dd7884d83f}{\+\_\+\+V\+I\+P\+T\+R}(it)~(it).\+\_\+\+Ptr
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef unsigned int \hyperlink{vector_8h_a1555a2f621ba9ade75bb9ce8bca77144}{\+\_\+\+Vbase}
+\item 
+typedef \hyperlink{classvector}{vector}$<$ bool, \\*
+allocator$<$ bool $>$ $>$ \hyperlink{vector_8h_a1563a8e0e8d6b2a14c1b1caf4714e3cb}{\+\_\+\+Bvector}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class \+\_\+\+Myvec $>$ }\\\hyperlink{class___vector__const__iterator}{\+\_\+\+Vector\+\_\+const\+\_\+iterator}$<$ \+\_\+\+Myvec $>$\\*
+\+::\+\_\+\+Unchecked\+\_\+type \hyperlink{vector_8h_a062de32a9f236801c5a1826227a1227a}{\+\_\+\+Unchecked} (\hyperlink{class___vector__const__iterator}{\+\_\+\+Vector\+\_\+const\+\_\+iterator}$<$ \+\_\+\+Myvec $>$ \+\_\+\+Iter)
+\item 
+{\footnotesize template$<$class \+\_\+\+Myvec $>$ }\\\hyperlink{class___vector__const__iterator}{\+\_\+\+Vector\+\_\+const\+\_\+iterator}$<$ \+\_\+\+Myvec $>$ \& \hyperlink{vector_8h_a807db8768e227acc91df4f9cd65b58e0}{\+\_\+\+Rechecked} (\hyperlink{class___vector__const__iterator}{\+\_\+\+Vector\+\_\+const\+\_\+iterator}$<$ \+\_\+\+Myvec $>$ \&\+\_\+\+Iter, typename \hyperlink{class___vector__const__iterator}{\+\_\+\+Vector\+\_\+const\+\_\+iterator}$<$ \+\_\+\+Myvec $>$\+::\+\_\+\+Unchecked\+\_\+type \+\_\+\+Right)
+\item 
+{\footnotesize template$<$class \+\_\+\+Myvec $>$ }\\\hyperlink{class___vector__const__iterator}{\+\_\+\+Vector\+\_\+const\+\_\+iterator}$<$ \+\_\+\+Myvec $>$ \hyperlink{vector_8h_a64b8d3ea8a38cf609ae14f1e93b6f7a0}{operator+} (typename \hyperlink{class___vector__const__iterator}{\+\_\+\+Vector\+\_\+const\+\_\+iterator}$<$ \+\_\+\+Myvec $>$\+::difference\+\_\+type \+\_\+\+Off, \hyperlink{class___vector__const__iterator}{\+\_\+\+Vector\+\_\+const\+\_\+iterator}$<$ \+\_\+\+Myvec $>$ \+\_\+\+Next)
+\item 
+{\footnotesize template$<$class \+\_\+\+Myvec $>$ }\\\hyperlink{class___vector__iterator}{\+\_\+\+Vector\+\_\+iterator}$<$ \+\_\+\+Myvec $>$\\*
+\+::\+\_\+\+Unchecked\+\_\+type \hyperlink{vector_8h_af24b6d290af87c04abe481643329bc12}{\+\_\+\+Unchecked} (\hyperlink{class___vector__iterator}{\+\_\+\+Vector\+\_\+iterator}$<$ \+\_\+\+Myvec $>$ \+\_\+\+Iter)
+\item 
+{\footnotesize template$<$class \+\_\+\+Myvec $>$ }\\\hyperlink{class___vector__iterator}{\+\_\+\+Vector\+\_\+iterator}$<$ \+\_\+\+Myvec $>$ \& \hyperlink{vector_8h_a18990a990a93ee6e5ad827266145c653}{\+\_\+\+Rechecked} (\hyperlink{class___vector__iterator}{\+\_\+\+Vector\+\_\+iterator}$<$ \+\_\+\+Myvec $>$ \&\+\_\+\+Iter, typename \hyperlink{class___vector__iterator}{\+\_\+\+Vector\+\_\+iterator}$<$ \+\_\+\+Myvec $>$\+::\+\_\+\+Unchecked\+\_\+type \+\_\+\+Right)
+\item 
+{\footnotesize template$<$class \+\_\+\+Myvec $>$ }\\\hyperlink{class___vector__iterator}{\+\_\+\+Vector\+\_\+iterator}$<$ \+\_\+\+Myvec $>$ \hyperlink{vector_8h_a09003eab95e547db219722c5559ea13c}{operator+} (typename \hyperlink{class___vector__iterator}{\+\_\+\+Vector\+\_\+iterator}$<$ \+\_\+\+Myvec $>$\+::difference\+\_\+type \+\_\+\+Off, \hyperlink{class___vector__iterator}{\+\_\+\+Vector\+\_\+iterator}$<$ \+\_\+\+Myvec $>$ \+\_\+\+Next)
+\item 
+{\footnotesize template$<$class \+\_\+\+Ty , class \+\_\+\+Alloc $>$ }\\void \hyperlink{vector_8h_ac0f601b791c99ceb5d0f39386208edc5}{swap} (\hyperlink{classvector}{vector}$<$ \+\_\+\+Ty, \+\_\+\+Alloc $>$ \&\+\_\+\+Left, \hyperlink{classvector}{vector}$<$ \+\_\+\+Ty, \+\_\+\+Alloc $>$ \&\+\_\+\+Right)
+\item 
+{\footnotesize template$<$class \+\_\+\+Ty , class \+\_\+\+Alloc $>$ }\\void \hyperlink{vector_8h_ac750a3e4529983541d4e08dcc931b1c0}{swap} (\hyperlink{classvector}{vector}$<$ \+\_\+\+Ty, \+\_\+\+Alloc $>$ \&\+\_\+\+Left, \hyperlink{classvector}{vector}$<$ \+\_\+\+Ty, \+\_\+\+Alloc $>$ \&\&\+\_\+\+Right)
+\item 
+{\footnotesize template$<$class \+\_\+\+Ty , class \+\_\+\+Alloc $>$ }\\void \hyperlink{vector_8h_a0d5792c32d907ef3e23d91630f46db30}{swap} (\hyperlink{classvector}{vector}$<$ \+\_\+\+Ty, \+\_\+\+Alloc $>$ \&\&\+\_\+\+Left, \hyperlink{classvector}{vector}$<$ \+\_\+\+Ty, \+\_\+\+Alloc $>$ \&\+\_\+\+Right)
+\item 
+{\footnotesize template$<$class \+\_\+\+Ty , class \+\_\+\+Alloc $>$ }\\bool \hyperlink{vector_8h_aed6b0a60acdcee1c4e95ecd2300df587}{operator==} (const \hyperlink{classvector}{vector}$<$ \+\_\+\+Ty, \+\_\+\+Alloc $>$ \&\+\_\+\+Left, const \hyperlink{classvector}{vector}$<$ \+\_\+\+Ty, \+\_\+\+Alloc $>$ \&\+\_\+\+Right)
+\item 
+{\footnotesize template$<$class \+\_\+\+Ty , class \+\_\+\+Alloc $>$ }\\bool \hyperlink{vector_8h_a4b286115dc408228ac6d708f5e0fc18d}{operator!=} (const \hyperlink{classvector}{vector}$<$ \+\_\+\+Ty, \+\_\+\+Alloc $>$ \&\+\_\+\+Left, const \hyperlink{classvector}{vector}$<$ \+\_\+\+Ty, \+\_\+\+Alloc $>$ \&\+\_\+\+Right)
+\item 
+{\footnotesize template$<$class \+\_\+\+Ty , class \+\_\+\+Alloc $>$ }\\bool \hyperlink{vector_8h_af8710ad442049b2a9e8b1d5e06ed8435}{operator$<$} (const \hyperlink{classvector}{vector}$<$ \+\_\+\+Ty, \+\_\+\+Alloc $>$ \&\+\_\+\+Left, const \hyperlink{classvector}{vector}$<$ \+\_\+\+Ty, \+\_\+\+Alloc $>$ \&\+\_\+\+Right)
+\item 
+{\footnotesize template$<$class \+\_\+\+Ty , class \+\_\+\+Alloc $>$ }\\bool \hyperlink{vector_8h_a953922e86572508c4d8cd9d07cead123}{operator$>$} (const \hyperlink{classvector}{vector}$<$ \+\_\+\+Ty, \+\_\+\+Alloc $>$ \&\+\_\+\+Left, const \hyperlink{classvector}{vector}$<$ \+\_\+\+Ty, \+\_\+\+Alloc $>$ \&\+\_\+\+Right)
+\item 
+{\footnotesize template$<$class \+\_\+\+Ty , class \+\_\+\+Alloc $>$ }\\bool \hyperlink{vector_8h_a5c0eb121b3bd3ac2fe7034f03a3ed74b}{operator$<$=} (const \hyperlink{classvector}{vector}$<$ \+\_\+\+Ty, \+\_\+\+Alloc $>$ \&\+\_\+\+Left, const \hyperlink{classvector}{vector}$<$ \+\_\+\+Ty, \+\_\+\+Alloc $>$ \&\+\_\+\+Right)
+\item 
+{\footnotesize template$<$class \+\_\+\+Ty , class \+\_\+\+Alloc $>$ }\\bool \hyperlink{vector_8h_af87ac07d481d9961cd77576775744bd8}{operator$>$=} (const \hyperlink{classvector}{vector}$<$ \+\_\+\+Ty, \+\_\+\+Alloc $>$ \&\+\_\+\+Left, const \hyperlink{classvector}{vector}$<$ \+\_\+\+Ty, \+\_\+\+Alloc $>$ \&\+\_\+\+Right)
+\item 
+{\footnotesize template$<$class \+\_\+\+Alloc $>$ }\\void \hyperlink{vector_8h_ac5b3fe99be59f727c9382305cb2be627}{swap} (\hyperlink{class___vb__reference}{\+\_\+\+Vb\+\_\+reference}$<$ \+\_\+\+Alloc $>$ \+\_\+\+Left, \hyperlink{class___vb__reference}{\+\_\+\+Vb\+\_\+reference}$<$ \+\_\+\+Alloc $>$ \+\_\+\+Right)
+\item 
+{\footnotesize template$<$class \+\_\+\+Alloc $>$ }\\\hyperlink{class___vb__const__iterator}{\+\_\+\+Vb\+\_\+const\+\_\+iterator}$<$ \+\_\+\+Alloc $>$ \hyperlink{vector_8h_aabb54322ce212fdbd1f5f4de659c0d18}{operator+} (typename \+\_\+\+Alloc\+::difference\+\_\+type \+\_\+\+Off, \hyperlink{class___vb__const__iterator}{\+\_\+\+Vb\+\_\+const\+\_\+iterator}$<$ \+\_\+\+Alloc $>$ \+\_\+\+Right)
+\item 
+{\footnotesize template$<$class \+\_\+\+Alloc $>$ }\\\hyperlink{class___vb__iterator}{\+\_\+\+Vb\+\_\+iterator}$<$ \+\_\+\+Alloc $>$ \hyperlink{vector_8h_a17a65210c4cef9f729f8a9551d68fb27}{operator+} (typename \+\_\+\+Alloc\+::difference\+\_\+type \+\_\+\+Off, \hyperlink{class___vb__iterator}{\+\_\+\+Vb\+\_\+iterator}$<$ \+\_\+\+Alloc $>$ \+\_\+\+Right)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const int \hyperlink{vector_8h_a02c1ccf82091037ec8356b5cc9138c65}{\+\_\+\+V\+B\+I\+T\+S} = 8 $\ast$ sizeof (\hyperlink{vector_8h_a1555a2f621ba9ade75bb9ce8bca77144}{\+\_\+\+Vbase})
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{vector_8h_a6b16f73727cd7a0f8e40d6b7f5bcf70e}{\index{vector.\+h@{vector.\+h}!\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+@{\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+}}
+\index{\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+@{\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+}!vector.\+h@{vector.\+h}}
+\subsubsection[{\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+V\+E\+C\+T\+O\+R\+\_\+}}\label{vector_8h_a6b16f73727cd7a0f8e40d6b7f5bcf70e}
+
+
+Definition at line 4 of file vector.\+h.
+
+\hypertarget{vector_8h_accb4aa82f529c64913d1038422f9efa9}{\index{vector.\+h@{vector.\+h}!\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+\+O\+R\+P\+H\+A\+N\+\_\+\+R\+A\+N\+G\+E@{\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+\+O\+R\+P\+H\+A\+N\+\_\+\+R\+A\+N\+G\+E}}
+\index{\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+\+O\+R\+P\+H\+A\+N\+\_\+\+R\+A\+N\+G\+E@{\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+\+O\+R\+P\+H\+A\+N\+\_\+\+R\+A\+N\+G\+E}!vector.\+h@{vector.\+h}}
+\subsubsection[{\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+\+O\+R\+P\+H\+A\+N\+\_\+\+R\+A\+N\+G\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+V\+E\+C\+T\+O\+R\+\_\+\+O\+R\+P\+H\+A\+N\+\_\+\+R\+A\+N\+G\+E~(\+\_\+\+I\+T\+E\+R\+A\+T\+O\+R\+\_\+\+D\+E\+B\+U\+G\+\_\+\+L\+E\+V\+E\+L == 2)}}\label{vector_8h_accb4aa82f529c64913d1038422f9efa9}
+
+
+Definition at line 16 of file vector.\+h.
+
+\hypertarget{vector_8h_a406d4e5524c966e29655be77be184bff}{\index{vector.\+h@{vector.\+h}!\+\_\+\+V\+I\+C\+O\+N\+T@{\+\_\+\+V\+I\+C\+O\+N\+T}}
+\index{\+\_\+\+V\+I\+C\+O\+N\+T@{\+\_\+\+V\+I\+C\+O\+N\+T}!vector.\+h@{vector.\+h}}
+\subsubsection[{\+\_\+\+V\+I\+C\+O\+N\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+V\+I\+C\+O\+N\+T(
+\begin{DoxyParamCaption}
+\item[{}]{it}
+\end{DoxyParamCaption}
+)~it.\+\_\+\+Getcont()}}\label{vector_8h_a406d4e5524c966e29655be77be184bff}
+
+
+Definition at line 496 of file vector.\+h.
+
+\hypertarget{vector_8h_a5dae669d15419799a37053dd7884d83f}{\index{vector.\+h@{vector.\+h}!\+\_\+\+V\+I\+P\+T\+R@{\+\_\+\+V\+I\+P\+T\+R}}
+\index{\+\_\+\+V\+I\+P\+T\+R@{\+\_\+\+V\+I\+P\+T\+R}!vector.\+h@{vector.\+h}}
+\subsubsection[{\+\_\+\+V\+I\+P\+T\+R}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+V\+I\+P\+T\+R(
+\begin{DoxyParamCaption}
+\item[{}]{it}
+\end{DoxyParamCaption}
+)~(it).\+\_\+\+Ptr}}\label{vector_8h_a5dae669d15419799a37053dd7884d83f}
+
+
+Definition at line 497 of file vector.\+h.
+
+
+
+\subsection{Typedef Documentation}
+\hypertarget{vector_8h_a1563a8e0e8d6b2a14c1b1caf4714e3cb}{\index{vector.\+h@{vector.\+h}!\+\_\+\+Bvector@{\+\_\+\+Bvector}}
+\index{\+\_\+\+Bvector@{\+\_\+\+Bvector}!vector.\+h@{vector.\+h}}
+\subsubsection[{\+\_\+\+Bvector}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf vector}$<$bool, allocator$<$bool$>$ $>$ {\bf \+\_\+\+Bvector}}}\label{vector_8h_a1563a8e0e8d6b2a14c1b1caf4714e3cb}
+
+
+Definition at line 2634 of file vector.\+h.
+
+\hypertarget{vector_8h_a1555a2f621ba9ade75bb9ce8bca77144}{\index{vector.\+h@{vector.\+h}!\+\_\+\+Vbase@{\+\_\+\+Vbase}}
+\index{\+\_\+\+Vbase@{\+\_\+\+Vbase}!vector.\+h@{vector.\+h}}
+\subsubsection[{\+\_\+\+Vbase}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned int {\bf \+\_\+\+Vbase}}}\label{vector_8h_a1555a2f621ba9ade75bb9ce8bca77144}
+
+
+Definition at line 1536 of file vector.\+h.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{vector_8h_a807db8768e227acc91df4f9cd65b58e0}{\index{vector.\+h@{vector.\+h}!\+\_\+\+Rechecked@{\+\_\+\+Rechecked}}
+\index{\+\_\+\+Rechecked@{\+\_\+\+Rechecked}!vector.\+h@{vector.\+h}}
+\subsubsection[{\+\_\+\+Rechecked}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Myvec $>$ {\bf \+\_\+\+Vector\+\_\+const\+\_\+iterator}$<$\+\_\+\+Myvec$>$\& \+\_\+\+Rechecked (
+\begin{DoxyParamCaption}
+\item[{{\bf \+\_\+\+Vector\+\_\+const\+\_\+iterator}$<$ \+\_\+\+Myvec $>$ \&}]{\+\_\+\+Iter, }
+\item[{typename {\bf \+\_\+\+Vector\+\_\+const\+\_\+iterator}$<$ \+\_\+\+Myvec $>$\+::\+\_\+\+Unchecked\+\_\+type}]{\+\_\+\+Right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{vector_8h_a807db8768e227acc91df4f9cd65b58e0}
+
+
+Definition at line 268 of file vector.\+h.
+
+\hypertarget{vector_8h_a18990a990a93ee6e5ad827266145c653}{\index{vector.\+h@{vector.\+h}!\+\_\+\+Rechecked@{\+\_\+\+Rechecked}}
+\index{\+\_\+\+Rechecked@{\+\_\+\+Rechecked}!vector.\+h@{vector.\+h}}
+\subsubsection[{\+\_\+\+Rechecked}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Myvec $>$ {\bf \+\_\+\+Vector\+\_\+iterator}$<$\+\_\+\+Myvec$>$\& \+\_\+\+Rechecked (
+\begin{DoxyParamCaption}
+\item[{{\bf \+\_\+\+Vector\+\_\+iterator}$<$ \+\_\+\+Myvec $>$ \&}]{\+\_\+\+Iter, }
+\item[{typename {\bf \+\_\+\+Vector\+\_\+iterator}$<$ \+\_\+\+Myvec $>$\+::\+\_\+\+Unchecked\+\_\+type}]{\+\_\+\+Right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{vector_8h_a18990a990a93ee6e5ad827266145c653}
+
+
+Definition at line 399 of file vector.\+h.
+
+\hypertarget{vector_8h_a062de32a9f236801c5a1826227a1227a}{\index{vector.\+h@{vector.\+h}!\+\_\+\+Unchecked@{\+\_\+\+Unchecked}}
+\index{\+\_\+\+Unchecked@{\+\_\+\+Unchecked}!vector.\+h@{vector.\+h}}
+\subsubsection[{\+\_\+\+Unchecked}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Myvec $>$ {\bf \+\_\+\+Vector\+\_\+const\+\_\+iterator}$<$\+\_\+\+Myvec$>$\+::\+\_\+\+Unchecked\+\_\+type \+\_\+\+Unchecked (
+\begin{DoxyParamCaption}
+\item[{{\bf \+\_\+\+Vector\+\_\+const\+\_\+iterator}$<$ \+\_\+\+Myvec $>$}]{\+\_\+\+Iter}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{vector_8h_a062de32a9f236801c5a1826227a1227a}
+
+
+Definition at line 261 of file vector.\+h.
+
+\hypertarget{vector_8h_af24b6d290af87c04abe481643329bc12}{\index{vector.\+h@{vector.\+h}!\+\_\+\+Unchecked@{\+\_\+\+Unchecked}}
+\index{\+\_\+\+Unchecked@{\+\_\+\+Unchecked}!vector.\+h@{vector.\+h}}
+\subsubsection[{\+\_\+\+Unchecked}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Myvec $>$ {\bf \+\_\+\+Vector\+\_\+iterator}$<$\+\_\+\+Myvec$>$\+::\+\_\+\+Unchecked\+\_\+type \+\_\+\+Unchecked (
+\begin{DoxyParamCaption}
+\item[{{\bf \+\_\+\+Vector\+\_\+iterator}$<$ \+\_\+\+Myvec $>$}]{\+\_\+\+Iter}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{vector_8h_af24b6d290af87c04abe481643329bc12}
+
+
+Definition at line 392 of file vector.\+h.
+
+\hypertarget{vector_8h_a4b286115dc408228ac6d708f5e0fc18d}{\index{vector.\+h@{vector.\+h}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!vector.\+h@{vector.\+h}}
+\subsubsection[{operator"!=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty , class \+\_\+\+Alloc $>$ bool operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Alloc $>$ \&}]{\+\_\+\+Left, }
+\item[{const {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Alloc $>$ \&}]{\+\_\+\+Right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{vector_8h_a4b286115dc408228ac6d708f5e0fc18d}
+
+
+Definition at line 1494 of file vector.\+h.
+
+\hypertarget{vector_8h_a64b8d3ea8a38cf609ae14f1e93b6f7a0}{\index{vector.\+h@{vector.\+h}!operator+@{operator+}}
+\index{operator+@{operator+}!vector.\+h@{vector.\+h}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Myvec $>$ {\bf \+\_\+\+Vector\+\_\+const\+\_\+iterator}$<$\+\_\+\+Myvec$>$ operator+ (
+\begin{DoxyParamCaption}
+\item[{typename {\bf \+\_\+\+Vector\+\_\+const\+\_\+iterator}$<$ \+\_\+\+Myvec $>$\+::difference\+\_\+type}]{\+\_\+\+Off, }
+\item[{{\bf \+\_\+\+Vector\+\_\+const\+\_\+iterator}$<$ \+\_\+\+Myvec $>$}]{\+\_\+\+Next}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{vector_8h_a64b8d3ea8a38cf609ae14f1e93b6f7a0}
+
+
+Definition at line 276 of file vector.\+h.
+
+\hypertarget{vector_8h_a09003eab95e547db219722c5559ea13c}{\index{vector.\+h@{vector.\+h}!operator+@{operator+}}
+\index{operator+@{operator+}!vector.\+h@{vector.\+h}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Myvec $>$ {\bf \+\_\+\+Vector\+\_\+iterator}$<$\+\_\+\+Myvec$>$ operator+ (
+\begin{DoxyParamCaption}
+\item[{typename {\bf \+\_\+\+Vector\+\_\+iterator}$<$ \+\_\+\+Myvec $>$\+::difference\+\_\+type}]{\+\_\+\+Off, }
+\item[{{\bf \+\_\+\+Vector\+\_\+iterator}$<$ \+\_\+\+Myvec $>$}]{\+\_\+\+Next}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{vector_8h_a09003eab95e547db219722c5559ea13c}
+
+
+Definition at line 407 of file vector.\+h.
+
+\hypertarget{vector_8h_aabb54322ce212fdbd1f5f4de659c0d18}{\index{vector.\+h@{vector.\+h}!operator+@{operator+}}
+\index{operator+@{operator+}!vector.\+h@{vector.\+h}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Alloc $>$ {\bf \+\_\+\+Vb\+\_\+const\+\_\+iterator}$<$\+\_\+\+Alloc$>$ operator+ (
+\begin{DoxyParamCaption}
+\item[{typename \+\_\+\+Alloc\+::difference\+\_\+type}]{\+\_\+\+Off, }
+\item[{{\bf \+\_\+\+Vb\+\_\+const\+\_\+iterator}$<$ \+\_\+\+Alloc $>$}]{\+\_\+\+Right}
+\end{DoxyParamCaption}
+)}}\label{vector_8h_aabb54322ce212fdbd1f5f4de659c0d18}
+
+
+Definition at line 1878 of file vector.\+h.
+
+\hypertarget{vector_8h_a17a65210c4cef9f729f8a9551d68fb27}{\index{vector.\+h@{vector.\+h}!operator+@{operator+}}
+\index{operator+@{operator+}!vector.\+h@{vector.\+h}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Alloc $>$ {\bf \+\_\+\+Vb\+\_\+iterator}$<$\+\_\+\+Alloc$>$ operator+ (
+\begin{DoxyParamCaption}
+\item[{typename \+\_\+\+Alloc\+::difference\+\_\+type}]{\+\_\+\+Off, }
+\item[{{\bf \+\_\+\+Vb\+\_\+iterator}$<$ \+\_\+\+Alloc $>$}]{\+\_\+\+Right}
+\end{DoxyParamCaption}
+)}}\label{vector_8h_a17a65210c4cef9f729f8a9551d68fb27}
+
+
+Definition at line 1985 of file vector.\+h.
+
+\hypertarget{vector_8h_af8710ad442049b2a9e8b1d5e06ed8435}{\index{vector.\+h@{vector.\+h}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!vector.\+h@{vector.\+h}}
+\subsubsection[{operator$<$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty , class \+\_\+\+Alloc $>$ bool operator$<$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Alloc $>$ \&}]{\+\_\+\+Left, }
+\item[{const {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Alloc $>$ \&}]{\+\_\+\+Right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{vector_8h_af8710ad442049b2a9e8b1d5e06ed8435}
+
+
+Definition at line 1502 of file vector.\+h.
+
+\hypertarget{vector_8h_a5c0eb121b3bd3ac2fe7034f03a3ed74b}{\index{vector.\+h@{vector.\+h}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!vector.\+h@{vector.\+h}}
+\subsubsection[{operator$<$=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty , class \+\_\+\+Alloc $>$ bool operator$<$= (
+\begin{DoxyParamCaption}
+\item[{const {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Alloc $>$ \&}]{\+\_\+\+Left, }
+\item[{const {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Alloc $>$ \&}]{\+\_\+\+Right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{vector_8h_a5c0eb121b3bd3ac2fe7034f03a3ed74b}
+
+
+Definition at line 1519 of file vector.\+h.
+
+\hypertarget{vector_8h_aed6b0a60acdcee1c4e95ecd2300df587}{\index{vector.\+h@{vector.\+h}!operator==@{operator==}}
+\index{operator==@{operator==}!vector.\+h@{vector.\+h}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty , class \+\_\+\+Alloc $>$ bool operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Alloc $>$ \&}]{\+\_\+\+Left, }
+\item[{const {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Alloc $>$ \&}]{\+\_\+\+Right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{vector_8h_aed6b0a60acdcee1c4e95ecd2300df587}
+
+
+Definition at line 1485 of file vector.\+h.
+
+\hypertarget{vector_8h_a953922e86572508c4d8cd9d07cead123}{\index{vector.\+h@{vector.\+h}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!vector.\+h@{vector.\+h}}
+\subsubsection[{operator$>$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty , class \+\_\+\+Alloc $>$ bool operator$>$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Alloc $>$ \&}]{\+\_\+\+Left, }
+\item[{const {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Alloc $>$ \&}]{\+\_\+\+Right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{vector_8h_a953922e86572508c4d8cd9d07cead123}
+
+
+Definition at line 1511 of file vector.\+h.
+
+\hypertarget{vector_8h_af87ac07d481d9961cd77576775744bd8}{\index{vector.\+h@{vector.\+h}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!vector.\+h@{vector.\+h}}
+\subsubsection[{operator$>$=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty , class \+\_\+\+Alloc $>$ bool operator$>$= (
+\begin{DoxyParamCaption}
+\item[{const {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Alloc $>$ \&}]{\+\_\+\+Left, }
+\item[{const {\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Alloc $>$ \&}]{\+\_\+\+Right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{vector_8h_af87ac07d481d9961cd77576775744bd8}
+
+
+Definition at line 1527 of file vector.\+h.
+
+\hypertarget{vector_8h_ac0f601b791c99ceb5d0f39386208edc5}{\index{vector.\+h@{vector.\+h}!swap@{swap}}
+\index{swap@{swap}!vector.\+h@{vector.\+h}}
+\subsubsection[{swap}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty , class \+\_\+\+Alloc $>$ void swap (
+\begin{DoxyParamCaption}
+\item[{{\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Alloc $>$ \&}]{\+\_\+\+Left, }
+\item[{{\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Alloc $>$ \&}]{\+\_\+\+Right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{vector_8h_ac0f601b791c99ceb5d0f39386208edc5}
+
+
+Definition at line 1462 of file vector.\+h.
+
+\hypertarget{vector_8h_ac750a3e4529983541d4e08dcc931b1c0}{\index{vector.\+h@{vector.\+h}!swap@{swap}}
+\index{swap@{swap}!vector.\+h@{vector.\+h}}
+\subsubsection[{swap}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty , class \+\_\+\+Alloc $>$ void swap (
+\begin{DoxyParamCaption}
+\item[{{\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Alloc $>$ \&}]{\+\_\+\+Left, }
+\item[{{\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Alloc $>$ \&\&}]{\+\_\+\+Right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{vector_8h_ac750a3e4529983541d4e08dcc931b1c0}
+
+
+Definition at line 1469 of file vector.\+h.
+
+\hypertarget{vector_8h_a0d5792c32d907ef3e23d91630f46db30}{\index{vector.\+h@{vector.\+h}!swap@{swap}}
+\index{swap@{swap}!vector.\+h@{vector.\+h}}
+\subsubsection[{swap}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Ty , class \+\_\+\+Alloc $>$ void swap (
+\begin{DoxyParamCaption}
+\item[{{\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Alloc $>$ \&\&}]{\+\_\+\+Left, }
+\item[{{\bf vector}$<$ \+\_\+\+Ty, \+\_\+\+Alloc $>$ \&}]{\+\_\+\+Right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{vector_8h_a0d5792c32d907ef3e23d91630f46db30}
+
+
+Definition at line 1477 of file vector.\+h.
+
+\hypertarget{vector_8h_ac5b3fe99be59f727c9382305cb2be627}{\index{vector.\+h@{vector.\+h}!swap@{swap}}
+\index{swap@{swap}!vector.\+h@{vector.\+h}}
+\subsubsection[{swap}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \+\_\+\+Alloc $>$ void swap (
+\begin{DoxyParamCaption}
+\item[{{\bf \+\_\+\+Vb\+\_\+reference}$<$ \+\_\+\+Alloc $>$}]{\+\_\+\+Left, }
+\item[{{\bf \+\_\+\+Vb\+\_\+reference}$<$ \+\_\+\+Alloc $>$}]{\+\_\+\+Right}
+\end{DoxyParamCaption}
+)}}\label{vector_8h_ac5b3fe99be59f727c9382305cb2be627}
+
+
+Definition at line 1659 of file vector.\+h.
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{vector_8h_a02c1ccf82091037ec8356b5cc9138c65}{\index{vector.\+h@{vector.\+h}!\+\_\+\+V\+B\+I\+T\+S@{\+\_\+\+V\+B\+I\+T\+S}}
+\index{\+\_\+\+V\+B\+I\+T\+S@{\+\_\+\+V\+B\+I\+T\+S}!vector.\+h@{vector.\+h}}
+\subsubsection[{\+\_\+\+V\+B\+I\+T\+S}]{\setlength{\rightskip}{0pt plus 5cm}const int \+\_\+\+V\+B\+I\+T\+S = 8 $\ast$ sizeof ({\bf \+\_\+\+Vbase})}}\label{vector_8h_a02c1ccf82091037ec8356b5cc9138c65}
+
+
+Definition at line 1537 of file vector.\+h.
+

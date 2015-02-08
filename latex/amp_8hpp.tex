@@ -1,0 +1,63 @@
+\hypertarget{amp_8hpp}{\section{S\+L\+P/amp.hpp File Reference}
+\label{amp_8hpp}\index{S\+L\+P/amp.\+hpp@{S\+L\+P/amp.\+hpp}}
+}
+{\ttfamily \#include $<$gmp.\+h$>$}\\*
+{\ttfamily \#include $<$mpfr.\+h$>$}\\*
+{\ttfamily \#include $<$iomanip$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$sstream$>$}\\*
+{\ttfamily \#include \char`\"{}Symbol.\+h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_a_m_p}{A\+M\+P}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{amp_8hpp_aac4dd9c2b554d05735c756ee43d1460f}{H\+A\+R\+D\+W\+A\+R\+E\+\_\+\+P\+R\+E\+C\+I\+S\+I\+O\+N}~64
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \hyperlink{amp_8hpp_a3370af179da4c3cec4a2502e2eb8b72f}{operator$<$$<$} (std\+::ostream \&sout, mpfr\+\_\+t m)
+\item 
+std\+::ostream \& \hyperlink{amp_8hpp_a2b7bb8a6a8043831b78dcaad16d049cc}{operator$<$$<$} (std\+::ostream \&sout, \hyperlink{class_a_m_p}{A\+M\+P} a)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{amp_8hpp_aac4dd9c2b554d05735c756ee43d1460f}{\index{amp.\+hpp@{amp.\+hpp}!H\+A\+R\+D\+W\+A\+R\+E\+\_\+\+P\+R\+E\+C\+I\+S\+I\+O\+N@{H\+A\+R\+D\+W\+A\+R\+E\+\_\+\+P\+R\+E\+C\+I\+S\+I\+O\+N}}
+\index{H\+A\+R\+D\+W\+A\+R\+E\+\_\+\+P\+R\+E\+C\+I\+S\+I\+O\+N@{H\+A\+R\+D\+W\+A\+R\+E\+\_\+\+P\+R\+E\+C\+I\+S\+I\+O\+N}!amp.\+hpp@{amp.\+hpp}}
+\subsubsection[{H\+A\+R\+D\+W\+A\+R\+E\+\_\+\+P\+R\+E\+C\+I\+S\+I\+O\+N}]{\setlength{\rightskip}{0pt plus 5cm}\#define H\+A\+R\+D\+W\+A\+R\+E\+\_\+\+P\+R\+E\+C\+I\+S\+I\+O\+N~64}}\label{amp_8hpp_aac4dd9c2b554d05735c756ee43d1460f}
+Define hardware precision to be 32 or 64 bits (or more?). Dependent on system and easy enough to change. 
+
+Definition at line 4 of file amp.\+hpp.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{amp_8hpp_a3370af179da4c3cec4a2502e2eb8b72f}{\index{amp.\+hpp@{amp.\+hpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!amp.\+hpp@{amp.\+hpp}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{sout, }
+\item[{mpfr\+\_\+t}]{m}
+\end{DoxyParamCaption}
+)}}\label{amp_8hpp_a3370af179da4c3cec4a2502e2eb8b72f}
+
+
+Definition at line 339 of file amp.\+cpp.
+
+\hypertarget{amp_8hpp_a2b7bb8a6a8043831b78dcaad16d049cc}{\index{amp.\+hpp@{amp.\+hpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!amp.\+hpp@{amp.\+hpp}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{sout, }
+\item[{{\bf A\+M\+P}}]{a}
+\end{DoxyParamCaption}
+)}}\label{amp_8hpp_a2b7bb8a6a8043831b78dcaad16d049cc}
+Insertion operator. 
+
+Definition at line 368 of file amp.\+cpp.
+

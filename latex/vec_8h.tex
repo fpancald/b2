@@ -1,0 +1,178 @@
+\hypertarget{vec_8h}{\section{vec.\+h File Reference}
+\label{vec_8h}\index{vec.\+h@{vec.\+h}}
+}
+{\ttfamily \#include $<$new$>$}\\*
+{\ttfamily \#include $<$cmath$>$}\\*
+{\ttfamily \#include $<$cstdlib$>$}\\*
+{\ttfamily \#include $<$cassert$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$sstream$>$}\\*
+{\ttfamily \#include $<$iomanip$>$}\\*
+{\ttfamily \#include $<$fstream$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_vector}{Vector$<$ T $>$}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{vec_8h_ac908cf52477534da697deea985c8126b}{D\+\_\+\+P\+R\+E\+C\+I\+S\+I\+O\+N}~16
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef long \hyperlink{vec_8h_a2dedc729e88b5f13d52bc9aeeda264dc}{Subscript}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T $>$ }\\ostream \& \hyperlink{vec_8h_ac2bf44c35728e1b3a3887b24ad1ee99d}{operator$<$$<$} (ostream \&s, const \hyperlink{class_vector}{Vector}$<$ T $>$ \&A)
+\item 
+{\footnotesize template$<$class T $>$ }\\istream \& \hyperlink{vec_8h_ae4feacc0de2fc8a309f4608f65c6801b}{operator$>$$>$} (istream \&s, \hyperlink{class_vector}{Vector}$<$ T $>$ \&A)
+\item 
+{\footnotesize template$<$class T $>$ }\\\hyperlink{class_vector}{Vector}$<$ T $>$ \hyperlink{vec_8h_ad1f7fa188750bfd266270a93ddbe69d4}{scalmult} (const \hyperlink{class_vector}{Vector}$<$ T $>$ \&A, const T \&B)
+\item 
+{\footnotesize template$<$class T $>$ }\\\hyperlink{class_vector}{Vector}$<$ T $>$ \hyperlink{vec_8h_a9021699c1e86c8db5cb6b487bc4f8b43}{operator$\ast$} (const \hyperlink{class_vector}{Vector}$<$ T $>$ \&A, const T \&B)
+\item 
+{\footnotesize template$<$class T $>$ }\\\hyperlink{class_vector}{Vector}$<$ T $>$ \hyperlink{vec_8h_a8650ad2a59026cf16e380b30651a59f3}{operator$\ast$} (const T \&B, const \hyperlink{class_vector}{Vector}$<$ T $>$ \&A)
+\item 
+{\footnotesize template$<$class T $>$ }\\\hyperlink{class_vector}{Vector}$<$ T $>$ \hyperlink{vec_8h_a78fbe75add8880ed222476ec6d1cff79}{operator+} (const \hyperlink{class_vector}{Vector}$<$ T $>$ \&A, const \hyperlink{class_vector}{Vector}$<$ T $>$ \&B)
+\item 
+{\footnotesize template$<$class T $>$ }\\\hyperlink{class_vector}{Vector}$<$ T $>$ \hyperlink{vec_8h_a53bde1337c0cb565e47b69d388f11be6}{operator-\/} (const \hyperlink{class_vector}{Vector}$<$ T $>$ \&A, const \hyperlink{class_vector}{Vector}$<$ T $>$ \&B)
+\item 
+{\footnotesize template$<$class T $>$ }\\\hyperlink{class_vector}{Vector}$<$ T $>$ \hyperlink{vec_8h_a2d4b338946ec1df26b856e820a4cddcf}{compmult} (const \hyperlink{class_vector}{Vector}$<$ T $>$ \&A, const \hyperlink{class_vector}{Vector}$<$ T $>$ \&B)
+\item 
+{\footnotesize template$<$class T $>$ }\\T \hyperlink{vec_8h_a534601821ec902ebf9126785613861b7}{operator$\ast$} (const \hyperlink{class_vector}{Vector}$<$ T $>$ \&A, const \hyperlink{class_vector}{Vector}$<$ T $>$ \&B)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{vec_8h_ac908cf52477534da697deea985c8126b}{\index{vec.\+h@{vec.\+h}!D\+\_\+\+P\+R\+E\+C\+I\+S\+I\+O\+N@{D\+\_\+\+P\+R\+E\+C\+I\+S\+I\+O\+N}}
+\index{D\+\_\+\+P\+R\+E\+C\+I\+S\+I\+O\+N@{D\+\_\+\+P\+R\+E\+C\+I\+S\+I\+O\+N}!vec.\+h@{vec.\+h}}
+\subsubsection[{D\+\_\+\+P\+R\+E\+C\+I\+S\+I\+O\+N}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+\_\+\+P\+R\+E\+C\+I\+S\+I\+O\+N~16}}\label{vec_8h_ac908cf52477534da697deea985c8126b}
+
+
+Definition at line 61 of file vec.\+h.
+
+
+
+\subsection{Typedef Documentation}
+\hypertarget{vec_8h_a2dedc729e88b5f13d52bc9aeeda264dc}{\index{vec.\+h@{vec.\+h}!Subscript@{Subscript}}
+\index{Subscript@{Subscript}!vec.\+h@{vec.\+h}}
+\subsubsection[{Subscript}]{\setlength{\rightskip}{0pt plus 5cm}typedef long {\bf Subscript}}}\label{vec_8h_a2dedc729e88b5f13d52bc9aeeda264dc}
+
+
+Definition at line 67 of file vec.\+h.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{vec_8h_a2d4b338946ec1df26b856e820a4cddcf}{\index{vec.\+h@{vec.\+h}!compmult@{compmult}}
+\index{compmult@{compmult}!vec.\+h@{vec.\+h}}
+\subsubsection[{compmult}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Vector}$<$T$>$ compmult (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector}$<$ T $>$ \&}]{A, }
+\item[{const {\bf Vector}$<$ T $>$ \&}]{B}
+\end{DoxyParamCaption}
+)}}\label{vec_8h_a2d4b338946ec1df26b856e820a4cddcf}
+
+
+Definition at line 550 of file vec.\+h.
+
+\hypertarget{vec_8h_a9021699c1e86c8db5cb6b487bc4f8b43}{\index{vec.\+h@{vec.\+h}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!vec.\+h@{vec.\+h}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Vector}$<$T$>$ operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector}$<$ T $>$ \&}]{A, }
+\item[{const T \&}]{B}
+\end{DoxyParamCaption}
+)}}\label{vec_8h_a9021699c1e86c8db5cb6b487bc4f8b43}
+
+
+Definition at line 501 of file vec.\+h.
+
+\hypertarget{vec_8h_a8650ad2a59026cf16e380b30651a59f3}{\index{vec.\+h@{vec.\+h}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!vec.\+h@{vec.\+h}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Vector}$<$T$>$ operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{B, }
+\item[{const {\bf Vector}$<$ T $>$ \&}]{A}
+\end{DoxyParamCaption}
+)}}\label{vec_8h_a8650ad2a59026cf16e380b30651a59f3}
+
+
+Definition at line 507 of file vec.\+h.
+
+\hypertarget{vec_8h_a534601821ec902ebf9126785613861b7}{\index{vec.\+h@{vec.\+h}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!vec.\+h@{vec.\+h}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ T operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector}$<$ T $>$ \&}]{A, }
+\item[{const {\bf Vector}$<$ T $>$ \&}]{B}
+\end{DoxyParamCaption}
+)}}\label{vec_8h_a534601821ec902ebf9126785613861b7}
+
+
+Definition at line 567 of file vec.\+h.
+
+\hypertarget{vec_8h_a78fbe75add8880ed222476ec6d1cff79}{\index{vec.\+h@{vec.\+h}!operator+@{operator+}}
+\index{operator+@{operator+}!vec.\+h@{vec.\+h}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Vector}$<$T$>$ operator+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector}$<$ T $>$ \&}]{A, }
+\item[{const {\bf Vector}$<$ T $>$ \&}]{B}
+\end{DoxyParamCaption}
+)}}\label{vec_8h_a78fbe75add8880ed222476ec6d1cff79}
+
+
+Definition at line 515 of file vec.\+h.
+
+\hypertarget{vec_8h_a53bde1337c0cb565e47b69d388f11be6}{\index{vec.\+h@{vec.\+h}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!vec.\+h@{vec.\+h}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Vector}$<$T$>$ operator-\/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector}$<$ T $>$ \&}]{A, }
+\item[{const {\bf Vector}$<$ T $>$ \&}]{B}
+\end{DoxyParamCaption}
+)}}\label{vec_8h_a53bde1337c0cb565e47b69d388f11be6}
+
+
+Definition at line 532 of file vec.\+h.
+
+\hypertarget{vec_8h_ac2bf44c35728e1b3a3887b24ad1ee99d}{\index{vec.\+h@{vec.\+h}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!vec.\+h@{vec.\+h}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{s, }
+\item[{const {\bf Vector}$<$ T $>$ \&}]{A}
+\end{DoxyParamCaption}
+)}}\label{vec_8h_ac2bf44c35728e1b3a3887b24ad1ee99d}
+
+
+Definition at line 449 of file vec.\+h.
+
+\hypertarget{vec_8h_ae4feacc0de2fc8a309f4608f65c6801b}{\index{vec.\+h@{vec.\+h}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!vec.\+h@{vec.\+h}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ istream\& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{istream \&}]{s, }
+\item[{{\bf Vector}$<$ T $>$ \&}]{A}
+\end{DoxyParamCaption}
+)}}\label{vec_8h_ae4feacc0de2fc8a309f4608f65c6801b}
+
+
+Definition at line 463 of file vec.\+h.
+
+\hypertarget{vec_8h_ad1f7fa188750bfd266270a93ddbe69d4}{\index{vec.\+h@{vec.\+h}!scalmult@{scalmult}}
+\index{scalmult@{scalmult}!vec.\+h@{vec.\+h}}
+\subsubsection[{scalmult}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Vector}$<$T$>$ scalmult (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector}$<$ T $>$ \&}]{A, }
+\item[{const T \&}]{B}
+\end{DoxyParamCaption}
+)}}\label{vec_8h_ad1f7fa188750bfd266270a93ddbe69d4}
+
+
+Definition at line 489 of file vec.\+h.
+

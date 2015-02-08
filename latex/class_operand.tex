@@ -1,0 +1,287 @@
+\hypertarget{class_operand}{\section{Operand Class Reference}
+\label{class_operand}\index{Operand@{Operand}}
+}
+
+
+{\ttfamily \#include $<$Operand.\+h$>$}
+
+Inheritance diagram for Operand\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_operand}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_symbol}{Symbol} $\ast$ \hyperlink{class_operand_a910e63f6f002b26dd75deb83af9c69a7}{evaluate} (\hyperlink{class_symbol}{Symbol} $\ast$vars\mbox{[}$\,$\mbox{]})=0
+\item 
+virtual std\+::stringstream \hyperlink{class_operand_a8cc045602e1f603a5920249a69abde03}{print} ()=0
+\item 
+virtual \hyperlink{class_operand}{Operand} $\ast$ \hyperlink{class_operand_a057d6848e78c2cc4d36a5d57ef68fa61}{diff} (int var\+Index)=0
+\item 
+virtual void \hyperlink{class_operand_a1650a1adf9ed0d15423c746b6cdcdf2b}{combine\+Adds} ()=0
+\item 
+virtual void \hyperlink{class_operand_a82913d427a06d6d3f3832ce9ee0e59ff}{combine\+Mults} ()=0
+\item 
+virtual void \hyperlink{class_operand_aca12745fcb2d33fda67568181eb19179}{clean\+Mults} ()=0
+\item 
+virtual void \hyperlink{class_operand_adce551c3eaf269ed417647d9365fd8de}{clean\+Adds} ()=0
+\item 
+int \hyperlink{class_operand_a78a71c37d38e0b703e2f94caa4cfee56}{get\+Type} ()
+\item 
+virtual std\+::vector$<$ \hyperlink{class_operand}{Operand} $\ast$ $>$ \hyperlink{class_operand_ad51e24642aff7fbeaefebc732bf01565}{get\+Operands} ()
+\item 
+virtual int \hyperlink{class_operand_ab2648e8880b005d2500d97f583e19022}{get\+Num\+Operands} ()
+\item 
+virtual void \hyperlink{class_operand_aa4d004991f0b05b9b6aaa566443f63a6}{add\+Operand} (\hyperlink{class_operand}{Operand} $\ast$op)
+\item 
+void \hyperlink{class_operand_a3ace581e9ed6c16129d30d6862c342e9}{clear} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_operand_a690d7ad2b55003a28adf37aeaa658527}{clean} (\hyperlink{class_operand}{Operand} $\ast$node)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int \hyperlink{class_operand_a72561b58147e35a5a359d9b79118dbb0}{T\+Y\+P\+E\+\_\+\+A\+D\+D} = 1
+\item 
+static const int \hyperlink{class_operand_a081453264453622326e975742d65bdc8}{T\+Y\+P\+E\+\_\+\+M\+U\+L\+T} = 2
+\item 
+static const int \hyperlink{class_operand_a16ab8a1b33c8e8a2f576a9027f7f2d21}{T\+Y\+P\+E\+\_\+\+E\+X\+P} = 3
+\item 
+static const int \hyperlink{class_operand_a9d9c7e7ff88c2ce280aa1332f9b12913}{T\+Y\+P\+E\+\_\+\+L\+E\+A\+F} = 4
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{class_operand}{Operand} $\ast$ $>$ \hyperlink{class_operand_a7939bfe67bad92030551774aed8a1b77}{operands}
+\item 
+int \hyperlink{class_operand_a36baa86e6e7199ef596a647f180a8584}{num\+Operands}
+\item 
+int \hyperlink{class_operand_a389bb640b257a1fc4ed658a1817591c6}{type}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 30 of file Operand.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_operand_aa4d004991f0b05b9b6aaa566443f63a6}{\index{Operand@{Operand}!add\+Operand@{add\+Operand}}
+\index{add\+Operand@{add\+Operand}!Operand@{Operand}}
+\subsubsection[{add\+Operand}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Operand\+::add\+Operand (
+\begin{DoxyParamCaption}
+\item[{{\bf Operand} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_operand_aa4d004991f0b05b9b6aaa566443f63a6}
+
+
+Reimplemented in \hyperlink{class_leaf_operand_a10d0959f23294fd4929d0b7551168f5c}{Leaf\+Operand}, \hyperlink{class_exp_op_ae7c3e828e61808d41b2087cfeeb4cb28}{Exp\+Op}, \hyperlink{class_addition_op_a4a0b8c6e12b6c54857b8b318c6ba55f1}{Addition\+Op}, and \hyperlink{class_op_operand_a97bd0af8d4e30f9815600b26bd0d2349}{Op\+Operand}.
+
+
+
+Definition at line 75 of file Operand.\+h.
+
+\hypertarget{class_operand_a690d7ad2b55003a28adf37aeaa658527}{\index{Operand@{Operand}!clean@{clean}}
+\index{clean@{clean}!Operand@{Operand}}
+\subsubsection[{clean}]{\setlength{\rightskip}{0pt plus 5cm}static void Operand\+::clean (
+\begin{DoxyParamCaption}
+\item[{{\bf Operand} $\ast$}]{node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_operand_a690d7ad2b55003a28adf37aeaa658527}
+
+
+Definition at line 65 of file Operand.\+h.
+
+\hypertarget{class_operand_adce551c3eaf269ed417647d9365fd8de}{\index{Operand@{Operand}!clean\+Adds@{clean\+Adds}}
+\index{clean\+Adds@{clean\+Adds}!Operand@{Operand}}
+\subsubsection[{clean\+Adds}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Operand\+::clean\+Adds (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_operand_adce551c3eaf269ed417647d9365fd8de}
+
+
+Implemented in \hyperlink{class_leaf_operand_ac1f316659c696c5c09fc58a9f02ccc53}{Leaf\+Operand}, \hyperlink{class_exp_op_a2a7d37dbe75ffbe6559dd3ff30ee89db}{Exp\+Op}, \hyperlink{class_addition_op_a4f573734c49e2acff6ae51f15a8698d6}{Addition\+Op}, and \hyperlink{class_mult_op_a84302f5059650d7eb78bb64fe07e4f9d}{Mult\+Op}.
+
+\hypertarget{class_operand_aca12745fcb2d33fda67568181eb19179}{\index{Operand@{Operand}!clean\+Mults@{clean\+Mults}}
+\index{clean\+Mults@{clean\+Mults}!Operand@{Operand}}
+\subsubsection[{clean\+Mults}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Operand\+::clean\+Mults (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_operand_aca12745fcb2d33fda67568181eb19179}
+
+
+Implemented in \hyperlink{class_leaf_operand_af5c807f1f53e279f63bd89b89e20272e}{Leaf\+Operand}, \hyperlink{class_op_operand_a669d2794a1939e92e976c3ff41e72fc9}{Op\+Operand}, \hyperlink{class_exp_op_a2262538ea97f669be0e30b023071af77}{Exp\+Op}, \hyperlink{class_addition_op_ad04b68e36b5852ec2b951005b71cd56d}{Addition\+Op}, and \hyperlink{class_mult_op_aa46a75fb04c6a595eda8fb3f5d1dc15c}{Mult\+Op}.
+
+\hypertarget{class_operand_a3ace581e9ed6c16129d30d6862c342e9}{\index{Operand@{Operand}!clear@{clear}}
+\index{clear@{clear}!Operand@{Operand}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}void Operand\+::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_operand_a3ace581e9ed6c16129d30d6862c342e9}
+
+
+Definition at line 76 of file Operand.\+h.
+
+\hypertarget{class_operand_a1650a1adf9ed0d15423c746b6cdcdf2b}{\index{Operand@{Operand}!combine\+Adds@{combine\+Adds}}
+\index{combine\+Adds@{combine\+Adds}!Operand@{Operand}}
+\subsubsection[{combine\+Adds}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Operand\+::combine\+Adds (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_operand_a1650a1adf9ed0d15423c746b6cdcdf2b}
+
+
+Implemented in \hyperlink{class_leaf_operand_ae0702803af7b67cf3d1f2da7d27c4698}{Leaf\+Operand}, \hyperlink{class_op_operand_a7207c2534050ce2f909e29f4cc3b7345}{Op\+Operand}, \hyperlink{class_exp_op_aebcfcfed0eb87355cf7bc89ae59bfaa1}{Exp\+Op}, \hyperlink{class_addition_op_aae8debc8773974054d3acf6a5df231ff}{Addition\+Op}, and \hyperlink{class_mult_op_ae2c71f6cacdf19f30adc3dbb53f54c28}{Mult\+Op}.
+
+\hypertarget{class_operand_a82913d427a06d6d3f3832ce9ee0e59ff}{\index{Operand@{Operand}!combine\+Mults@{combine\+Mults}}
+\index{combine\+Mults@{combine\+Mults}!Operand@{Operand}}
+\subsubsection[{combine\+Mults}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Operand\+::combine\+Mults (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_operand_a82913d427a06d6d3f3832ce9ee0e59ff}
+
+
+Implemented in \hyperlink{class_leaf_operand_a11f84bc19234ece8291aaba171692bb8}{Leaf\+Operand}, \hyperlink{class_op_operand_a0e12f3662ac434767c8ad51053870fb2}{Op\+Operand}, \hyperlink{class_exp_op_aa17e9aa3c005d1edd0259253521a1e44}{Exp\+Op}, \hyperlink{class_addition_op_abd35da4badb0e1b02ab271a8f87da472}{Addition\+Op}, and \hyperlink{class_mult_op_a53528db5222b6e7d0aa985c0a40e6e6c}{Mult\+Op}.
+
+\hypertarget{class_operand_a057d6848e78c2cc4d36a5d57ef68fa61}{\index{Operand@{Operand}!diff@{diff}}
+\index{diff@{diff}!Operand@{Operand}}
+\subsubsection[{diff}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Operand}$\ast$ Operand\+::diff (
+\begin{DoxyParamCaption}
+\item[{int}]{var\+Index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_operand_a057d6848e78c2cc4d36a5d57ef68fa61}
+
+
+Implemented in \hyperlink{class_leaf_operand_ada3d818eb13fe43a9117b6140a66072f}{Leaf\+Operand}, \hyperlink{class_exp_op_a5f9a55e3ca7ee9369bd41be93e41c2a5}{Exp\+Op}, \hyperlink{class_addition_op_a0339b4c06997d4592c50f9bf72f578a3}{Addition\+Op}, \hyperlink{class_op_operand_ac20c0b3333ea6f67b677921f561c973b}{Op\+Operand}, and \hyperlink{class_mult_op_a37b0fd3f963181f326272b7c8de9d86c}{Mult\+Op}.
+
+\hypertarget{class_operand_a910e63f6f002b26dd75deb83af9c69a7}{\index{Operand@{Operand}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!Operand@{Operand}}
+\subsubsection[{evaluate}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Symbol}$\ast$ Operand\+::evaluate (
+\begin{DoxyParamCaption}
+\item[{{\bf Symbol} $\ast$}]{vars\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_operand_a910e63f6f002b26dd75deb83af9c69a7}
+
+
+Implemented in \hyperlink{class_leaf_operand_ae42e6497dac355f12624a718d6f91a33}{Leaf\+Operand}, \hyperlink{class_exp_op_a56abe7525f95bb5aa6b72ba9d68e56b1}{Exp\+Op}, \hyperlink{class_addition_op_acc5fa1937f8e82d7e6356d2aa199a5e9}{Addition\+Op}, \hyperlink{class_op_operand_a5c1da397269f8edfb7ebb76c6da16bdb}{Op\+Operand}, and \hyperlink{class_mult_op_ae25e9a6e8e71dab26b15513f8de6a36a}{Mult\+Op}.
+
+\hypertarget{class_operand_ab2648e8880b005d2500d97f583e19022}{\index{Operand@{Operand}!get\+Num\+Operands@{get\+Num\+Operands}}
+\index{get\+Num\+Operands@{get\+Num\+Operands}!Operand@{Operand}}
+\subsubsection[{get\+Num\+Operands}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Operand\+::get\+Num\+Operands (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_operand_ab2648e8880b005d2500d97f583e19022}
+
+
+Reimplemented in \hyperlink{class_op_operand_ab73903f1d3eb535209eb15c992b17c61}{Op\+Operand}.
+
+
+
+Definition at line 72 of file Operand.\+h.
+
+\hypertarget{class_operand_ad51e24642aff7fbeaefebc732bf01565}{\index{Operand@{Operand}!get\+Operands@{get\+Operands}}
+\index{get\+Operands@{get\+Operands}!Operand@{Operand}}
+\subsubsection[{get\+Operands}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\+::vector$<${\bf Operand}$\ast$$>$ Operand\+::get\+Operands (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_operand_ad51e24642aff7fbeaefebc732bf01565}
+
+
+Reimplemented in \hyperlink{class_op_operand_a4dabe730f5df82d74919c974fb54e1c6}{Op\+Operand}.
+
+
+
+Definition at line 71 of file Operand.\+h.
+
+\hypertarget{class_operand_a78a71c37d38e0b703e2f94caa4cfee56}{\index{Operand@{Operand}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!Operand@{Operand}}
+\subsubsection[{get\+Type}]{\setlength{\rightskip}{0pt plus 5cm}int Operand\+::get\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_operand_a78a71c37d38e0b703e2f94caa4cfee56}
+
+
+Definition at line 70 of file Operand.\+h.
+
+\hypertarget{class_operand_a8cc045602e1f603a5920249a69abde03}{\index{Operand@{Operand}!print@{print}}
+\index{print@{print}!Operand@{Operand}}
+\subsubsection[{print}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\+::stringstream Operand\+::print (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_operand_a8cc045602e1f603a5920249a69abde03}
+
+
+Implemented in \hyperlink{class_leaf_operand_a3fd735b5d259ad12676f01e84407e0da}{Leaf\+Operand}, \hyperlink{class_exp_op_ab983d8c531da78f87e13ee7a57031b36}{Exp\+Op}, \hyperlink{class_addition_op_a6e62b558d233e3c358d62e14941872dc}{Addition\+Op}, \hyperlink{class_op_operand_af23227873e50e47d7fa8fb72834d4823}{Op\+Operand}, and \hyperlink{class_mult_op_ab08cb5ca6f8ad57596160a98a79f88ae}{Mult\+Op}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_operand_a36baa86e6e7199ef596a647f180a8584}{\index{Operand@{Operand}!num\+Operands@{num\+Operands}}
+\index{num\+Operands@{num\+Operands}!Operand@{Operand}}
+\subsubsection[{num\+Operands}]{\setlength{\rightskip}{0pt plus 5cm}int Operand\+::num\+Operands\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_operand_a36baa86e6e7199ef596a647f180a8584}
+
+
+Definition at line 37 of file Operand.\+h.
+
+\hypertarget{class_operand_a7939bfe67bad92030551774aed8a1b77}{\index{Operand@{Operand}!operands@{operands}}
+\index{operands@{operands}!Operand@{Operand}}
+\subsubsection[{operands}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Operand}$\ast$$>$ Operand\+::operands\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_operand_a7939bfe67bad92030551774aed8a1b77}
+
+
+Definition at line 35 of file Operand.\+h.
+
+\hypertarget{class_operand_a389bb640b257a1fc4ed658a1817591c6}{\index{Operand@{Operand}!type@{type}}
+\index{type@{type}!Operand@{Operand}}
+\subsubsection[{type}]{\setlength{\rightskip}{0pt plus 5cm}int Operand\+::type\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_operand_a389bb640b257a1fc4ed658a1817591c6}
+
+
+Definition at line 40 of file Operand.\+h.
+
+\hypertarget{class_operand_a72561b58147e35a5a359d9b79118dbb0}{\index{Operand@{Operand}!T\+Y\+P\+E\+\_\+\+A\+D\+D@{T\+Y\+P\+E\+\_\+\+A\+D\+D}}
+\index{T\+Y\+P\+E\+\_\+\+A\+D\+D@{T\+Y\+P\+E\+\_\+\+A\+D\+D}!Operand@{Operand}}
+\subsubsection[{T\+Y\+P\+E\+\_\+\+A\+D\+D}]{\setlength{\rightskip}{0pt plus 5cm}const int Operand\+::\+T\+Y\+P\+E\+\_\+\+A\+D\+D = 1\hspace{0.3cm}{\ttfamily [static]}}}\label{class_operand_a72561b58147e35a5a359d9b79118dbb0}
+
+
+Definition at line 44 of file Operand.\+h.
+
+\hypertarget{class_operand_a16ab8a1b33c8e8a2f576a9027f7f2d21}{\index{Operand@{Operand}!T\+Y\+P\+E\+\_\+\+E\+X\+P@{T\+Y\+P\+E\+\_\+\+E\+X\+P}}
+\index{T\+Y\+P\+E\+\_\+\+E\+X\+P@{T\+Y\+P\+E\+\_\+\+E\+X\+P}!Operand@{Operand}}
+\subsubsection[{T\+Y\+P\+E\+\_\+\+E\+X\+P}]{\setlength{\rightskip}{0pt plus 5cm}const int Operand\+::\+T\+Y\+P\+E\+\_\+\+E\+X\+P = 3\hspace{0.3cm}{\ttfamily [static]}}}\label{class_operand_a16ab8a1b33c8e8a2f576a9027f7f2d21}
+
+
+Definition at line 46 of file Operand.\+h.
+
+\hypertarget{class_operand_a9d9c7e7ff88c2ce280aa1332f9b12913}{\index{Operand@{Operand}!T\+Y\+P\+E\+\_\+\+L\+E\+A\+F@{T\+Y\+P\+E\+\_\+\+L\+E\+A\+F}}
+\index{T\+Y\+P\+E\+\_\+\+L\+E\+A\+F@{T\+Y\+P\+E\+\_\+\+L\+E\+A\+F}!Operand@{Operand}}
+\subsubsection[{T\+Y\+P\+E\+\_\+\+L\+E\+A\+F}]{\setlength{\rightskip}{0pt plus 5cm}const int Operand\+::\+T\+Y\+P\+E\+\_\+\+L\+E\+A\+F = 4\hspace{0.3cm}{\ttfamily [static]}}}\label{class_operand_a9d9c7e7ff88c2ce280aa1332f9b12913}
+
+
+Definition at line 47 of file Operand.\+h.
+
+\hypertarget{class_operand_a081453264453622326e975742d65bdc8}{\index{Operand@{Operand}!T\+Y\+P\+E\+\_\+\+M\+U\+L\+T@{T\+Y\+P\+E\+\_\+\+M\+U\+L\+T}}
+\index{T\+Y\+P\+E\+\_\+\+M\+U\+L\+T@{T\+Y\+P\+E\+\_\+\+M\+U\+L\+T}!Operand@{Operand}}
+\subsubsection[{T\+Y\+P\+E\+\_\+\+M\+U\+L\+T}]{\setlength{\rightskip}{0pt plus 5cm}const int Operand\+::\+T\+Y\+P\+E\+\_\+\+M\+U\+L\+T = 2\hspace{0.3cm}{\ttfamily [static]}}}\label{class_operand_a081453264453622326e975742d65bdc8}
+
+
+Definition at line 45 of file Operand.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+S\+L\+P/\hyperlink{_operand_8h}{Operand.\+h}\end{DoxyCompactItemize}
