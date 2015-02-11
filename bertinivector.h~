@@ -36,11 +36,11 @@ public:
 	T l2sum();//l2 norm (squared)
 	T l2norm();//l2 norm 
 	T linfnorm();//linfinity norm
-	T lpsum(T p);//lp norm (to power p)
-	T lpnorm(T p);//lp norm 
+	T lpsum(double p);//lp norm (to power p)
+	T lpnorm(double p);//lp norm 
 	T maxv();//max
 	T minv();//min
-	T dist(const bertinivector&, T p) const;//lp distance between two vectors
+	T dist(const bertinivector&, double p) const;//lp distance between two vectors
 	T dist(const bertinivector&) const;//l2 distance between two vectors
 	bertinivector operator=(const bertinivector&);//substitute vector
 	bertinivector operator=(const T&);//set each element in vector =constant

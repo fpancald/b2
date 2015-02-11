@@ -231,7 +231,7 @@ T bertinivector<T>::l2norm()
 }
 
 template <class T>
-T bertinivector<T>::lpsum(T p)
+T bertinivector<T>::lpsum(double p)
 {
 	T sum=0;
 	if(p<1)
@@ -242,7 +242,7 @@ T bertinivector<T>::lpsum(T p)
 }
 
 template <class T>
-T bertinivector<T>::lpnorm(T p)
+T bertinivector<T>::lpnorm(double p)
 {
 	T sum=0;	
 	if(p<1)

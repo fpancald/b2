@@ -64,7 +64,7 @@ int main()
 		std::cout<<vec6[i]<< " ";
 	std::cout << "\n";
 	s=vec3.sumv();
-	sp=vec6.dist(vec6,2);
+	sp=vec6.dist(vec6,2.0);
 	std::cout <<s<<"\n";
 	std::cout <<sp<<"\n";
 	bool ans=vec6.isnear(vec6,0.1,2);
