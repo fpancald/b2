@@ -27,7 +27,7 @@ public:
 	bertinivector operator-(const bertinivector&);//sub vectors if different throw exception
 	bertinivector dot_product(const bertinivector&) const;//multiplication index-by-index vectors if different size throw exception
 	T inner_product(const bertinivector&) const;//scalar product of vector with argument vector if different size throw exception
-	template <class Y> friend bertinivector<bertinivector<Y> > outer_product(const bertinivector<Y>& lhs,const bertinivector<Y>& rhs);
+	//template <class Y> friend bertinivector<bertinivector<Y> > outer_product(const bertinivector<Y>& lhs,const bertinivector<Y>& rhs);
 	template <class Y> friend Y operator*(const bertinivector<Y>& lhs,const bertinivector<Y>& rhs);//inner product if different size throw exception
 	template <class Y> friend bertinivector<Y> operator*(const bertinivector<Y>& lhs,const Y& scalar);//multiplication by scalar number
 	template <class Y> friend bertinivector<Y> operator*(const Y& scalar,const bertinivector<Y>& rhs);//multiplication by scalar number
@@ -45,7 +45,7 @@ public:
 	bertinivector operator=(const bertinivector&);//substitute vector
 	bertinivector operator=(const T&);//set each element in vector =constant
 	bertinivector operator*=(const T&);//substitute vector with vector multiplied by constant
-	friend ostream& operator<<(ostream& s,const bertinivectorector<T>& v);
+	//friend ostream& operator<<(ostream& s,const bertinivectorector<T>& v);
 	bool operator==(const bertinivector& rhs);//check equality
 	bool operator!=(const bertinivector& rhs);//check inequality
 	bool isnear(const bertinivector& rhs,T toll,T p);//check if near with norm p and tollerance toll

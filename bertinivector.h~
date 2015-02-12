@@ -27,7 +27,7 @@ public:
 	bertinivector operator-(const bertinivector&);//sub vectors if different throw exception
 	bertinivector dot_product(const bertinivector&) const;//multiplication index-by-index vectors if different size throw exception
 	T inner_product(const bertinivector&) const;//scalar product of vector with argument vector if different size throw exception
-	//template <class Y> friend bertinivector<bertinivector<Y> > outer_product(const bertinivector<Y>& lhs,const bertinivector<Y>& rhs);
+	template <class Y> friend bertinivector<bertinivector<Y> > outer_product(const bertinivector<Y>& lhs,const bertinivector<Y>& rhs);
 	template <class Y> friend Y operator*(const bertinivector<Y>& lhs,const bertinivector<Y>& rhs);//inner product if different size throw exception
 	template <class Y> friend bertinivector<Y> operator*(const bertinivector<Y>& lhs,const Y& scalar);//multiplication by scalar number
 	template <class Y> friend bertinivector<Y> operator*(const Y& scalar,const bertinivector<Y>& rhs);//multiplication by scalar number
@@ -36,11 +36,11 @@ public:
 	T l2sum();//l2 norm (squared)
 	T l2norm();//l2 norm 
 	T linfnorm();//linfinity norm
-	T lpsum(double p);//lp norm (to power p)
-	T lpnorm(double p);//lp norm 
+	T lpsum(T p);//lp norm (to power p)
+	T lpnorm(T p);//lp norm 
 	T maxv();//max
 	T minv();//min
-	T dist(const bertinivector&, double p) const;//lp distance between two vectors
+	T dist(const bertinivector&, T p) const;//lp distance between two vectors
 	T dist(const bertinivector&) const;//l2 distance between two vectors
 	bertinivector operator=(const bertinivector&);//substitute vector
 	bertinivector operator=(const T&);//set each element in vector =constant

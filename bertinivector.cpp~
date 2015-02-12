@@ -142,7 +142,7 @@ T bertinivector<T>::inner_product(const bertinivector<T>& v) const
     return sum;
 }
 
-/*template <class Y>
+template <class Y>
 bertinivector<bertinivector<Y> > outer_product(const bertinivector<Y>& lhs,const bertinivector<Y>& rhs)
 {
 	bertinivector<bertinivector<Y> > prod;
@@ -159,7 +159,7 @@ bertinivector<bertinivector<Y> > outer_product(const bertinivector<Y>& lhs,const
 
     return prod;}
 	throw 10;//exception
-}*/
+}
 
 template <class Y>
 bertinivector<Y> operator*(const Y& scalar, const bertinivector<Y>& rhs)
@@ -231,7 +231,7 @@ T bertinivector<T>::l2norm()
 }
 
 template <class T>
-T bertinivector<T>::lpsum(double p)
+T bertinivector<T>::lpsum(T p)
 {
 	T sum=0;
 	if(p<1)
@@ -242,7 +242,7 @@ T bertinivector<T>::lpsum(double p)
 }
 
 template <class T>
-T bertinivector<T>::lpnorm(double p)
+T bertinivector<T>::lpnorm(T p)
 {
 	T sum=0;	
 	if(p<1)
@@ -363,7 +363,7 @@ bertinivector<T> bertinivector<T>::operator*=(const T& scalar)
 }
 
 /*template < class T >
-ostream& operator << (ostream& os, const bertinivector<T>& v) 
+friend ostream& operator << (ostream& os, const bertinivector<T>& v) 
 {
     os << "[";
     for (int i=0;i<v.vsize;i++)

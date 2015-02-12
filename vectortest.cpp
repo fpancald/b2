@@ -78,11 +78,11 @@ int main()
 	
 	std::cout << "here\n" << std::endl;
 	
-	vec7=outer_product(vec6,vec6);
-	std::cout << vec7.size() << std::endl,
+	/*vec7=outer_product(vec6,vec6);
+	std::cout << vec7.size() << std::endl;
 	for (int i=0; i<vec7.size();i++){
 		for(int j=0; i<vec7[i].size();j++)
 			std::cout<<vec7[i][j]<< " ";
-	std::cout << "\n";}
+	std::cout << "\n";}*/
 	return 0;
 }
